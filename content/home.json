@@ -43,7 +43,15 @@
       "page": 1
     },
     {
-      "type": "banners-grid"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-dupol-ofertas.png"
+        },
+        {
+          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
+        }
+      ]
     },
     {
       "type": "dynamic-showcase",
