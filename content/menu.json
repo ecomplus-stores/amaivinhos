@@ -1,6 +1,9 @@
 {
-  "sort_categories": [],
+  "sort_categories": [
+    "por-tipo",
+    "por-uva"
+  ],
   "alphabetical_order": false,
-  "phone_wpp": true,
-  "socials": true
+  "phone_wpp": false,
+  "socials": false
 }
