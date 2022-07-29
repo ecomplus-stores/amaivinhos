@@ -4,7 +4,7 @@
   "primary_color": "#30a77e",
   "theme": {
     "bootswatch": "lux",
-    "custom": "clean-dark"
+    "custom": "_"
   },
   "bg_color": "#ffffff",
   "logo": "/img/uploads/sem-nome-200-100-px-200-80-px-1-.png",
