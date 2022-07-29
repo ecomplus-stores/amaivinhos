@@ -1,5 +1,5 @@
 {
-  "css": ".footer {\nbackground: #F3F6F4; !important;\n}\n\n.info-bar {\n    background-color: #F3F6F4; !important;\n}",
+  "css": ".footer {\nbackground: #F3F6F4; !important;\n}\n.bory {\n      background-color: #ffffff; !important;\n}",
   "html_head": "",
   "html_body": ""
 }
