@@ -8,19 +8,9 @@
       "full_width": false,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
-        },
-        {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "start": "",
-          "end": "",
-          "mobile_img": "/img/uploads/passion.webp"
+          "start": "2022-07-29T20:29:36.528Z",
+          "end": "2022-07-29T20:29:36.542Z",
+          "img": "/img/uploads/full-pc-1920-430-px-novo-1-.png"
         }
       ]
     },
