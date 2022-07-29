@@ -68,6 +68,17 @@
       "enabled": true
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/6-2-1-.png"
+        },
+        {
+          "img": "/img/uploads/5-1-1-.png"
+        }
+      ]
+    },
+    {
       "type": "brands-carousel",
       "limit": 24,
       "offset": 0
