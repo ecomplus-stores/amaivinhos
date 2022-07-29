@@ -1,7 +1,8 @@
 {
   "marketing_stripe": {
-    "text": "Aproveite nossos descontos de até 40%!",
-    "link": "/promotion"
+    "text": "Descubra vinhos extraordinários!",
+    "link": "/promotion",
+    "background": "#052b46"
   },
   "contacts_stripe": {
     "pages": [
@@ -10,8 +11,8 @@
         "link": "/pages/sobre-nos"
       },
       {
-        "title": "Esta loja é um PWA",
-        "link": "/posts/esta-loja-e-um-pwa"
+        "title": "Esta loja é um App nativo para o seu celular",
+        "link": "/posts"
       }
     ],
     "phone_wpp": true,
@@ -20,7 +21,7 @@
   "categories_list": {
     "featured": [],
     "random": 6,
-    "full_width": false
+    "full_width": true
   },
   "desktop_megamenu": true,
   "search_input": true
