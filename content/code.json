@@ -1,5 +1,5 @@
 {
-  "css": "\n\n.footer .py-3-py-lg-4-py-xl-5 {\nbackground: #F3F6F4; !important;\n}",
+  "css": "\n\n.footer.py-3-py-lg-4-py-xl-5 {\nbackground: #F3F6F4; !important;\n}",
   "html_head": "",
   "html_body": ""
 }
