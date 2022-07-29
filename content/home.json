@@ -29,6 +29,9 @@
       "enabled": true
     },
     {
+      "type": "banners-grid"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "collection_id": null,
@@ -37,6 +40,28 @@
       "headless": false,
       "limit": 12,
       "page": 1
+    },
+    {
+      "type": "banners-grid"
+    },
+    {
+      "type": "dynamic-showcase",
+      "load_more": true
+    },
+    {
+      "type": "offers-timer",
+      "max_hours": 24,
+      "start": "2022-07-29T17:12:21.170Z",
+      "end": "2022-07-29T17:12:21.196Z"
+    },
+    {
+      "type": "blog",
+      "enabled": true
+    },
+    {
+      "type": "brands-carousel",
+      "limit": 24,
+      "offset": 0
     },
     {
       "type": "page-title",
