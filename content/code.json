@@ -1,5 +1,5 @@
 {
-  "css": "\n\n.py-3-py-lg-4-py-xl-5 {\nbackground: #F3F6F4; !important;\n}\n\n.top-bar__countdown {\nbackground: #30a77e; !important;\n}",
+  "css": ".header {\nbackground: #000; !important;\n}\n.top-bar__countdown {\nbackground: #30a77e; !important;\n}\n.list-unstyled",
   "html_head": "",
   "html_body": ""
 }
