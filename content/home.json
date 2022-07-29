@@ -55,17 +55,30 @@
     },
     {
       "type": "dynamic-showcase",
-      "load_more": true
+      "load_more": true,
+      "sort": "sales"
     },
     {
       "type": "offers-timer",
       "max_hours": 24,
       "start": "2022-07-29T17:12:21.170Z",
-      "end": "2022-07-29T17:12:21.196Z"
+      "end": "2022-08-03T17:12:21.196Z",
+      "offers": [
+        "62e42fc1eb859112169d0c39"
+      ],
+      "notes": "Máximo de 6 unidades por CPF."
     },
     {
       "type": "blog",
       "enabled": true
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "sort": "views",
+      "title": "Mais vistos"
     },
     {
       "type": "banners-grid",
