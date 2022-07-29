@@ -19,7 +19,18 @@
       "enabled": true
     },
     {
-      "type": "banners-grid"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/vinhos-para-o-dia-a-dia-3-1-.png"
+        },
+        {
+          "img": "/img/uploads/os-mais-especiais-3-1-.png"
+        },
+        {
+          "img": "/img/uploads/para-saborear-com-comida-3-1-.png"
+        }
+      ]
     },
     {
       "type": "collection-shelf",
