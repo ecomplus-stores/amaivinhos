@@ -1,25 +1,25 @@
 {
-  "store_id": 51299,
-  "name": "amaivinhos",
   "domain": "amaivinhos.netlify.app",
-  "short_name": "amaivinhos",
-  "description": "amaivinhos",
+  "currency_symbol": "R$",
   "primary_color": "#222831",
-  "secondary_color": "#393e46",
-  "bg_color": "#ffffff",
   "theme": {
     "bootswatch": "_",
-    "custom": "_"
+    "custom": "clean-dark"
   },
-  "logo": "/img/uploads/logo.png",
-  "mini_logo": "",
-  "icon": "/img/icon.png",
-  "large_icon": "/img/large-icon.png",
-  "favicon": "/img/uploads/favicon.png",
+  "bg_color": "#ffffff",
+  "logo": "/img/uploads/sem-nome-200-100-px-200-80-px-1-.png",
+  "name": "Amai Vinhos",
+  "short_name": "Amai vinhos",
   "lang": "pt_br",
   "currency": "BRL",
-  "currency_symbol": "R$",
-  "country_code": "BR",
+  "mini_logo": "",
+  "font_family": "_",
+  "favicon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
   "icons_font": "_",
-  "font_family": "_"
+  "country_code": "BR",
+  "secondary_color": "#393e46",
+  "icon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
+  "store_id": 51299,
+  "description": "Somos uma loja online de Vinhos selecionados com muito amor.",
+  "large_icon": "/img/uploads/sem-fundo-branco-1-.png"
 }
