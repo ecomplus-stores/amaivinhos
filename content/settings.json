@@ -1,10 +1,10 @@
 {
   "domain": "amaivinhos.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#000000",
+  "primary_color": "#30a77e",
   "theme": {
-    "bootswatch": "_",
-    "custom": "clean-dark"
+    "bootswatch": "lux",
+    "custom": "_"
   },
   "bg_color": "#ffffff",
   "logo": "/img/uploads/sem-nome-200-100-px-200-80-px-1-.png",
@@ -17,7 +17,7 @@
   "favicon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
   "icons_font": "_",
   "country_code": "BR",
-  "secondary_color": "#df0000",
+  "secondary_color": "#ffffff",
   "icon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
   "store_id": 51299,
   "description": "Somos uma loja online de Vinhos selecionados com muito amor.",
