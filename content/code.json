@@ -1,5 +1,5 @@
 {
   "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n.top-bar__countdown {\n        font-weight: 700; !important;\n}\n .header__category {\n       color: #fff;\n}\n\n.menu__list {\n       color: #fff;\n}\n.menu__item {\n        color: #000;    \n}\n.menu__item img {\n    max-height: 40px;\n    max-width: 40px;    \n}\n    ",
-  "html_head": "<a id=\"top-bar__countdown\">\n                <img src=\"template/public/img/uploads/fresh.gif\">\n            </a>",
+  "html_head": "<a id=\"top-bar__countdown\">\n                <img src=\"amaivinhos.netlify.app/e7e9ed86-7453-4a57-a33a-96e531625c14\">\n            </a>",
   "html_body": ""
 }
