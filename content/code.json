@@ -1,5 +1,5 @@
 {
-  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n.top-bar__countdown {\n        font-weight: 700; !important;\n}\n .header__category {\n       color: #fff;\n}\n\n.menu__list {\n       color: #fff;\n}\n.menu__item {\n        color: #000;    \n}\n.menu__item img {\n    max-height: 30px;\n    max-width: 30px;    \n}\n.button.btn-primary {\n      color: #30a77e;\n}\n.header__buttons {\n  color: #000;\n  font-size: 2rem;\n}\n.header__toggler-icon {\n    color: #000;\n    font-size: 2rem;\n   \n}\n ",
+  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n.top-bar__countdown {\n        font-weight: 700; !important;\n}\n .header__category {\n       color: #fff;\n}\n\n.menu__list {\n       color: #fff;\n}\n.menu__item {\n        color: #000;    \n}\n.menu__item img {\n    max-height: 30px;\n    max-width: 30px;    \n}\n.button.btn-primary {\n      color: #30a77e;\n}\n.header__buttons {\n  color: #000;\n  font-size: 2rem;\n}\n.header__toggler-icon {\n    color: #fff;\n    font-size: 2rem;\n   \n}\n ",
   "html_head": "",
   "html_body": ""
 }
