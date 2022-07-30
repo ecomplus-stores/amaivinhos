@@ -1,6 +1,6 @@
 {
   "description": {
-    "title": "",
+    "title": "Amai Vinhos",
     "text": ""
   },
   "links_1": {
@@ -22,12 +22,16 @@
   },
   "stamps": [
     {
-      "src": "/img/uploads/ssl-safe.png",
+      "src": "/img/uploads/selo-site-protegido-ssl-1-.webp",
       "alt": "Secure connection"
+    },
+    {
+      "src": "/img/uploads/stamp_google_safe_browsing.png",
+      "link": "https://transparencyreport.google.com/safe-browsing/search?url=www.amaivinhos.com.br"
     }
   ],
   "payment_methods": {
-    "bb": false,
+    "bb": true,
     "visa": true,
     "boleto": false,
     "aura": true,
@@ -35,15 +39,16 @@
     "elo": false,
     "hipercard": true,
     "hsbc": false,
-    "bradesco": false,
-    "santander": false,
+    "bradesco": true,
+    "santander": true,
     "mastercard": true,
+    "paypal": true,
     "citibank": false,
     "hiper": true,
     "diners": true,
     "mais": false,
     "amex": true,
-    "itau": false
+    "itau": true
   },
   "credits": ""
 }
