@@ -1,5 +1,5 @@
 {
-  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 100px;\n}\n.top-bar {\n    background: #000;\n    width: 100%;\n}",
+  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 150px;\n}\n.header__toggler-icon.i-bars {\n       min-height: 40px;\n}",
   "html_head": "",
   "html_body": ""
 }
