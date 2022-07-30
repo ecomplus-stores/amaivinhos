@@ -1,12 +1,12 @@
 {
   "domain": "app.amaivinhos.com.br",
   "currency_symbol": "R$",
-  "primary_color": "#30a77e",
+  "primary_color": "#040404",
   "theme": {
     "bootswatch": "litera",
     "custom": "_"
   },
-  "bg_color": "#ffffff",
+  "bg_color": "#000000",
   "logo": "/img/uploads/sem-nome-200-100-px-200-80-px-1-.png",
   "name": "Amai Vinhos",
   "short_name": "Amai vinhos",
@@ -15,10 +15,10 @@
   "mini_logo": "",
   "font_family": "_",
   "favicon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
-  "icons_font": "_",
+  "icons_font": "bootstrap-icons",
   "country_code": "BR",
-  "secondary_color": "#ffffff",
-  "icon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
+  "secondary_color": "#30a77e",
+  "icon": "/img/uploads/logo-amai-com-flecha-branco-icon-li.png",
   "store_id": 51299,
   "description": "Somos uma loja online de Vinhos selecionados com muito amor.",
   "large_icon": "/img/uploads/sem-fundo-branco-1-.png"
