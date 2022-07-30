@@ -1,5 +1,5 @@
 {
-  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n.top-bar.top-bar__countdown {\n        font-weight: 700;\n}\n .header__category {\n       color: #fff;\n}",
+  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n.top-bar.top-bar__countdown {\n        font-weight: 700;\n}\n .header__category {\n       color: #fff;\n}\n.menu__item {\n        color: #000;    \n}",
   "html_head": "",
   "html_body": ""
 }
