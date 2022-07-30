@@ -2,8 +2,8 @@
   "marketing_stripe": {
     "text": "Frete Grátis e Vinhos extraordinários",
     "link": "/promotion",
-    "background": "#b3b30a",
-    "color": "#000000"
+    "background": "#23936c",
+    "color": "#fe0000"
   },
   "contacts_stripe": {
     "pages": [
