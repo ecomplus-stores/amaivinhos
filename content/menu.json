@@ -3,7 +3,8 @@
     "por-tipo",
     "por-uva",
     "por-pais-regiao",
-    "por-produtor"
+    "por-produtor",
+    "selecao"
   ],
   "alphabetical_order": true,
   "phone_wpp": false,
