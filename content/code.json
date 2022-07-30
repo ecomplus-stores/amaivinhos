@@ -1,5 +1,5 @@
 {
-  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 150px;\n}\n",
+  "css": ".header {\nbackground: #000; !important;\n}\n.header__row {\n       min-height: 80px;\n}\n",
   "html_head": "",
   "html_body": ""
 }
