@@ -1,7 +1,9 @@
 {
   "sort_categories": [
     "por-tipo",
-    "por-uva"
+    "por-uva",
+    "por-pais-regiao",
+    "por-produtor"
   ],
   "alphabetical_order": true,
   "phone_wpp": false,
