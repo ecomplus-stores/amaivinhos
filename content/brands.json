@@ -5,7 +5,9 @@
       "enabled": true
     },
     {
-      "type": "page-title"
+      "type": "page-title",
+      "title": "Armani",
+      "description": "Não é qualquer produtor que pode se orgulhar de 4 séculos de história. Desde 1607, os Armani estão profundamente arraigados ao Nordeste da Itália, criando vinhos com a identidade da terra que lhes dá origem. Os vinhos exibem toda a tipicidade da altitude, com frescor, fluidez, fruta imaculada, intensa, e inerente senso de elegância. A vinícola possui vinhedos no Trentino, no Vêneto e no Friuli, todos com certificação de sustentabilidade."
     },
     {
       "type": "document-banner",
