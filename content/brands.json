@@ -11,11 +11,11 @@
     },
     {
       "type": "document-banner",
-      "enabled": false
+      "enabled": true
     },
     {
       "type": "document-description",
-      "enabled": false
+      "enabled": true
     },
     {
       "type": "brand-retail",
