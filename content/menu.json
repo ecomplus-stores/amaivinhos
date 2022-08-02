@@ -10,6 +10,6 @@
     "para-impressionar"
   ],
   "alphabetical_order": true,
-  "phone_wpp": false,
-  "socials": false
+  "phone_wpp": true,
+  "socials": true
 }
