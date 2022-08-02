@@ -3,9 +3,11 @@
     "por-tipo",
     "por-uva",
     "por-pais-regiao",
-    "por-produtor"
+    "por-produtor",
+    "premiados",
+    "para-harmonizar"
   ],
   "alphabetical_order": true,
-  "phone_wpp": true,
-  "socials": true
+  "phone_wpp": false,
+  "socials": false
 }
