@@ -1,18 +1,22 @@
 {
   "shipping": {
     "show": true,
-    "text": "Entregamos para todo o Brasil"
+    "text": "Entregamos para todo o Brasil",
+    "title": "Envio rápido"
   },
   "installments": {
     "show": true,
-    "text": "Parcele sem juros"
+    "text": "Em até sem juros até 3x s/ juros",
+    "title": "Parcele"
   },
   "exchange": {
     "show": true,
-    "text": "Não gostou? A primeira troca é gratuita"
+    "text": "Variedades de vinhos de 12 países",
+    "title": "Produtores premiados"
   },
   "promo": {
-    "show": true,
-    "text": "Diferentes promoções ao longo do ano!"
+    "show": false,
+    "text": "Promoções toda semana",
+    "title": ""
   }
 }
