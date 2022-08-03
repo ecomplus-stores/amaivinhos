@@ -1,5 +1,5 @@
 {
-  "css": "main .header {\n    background-color: #000;\n   \n}\n /* Infobar */\nmain .info-bar {\n    background-color: #6a6425;\n}\n.header__buttons {\n    color: #fff;\n}\n.top-bar__countdown {\n        font-weight: 600; !important;\n}\n .header__category {\n    color: #fff;\n}\n.header__nav .header__nav--full {\n  color: #fff;\n}\n.order-lg-last .col-auto .p-0 {\n  color: #fff;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n\n.header__toggler-icon {\n    color: #fff;\n  \n}\n.button {\n      color: #30a77e;\n}\n\n.badge-primary {\n    background-color: #30a77e;    \n}\n.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {\n    background-color: #30a77e;   \n}\n    \n.footer.main.footer {\n    background-color: #f3f6f4;\n}\n\n",
+  "css": ".top-bar__countdown {\n        font-weight: 600; !important;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n",
   "html_head": "",
   "html_body": ""
 }
