@@ -1,5 +1,5 @@
 {
-  "css": ".top-bar__countdown {\n        font-weight: 600; !important;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n",
+  "css": ".top-bar__countdown {\n        font-weight: 600; !important;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n.badge-primary {\n    background-color: #30a77e;\n}\nmain .header {\n    background-color: #000;\n}\n",
   "html_head": "",
   "html_body": ""
 }
