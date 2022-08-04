@@ -23,13 +23,79 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/vinhos-para-o-dia-a-dia-3-1-.png"
+          "img": "/img/uploads/mercado_4rhe.webp"
         },
         {
-          "img": "/img/uploads/os-mais-especiais-3-1-.png"
+          "img": "/img/uploads/pastel2_qewo.webp"
         },
         {
-          "img": "/img/uploads/para-saborear-com-comida-3-1-.png"
+          "img": "/img/uploads/vegetariana_2xfi.webp"
+        },
+        {
+          "img": "/img/uploads/salgados_dtng.webp"
+        },
+        {
+          "img": "/img/uploads/sorvetes_bd8y.webp"
+        },
+        {
+          "img": "/img/uploads/japonesa_fp14.webp"
+        },
+        {
+          "img": "/img/uploads/gourmet_gj6z.webp"
+        },
+        {
+          "img": "/img/uploads/acai_wtxp.webp"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/08habibseragazzopedmin15principalcpddmin152_iln4.webp"
+        },
+        {
+          "img": "/img/uploads/10restaurantesqueridinhosprincipal4_y1yo.webp"
+        },
+        {
+          "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/29melhoresofertasbebidas2bisnaga_bcza.webp"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/alemanha-copia-copia.png"
+        },
+        {
+          "img": "/img/uploads/argentina-1-copia-copia.png"
+        },
+        {
+          "img": "/img/uploads/bandeira-do-brasil-1-copia-copia.png"
+        },
+        {
+          "img": "/img/uploads/bandeiras-1-copia.png"
+        },
+        {
+          "img": "/img/uploads/italia-1-copia.png"
+        },
+        {
+          "img": "/img/uploads/chile-copia.png"
+        },
+        {
+          "img": "/img/uploads/portugal-1-copia.png"
+        },
+        {
+          "img": "/img/uploads/uruguai.png"
         }
       ]
     },
@@ -44,63 +110,18 @@
       "page": 1
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-dupol-ofertas.png"
-        },
-        {
-          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
-        }
-      ]
-    },
-    {
-      "type": "dynamic-showcase",
-      "load_more": true,
-      "sort": "sales"
-    },
-    {
-      "type": "offers-timer",
-      "max_hours": 24,
-      "start": "2022-07-29T17:12:21.170Z",
-      "end": "2022-08-03T17:12:21.196Z",
-      "offers": [
-        "62e42fc1eb859112169d0c39"
-      ],
-      "notes": "Máximo de 6 unidades por CPF."
-    },
-    {
       "type": "blog",
       "enabled": true
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "sort": "views",
-      "title": "Mais vistos"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/6-2-1-.png"
-        },
-        {
-          "img": "/img/uploads/5-1-1-.png"
-        }
-      ]
-    },
-    {
-      "type": "brands-carousel",
-      "limit": 24,
-      "offset": 0
     },
     {
       "type": "page-title",
       "title": "Amai Vinhos",
       "description": "Somos a loja de vinhos mais rápida do Brasil. Usamos tecnologia de ponta para entregar uma experiência cada dia melhor para você."
+    },
+    {
+      "type": "brands-carousel",
+      "limit": 24,
+      "offset": 0
     }
   ]
 }
