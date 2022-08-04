@@ -27,7 +27,7 @@
         {
           "start": "2022-08-04T18:39:24.764Z",
           "end": "2022-08-04T18:39:24.777Z",
-          "img": "/img/uploads/5.png"
+          "img": "/img/uploads/banner-dia-dos-pais.png"
         },
         {
           "start": "2022-08-04T18:39:25.871Z",
@@ -65,9 +65,11 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 12,
-      "page": 1
+      "shuffle": true,
+      "limit": "",
+      "page": "",
+      "sort": "sales",
+      "title": "Destaques da semana"
     },
     {
       "type": "banners-grid",
@@ -88,10 +90,10 @@
       "shuffle": true,
       "collection_id": null,
       "sort": "news",
-      "title": "Novidades da Sommelière",
+      "title": "Seleção da Sommelière",
       "headless": false,
-      "limit": 12,
-      "page": 1
+      "limit": "",
+      "page": ""
     },
     {
       "type": "banners-grid",
@@ -113,7 +115,7 @@
       "limit": 12,
       "page": 2,
       "sort": "sales",
-      "title": "Mais vendidos da semana"
+      "title": "Mais vendidos do mês"
     },
     {
       "type": "banners-grid",
