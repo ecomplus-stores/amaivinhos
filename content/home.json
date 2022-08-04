@@ -33,9 +33,20 @@
         },
         {
           "img": "/img/uploads/1.png"
+        }
+      ]
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/08habibseragazzopedmin15principalcpddmin152_iln4.webp"
         },
         {
-          "img": "/img/uploads/3.png"
+          "img": "/img/uploads/10restaurantesqueridinhosprincipal4_y1yo.webp"
+        },
+        {
+          "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
         }
       ]
     },
