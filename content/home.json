@@ -37,6 +37,12 @@
       ]
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
@@ -47,17 +53,6 @@
         },
         {
           "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
-        }
-      ]
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-dupol-ofertas.png"
-        },
-        {
-          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
         }
       ]
     },
@@ -94,10 +89,15 @@
       "title": "Mais vendidos da semana"
     },
     {
-      "type": "offers-timer",
-      "max_hours": 24,
-      "start": "2022-08-04T01:21:25.838Z",
-      "end": "2022-08-04T01:21:25.892Z"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner-dupol-ofertas.png"
+        },
+        {
+          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
+        }
+      ]
     },
     {
       "type": "custom-content",
