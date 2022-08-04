@@ -20,7 +20,15 @@
     "socials": true
   },
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/por-tipo?Por tipo",
+      "/por-uva?Por uva",
+      "/por-pais-regiao?Por País/ Região",
+      "/por-produtor?Por Produtor",
+      "/premiados?Premiados",
+      "/ofertas?Ofertas",
+      "/para-harmonizar?Para Harmonizar"
+    ],
     "random": 8,
     "full_width": true
   },
