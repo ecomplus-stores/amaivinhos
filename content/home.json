@@ -73,13 +73,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/08habibseragazzopedmin15principalcpddmin152_iln4.webp"
+          "img": "/img/uploads/banner-volta-ao-mundo.png"
         },
         {
-          "img": "/img/uploads/10restaurantesqueridinhosprincipal4_y1yo.webp"
+          "img": "/img/uploads/banner-explore.png"
         },
         {
-          "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
+          "img": "/img/uploads/banner-blog.png"
         }
       ]
     },
@@ -97,13 +97,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
+          "img": "/img/uploads/banner-dia-a-dia.png"
         },
         {
-          "img": "/img/uploads/08habibseragazzopedmin15principalcpddmin152_iln4.webp"
+          "img": "/img/uploads/banner-harmonizar.png"
         },
         {
-          "img": "/img/uploads/10restaurantesqueridinhosprincipal4_y1yo.webp"
+          "img": "/img/uploads/banner-para-impressionar.png"
         }
       ]
     },
