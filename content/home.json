@@ -36,15 +36,6 @@
         },
         {
           "img": "/img/uploads/sorvetes_bd8y.webp"
-        },
-        {
-          "img": "/img/uploads/japonesa_fp14.webp"
-        },
-        {
-          "img": "/img/uploads/gourmet_gj6z.webp"
-        },
-        {
-          "img": "/img/uploads/acai_wtxp.webp"
         }
       ]
     },
@@ -66,36 +57,10 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/29melhoresofertasbebidas2bisnaga_bcza.webp"
-        }
-      ]
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/alemanha-copia-copia.png"
+          "img": "/img/uploads/banner-dupol-ofertas.png"
         },
         {
-          "img": "/img/uploads/argentina-1-copia-copia.png"
-        },
-        {
-          "img": "/img/uploads/bandeira-do-brasil-1-copia-copia.png"
-        },
-        {
-          "img": "/img/uploads/bandeiras-1-copia.png"
-        },
-        {
-          "img": "/img/uploads/italia-1-copia.png"
-        },
-        {
-          "img": "/img/uploads/chile-copia.png"
-        },
-        {
-          "img": "/img/uploads/portugal-1-copia.png"
-        },
-        {
-          "img": "/img/uploads/uruguai.png"
+          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
         }
       ]
     },
@@ -110,6 +75,49 @@
       "page": 1
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/29jantarbomebaratoprincipal_kmia.webp"
+        },
+        {
+          "img": "/img/uploads/08habibseragazzopedmin15principalcpddmin152_iln4.webp"
+        },
+        {
+          "img": "/img/uploads/10restaurantesqueridinhosprincipal4_y1yo.webp"
+        }
+      ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 12,
+      "page": 2,
+      "sort": "sales",
+      "title": "Mais vendidos da semana"
+    },
+    {
+      "type": "offers-timer",
+      "max_hours": 24,
+      "start": "2022-08-04T01:21:25.838Z",
+      "end": "2022-08-04T01:21:25.892Z"
+    },
+    {
+      "type": "custom-content",
+      "markdown": "<!--StartFragment-->\n\n#### Produtores Premiados\n\n<!--EndFragment-->"
+    },
+    {
+      "type": "brands-carousel",
+      "limit": 24,
+      "offset": 0
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
       "type": "blog",
       "enabled": true
     },
@@ -117,11 +125,6 @@
       "type": "page-title",
       "title": "Amai Vinhos",
       "description": "Somos a loja de vinhos mais rápida do Brasil. Usamos tecnologia de ponta para entregar uma experiência cada dia melhor para você."
-    },
-    {
-      "type": "brands-carousel",
-      "limit": 24,
-      "offset": 0
     }
   ]
 }
