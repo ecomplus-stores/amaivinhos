@@ -146,6 +146,10 @@
       "title": "Queridinhos do público"
     },
     {
+      "type": "custom-content",
+      "markdown": "<!--StartFragment-->\n\n#### Blog\n\n<!--EndFragment-->"
+    },
+    {
       "type": "blog",
       "enabled": true
     },
