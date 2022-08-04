@@ -23,19 +23,19 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/mercado_4rhe.webp"
+          "img": "/img/uploads/farming-1-.png"
         },
         {
-          "img": "/img/uploads/pastel2_qewo.webp"
+          "img": "/img/uploads/smartphone-2-.png"
         },
         {
-          "img": "/img/uploads/vegetariana_2xfi.webp"
+          "img": "/img/uploads/wine-glass-1-.png"
         },
         {
-          "img": "/img/uploads/salgados_dtng.webp"
+          "img": "/img/uploads/fans.png"
         },
         {
-          "img": "/img/uploads/sorvetes_bd8y.webp"
+          "img": "/img/uploads/shopping-1-.png"
         }
       ]
     },
@@ -113,9 +113,11 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 12,
-      "page": 1
+      "page": 1,
+      "sort": "slug",
+      "title": "Queridinhos do público"
     },
     {
       "type": "blog",
