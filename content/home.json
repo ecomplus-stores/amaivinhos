@@ -54,13 +54,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banner-volta-ao-mundo.png"
+          "img": "/img/uploads/banner-dia-a-dia.png"
         },
         {
-          "img": "/img/uploads/banner-explore.png"
+          "img": "/img/uploads/banner-harmonizar.png"
         },
         {
-          "img": "/img/uploads/banner-blog.png"
+          "img": "/img/uploads/banner-para-impressionar.png"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banner-dia-a-dia.png"
+          "img": "/img/uploads/banner-volta-ao-mundo.png"
         },
         {
-          "img": "/img/uploads/banner-harmonizar.png"
+          "img": "/img/uploads/banner-explore.png"
         },
         {
-          "img": "/img/uploads/banner-para-impressionar.png"
+          "img": "/img/uploads/banner-el-principal.png"
         }
       ]
     },
