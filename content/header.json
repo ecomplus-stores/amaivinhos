@@ -2,7 +2,7 @@
   "marketing_stripe": {
     "text": "Frete Grátis para compras acima de R$ 300,00",
     "link": "",
-    "background": "#23936c",
+    "background": "#000000",
     "color": "#ffffff"
   },
   "contacts_stripe": {
