@@ -1,5 +1,5 @@
 {
-  "css": ".top-bar__countdown {\n        font-weight: 400;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n.badge-primary {\n    background-color: #30a77e;\n}\n/*main .header {\n    background-color: #000;\n}\n\n.header__category {\n      color: #fff;\n \n}\n*/\n.product__buy button {\ncolor: #ffffff;\nbackground-color: #30a77e;\nborder-color: #30a77e;\nwidth: 100%;\n}\n.product__buy button:hover {\nbackground: #17664a;\nborder-color: #17664a;\n}",
+  "css": ".top-bar__countdown {\n        font-weight: 400;\n}\n\n.menu__item img {\n    max-height: 35px;\n    max-width: 35px; \n    \n}\n.badge-primary {\n    background-color: #30a77e;\n}\n/*main .header {\n    background-color: #000;\n}\n\n.header__category {\n      color: #fff;\n \n}\n*/\n.product__buy button {\ncolor: #ffffff;\nbackground-color: #30a77e;\nborder-color: #30a77e;\nwidth: 100%;\n}\n.product__buy button:hover {\nbackground: #17664a;\nborder-color: #17664a;\n}\n\n.quantity-selector__btn-container {\n  background-color: #000;\n}",
   "html_head": "",
   "html_body": ""
 }
