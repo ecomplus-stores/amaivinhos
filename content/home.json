@@ -97,17 +97,6 @@
       "title": "Mais vendidos do mês"
     },
     {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner-dupol-ofertas.png"
-        },
-        {
-          "img": "/img/uploads/banner-duplo-luigi-bosca.png"
-        }
-      ]
-    },
-    {
       "type": "custom-content",
       "markdown": "<!--StartFragment-->\n\n#### Produtores Premiados\n\n<!--EndFragment-->"
     },
