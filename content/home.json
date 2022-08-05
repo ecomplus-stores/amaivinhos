@@ -20,33 +20,6 @@
       "enabled": false
     },
     {
-      "type": "banner-slider",
-      "autoplay": 0,
-      "full_width": false,
-      "slides": [
-        {
-          "start": "2022-08-04T18:39:24.764Z",
-          "end": "2022-08-04T18:39:24.777Z",
-          "img": "/img/uploads/tintosafasfsa.png"
-        },
-        {
-          "start": "2022-08-04T18:39:25.871Z",
-          "end": "2022-08-04T18:39:25.886Z",
-          "img": "/img/uploads/premiadosfasf.png"
-        },
-        {
-          "start": "2022-08-04T18:39:27.347Z",
-          "end": "2022-08-04T18:39:27.364Z",
-          "img": "/img/uploads/ofertassada.png"
-        },
-        {
-          "start": "2022-08-04T18:39:28.062Z",
-          "end": "2022-08-04T18:39:28.093Z",
-          "img": "/img/uploads/brancosss.png"
-        }
-      ]
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
@@ -62,10 +35,10 @@
           "img": "/img/uploads/brancosss.png"
         },
         {
-          "img": "/img/uploads/espumantesss.png"
+          "img": "/img/uploads/premiados-100-100-px-3-.png"
         },
         {
-          "img": "/img/uploads/kitsss.png"
+          "img": "/img/uploads/premiados-100-100-px-2-.png"
         }
       ]
     },
