@@ -2,12 +2,12 @@
   <% const colSize = Math.ceil(12 / opt.banners.length) %>
   <div class="banners-grid my-3 my-md-4 my-lg-5">
     <div class="container">
-      <% if (opt.banners.length >= 5) { %>
+      <% if (opt.banners.length > 5) { %>
         <div
           class="glide minibanners_slider"
           data-wait-mutation="false"
-          data-autoplay="true"
-          data-per-view="5"
+          data-autoplay="3000"
+          data-per-view="6"
           data-per-view-md="5"
           data-per-view-sm="3"
         >
@@ -19,25 +19,27 @@
                 </li>
               <% } %>
             </ul>
-            <div
-            class="glide__arrows glide__arrows--outer"
-            data-glide-el="controls"
-          >
-            <button
-              class="btn glide__arrow glide__arrow--left"
-              data-glide-dir="<"
-              aria-label="<%= _.dictionary('previous') %>"
-            >
-              <i class="i-chevron-left"></i>
-            </button>
-            <button
-              class="btn glide__arrow glide__arrow--right"
-              data-glide-dir=">"
-              aria-label="<%= _.dictionary('next') %>"
-            >
-              <i class="i-chevron-right"></i>
-            </button>
-          </div>
+            
+              <div
+                class="glide__arrows glide__arrows--outer setas_"
+                data-glide-el="controls"
+              >
+              <button
+                class="btn glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+                aria-label="<%= _.dictionary('previous') %>"
+              >
+                <i class="i-chevron-left"></i>
+              </button>
+              <button
+                class="btn glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+                aria-label="<%= _.dictionary('next') %>"
+              >
+                <i class="i-chevron-right"></i>
+              </button>
+            </div>
+            
         </div>    
       <% } else { %>
         <div class="row">

@@ -1,7 +1,14 @@
 // Add your custom CSS here.
+.minibanners_slider .banner{margin:0 auto; display:block; width:fit-content}
 .minibanners_slider .glide__arrow--left{
     left:-23px;
 }
 .minibanners_slider .glide__arrow--right{
     right:-23px;
+}
+
+@media(min-width:990px){
+    .minibanners_slider .setas_{
+        display:none
+    }
 }
