@@ -54,13 +54,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/banner-dia-a-dia.png"
+          "img": "/img/uploads/vinhos-para-o-dia-a-dia.jpg"
         },
         {
-          "img": "/img/uploads/banner-harmonizar.png"
+          "img": "/img/uploads/para-saborear-com-comida.jpg"
         },
         {
-          "img": "/img/uploads/banner-para-impressionar.png"
+          "img": "/img/uploads/os-mais-especiais.jpg"
         }
       ]
     },
@@ -78,13 +78,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/fsafasfasf.png"
+          "img": "/img/uploads/5-1-.jpg"
         },
         {
-          "img": "/img/uploads/fsdghdfhdfhjdfjjfgj.png"
+          "img": "/img/uploads/4-1-.jpg"
         },
         {
-          "img": "/img/uploads/minibaner-triplo-pinot-noir-.png"
+          "img": "/img/uploads/6-1-.jpg"
         }
       ]
     },
