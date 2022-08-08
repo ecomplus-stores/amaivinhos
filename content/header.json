@@ -2,7 +2,7 @@
   "marketing_stripe": {
     "text": "Frete Grátis nas compras acima de R$ 300 Sul e Sudeste",
     "link": "",
-    "background": "#000000",
+    "background": "#30a77e",
     "color": "#ffffff"
   },
   "contacts_stripe": {
@@ -27,7 +27,7 @@
       "/por-produtor?Por Produtor",
       "/premiados?Premiados",
       "/ofertas?Ofertas",
-      "/para-harmonizar?Para Harmonizar"
+      "/para-harmonizar?Dicas de harmonização"
     ],
     "random": 7,
     "full_width": true
