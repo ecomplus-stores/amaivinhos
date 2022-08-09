@@ -201,7 +201,7 @@
     },
     {
       "type": "custom-html",
-      "html": "<p style=\"text-align:center\"><a href=\"https://www.amaivinhos.com.br//blog\" target=\"_self\"><span style=\"background-color:#000000\"><input name=\"Veja todos os artigos\" type=\"button\" value=\"Veja todos os artigos\" /></span></a></p>\n"
+      "html": "<p style=\"text-align:center\"><a href=\"/blog\" target=\"_self\"><span style=\"background-color:#000000\"><input name=\"Veja todos os artigos\" type=\"button\" value=\"Veja todos os artigos\" /></span></a></p>\n"
     },
     {
       "type": "custom-html",
