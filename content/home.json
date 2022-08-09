@@ -159,6 +159,35 @@
       "title": "Queridinhos do público"
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/aves.jpg",
+          "link": "/aves"
+        },
+        {
+          "link": "/carnes",
+          "img": "/img/uploads/carnes.jpg"
+        },
+        {
+          "img": "/img/uploads/frutos-do-mar.jpg",
+          "link": "/peixes-e-frutos-do-mar"
+        },
+        {
+          "img": "/img/uploads/queijos.jpg",
+          "link": "/quejos"
+        },
+        {
+          "img": "/img/uploads/vegetais.jpg",
+          "link": "/vegetais"
+        },
+        {
+          "img": "/img/uploads/sobremesas.jpg",
+          "link": "/sobremesas"
+        }
+      ]
+    },
+    {
       "type": "custom-html",
       "html": "<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Blog</span></h2>"
     },
