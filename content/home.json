@@ -138,8 +138,8 @@
       "title": "Mais vendidos do mês"
     },
     {
-      "type": "custom-content",
-      "markdown": "<!--StartFragment-->\n\n#### Produtores Premiados\n\n<!--EndFragment-->"
+      "type": "custom-html",
+      "html": "  <h2 style=\"text-align:center\"><span style=\"font-size:24px\">Produtores premiados</span></h2>"
     },
     {
       "type": "brands-carousel",
@@ -155,8 +155,8 @@
       "title": "Queridinhos do público"
     },
     {
-      "type": "custom-content",
-      "markdown": "<!--StartFragment-->\n\n#### Blog\n\n<!--EndFragment-->"
+      "type": "custom-html",
+      "html": "<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Blog</span></h2>"
     },
     {
       "type": "blog",
