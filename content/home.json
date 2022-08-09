@@ -168,6 +168,10 @@
     },
     {
       "type": "custom-html",
+      "html": "<p style=\"text-align:center\"><a href=\"https://www.amaivinhos.com.br//blog\" target=\"_self\"><span style=\"background-color:#000000\"><input name=\"Veja todos os artigos\" type=\"button\" value=\"Veja todos os artigos\" /></span></a></p>\n"
+    },
+    {
+      "type": "custom-html",
       "html": "<div class=\"embedsocial-hashtag\" data-ref=\"2c547476ea73d16417b2c3996b532fb00d2e1f8f\"><a class=\"feed-powered-by-es feed-powered-by-es-slider-new\" href=\"https://embedsocial.com/social-media-aggregator/\" target=\"_blank\" title=\" \"></span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = \"https://embedsocial.com/cdn/ht.js\"; d.getElementsByTagName(\"head\")[0].appendChild(js);}(document, \"script\", \"EmbedSocialHashtagScript\"));</script>"
     },
     {
