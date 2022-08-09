@@ -23,22 +23,28 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/icon-category-espumantes.png"
+          "img": "/img/uploads/icones-categorias-espumantes.png",
+          "link": "/espumantes"
         },
         {
-          "img": "/img/uploads/icon-category-brancos.png"
+          "img": "/img/uploads/icon-categoria-brancos.png",
+          "link": "/brancos"
         },
         {
-          "img": "/img/uploads/icon-category-tintos.png"
+          "img": "/img/uploads/icones-categorias-tintos.png",
+          "link": "/tintos"
         },
         {
-          "img": "/img/uploads/icon-category-premiados.png"
+          "img": "/img/uploads/icones-categorias-premiados.png",
+          "link": "/premiados"
         },
         {
-          "img": "/img/uploads/icon-category-ofertas.png"
+          "img": "/img/uploads/icones-categorias-ofertas.png",
+          "link": "/ofertas"
         },
         {
-          "img": "/img/uploads/icon-category-kits.png"
+          "img": "/img/uploads/icones-categorias-kits.png",
+          "link": "/kits"
         }
       ]
     },
