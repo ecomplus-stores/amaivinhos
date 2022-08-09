@@ -23,13 +23,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/icon-category-tintos.png"
-        },
-        {
           "img": "/img/uploads/icon-category-espumantes.png"
         },
         {
           "img": "/img/uploads/icon-category-brancos.png"
+        },
+        {
+          "img": "/img/uploads/icon-category-tintos.png"
         },
         {
           "img": "/img/uploads/icon-category-premiados.png"
