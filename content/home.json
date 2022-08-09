@@ -84,13 +84,44 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/5-1-.jpg"
+          "img": "/img/uploads/italia.png",
+          "link": "/italia"
         },
         {
-          "img": "/img/uploads/4-1-.jpg"
+          "img": "/img/uploads/franca.png",
+          "link": "/franca"
         },
         {
-          "img": "/img/uploads/6-1-.jpg"
+          "img": "/img/uploads/argentina.png",
+          "link": "/argentina"
+        },
+        {
+          "img": "/img/uploads/portugal.png",
+          "link": "/portugal"
+        },
+        {
+          "img": "/img/uploads/brasil.png",
+          "link": "/brasil"
+        },
+        {
+          "img": "/img/uploads/chile.png",
+          "link": "/chile"
+        },
+        {
+          "img": "/img/uploads/espanha.png",
+          "link": "/espanha"
+        },
+        {
+          "img": "/img/uploads/africa-do-sul.png",
+          "link": "/africa-do-sul"
+        },
+        {
+          "img": "/img/uploads/eslovenia.png",
+          "link": "/eslovenia"
+        },
+        {
+          "img": "/img/uploads/grecia.png",
+          "link": "/grecia"
         }
       ]
     },
