@@ -159,6 +159,10 @@
       "title": "Queridinhos do público"
     },
     {
+      "type": "custom-html",
+      "html": "​<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Dicas de Harmonização</span></h2>"
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
