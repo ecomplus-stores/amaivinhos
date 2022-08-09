@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.ddf42ece3374e997c4433d0e5c0a5dda.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.63ff8bae1fb9f89675b05ff8be3f7588.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.7ddda0c3545a99383ddb2860be4001eb.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.f5ae998f136572fb35f08a731ab36c15.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.777d3c0843ac84f3eb9d3164a2dec225.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Amai Vinhos",
+  "short_name": "Amai vinhos",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Somos uma loja online de Vinhos selecionados com muito amor.",
+  "background_color": "#010000",
+  "theme_color": "#040404"
+}
