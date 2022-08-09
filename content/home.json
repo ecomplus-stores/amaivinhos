@@ -23,27 +23,27 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/icones-categorias-espumantes.png",
+          "img": "/img/uploads/espumantes-icon.png",
           "link": "/espumantes"
         },
         {
-          "img": "/img/uploads/icon-categoria-brancos.png",
+          "img": "/img/uploads/icon-branco.png",
           "link": "/vinho-branco"
         },
         {
-          "img": "/img/uploads/icones-categorias-tintos.png",
+          "img": "/img/uploads/tintos-icon.png",
           "link": "/vinho-tinto"
         },
         {
-          "img": "/img/uploads/icones-categorias-premiados.png",
+          "img": "/img/uploads/premiados-icon.png",
           "link": "/premiados"
         },
         {
-          "img": "/img/uploads/icones-categorias-ofertas.png",
+          "img": "/img/uploads/ofertas-icon.png",
           "link": "/ofertas"
         },
         {
-          "img": "/img/uploads/icones-categorias-kits.png",
+          "img": "/img/uploads/kits-icon.png",
           "link": "/kits"
         }
       ]
