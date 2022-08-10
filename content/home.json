@@ -173,27 +173,33 @@
       "banners": [
         {
           "img": "/img/uploads/aves.jpg",
-          "link": "/aves"
+          "link": "/aves",
+          "mobile_img": "/img/uploads/aves-mobile.jpg"
         },
         {
           "link": "/vermelhas",
-          "img": "/img/uploads/carnes.jpg"
+          "img": "/img/uploads/carnes.jpg",
+          "mobile_img": "/img/uploads/carnes-mobile.jpg"
         },
         {
           "img": "/img/uploads/frutos-do-mar.jpg",
-          "link": "/peixes-e-frutos-do-mar"
+          "link": "/peixes-e-frutos-do-mar",
+          "mobile_img": "/img/uploads/frutos-do-mar-mobile.jpg"
         },
         {
           "img": "/img/uploads/queijos.jpg",
-          "link": "/queijos"
+          "link": "/queijos",
+          "mobile_img": "/img/uploads/queijos-mobile.jpg"
         },
         {
           "img": "/img/uploads/vegetais.jpg",
-          "link": "/vegetais"
+          "link": "/vegetais",
+          "mobile_img": "/img/uploads/vegetais-mobile.jpg"
         },
         {
           "img": "/img/uploads/sobremesas.jpg",
-          "link": "/sobremesas"
+          "link": "/sobremesas",
+          "mobile_img": "/img/uploads/sobremesas-mobile.jpg"
         }
       ]
     },
