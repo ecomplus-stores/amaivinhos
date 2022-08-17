@@ -98,7 +98,7 @@ const hasMegamenu = header.desktop_megamenu
                 </a>
               <% } %>
             </div>
-            
+
           <% } %>
         </div>
         <% if (header.contacts_stripe.socials) { %>
@@ -271,8 +271,8 @@ const hasMegamenu = header.desktop_megamenu
                   <% if (subcategories.length) { %>
                     <nav class="header__submenu" id="<%= `s-${slug.replace(/\//g, '_')}` %>">
                       <% subcategories.forEach(subcategory => { %>
-                        <div>               
-                          <a id="sd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>
+                        <div>
+                          <a style="margin-top: 0px;" id="sd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>
                           <% const thirdCategories = _.categories.filter(({ parent }) => parent && parent.slug === subcategory.slug) %>
                           <% thirdCategories.forEach(thirdCategory => { %>
                             <a id="td-<%= thirdCategory._id %>" class="header__submenu-subcategory" href="/<%= thirdCategory.slug %>">
