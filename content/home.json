@@ -98,48 +98,59 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/italia.png",
-          "link": "/italia"
+          "img": "/img/uploads/italia-pc.png",
+          "link": "/italia",
+          "mobile_img": "/img/uploads/italia-mobile.png"
         },
         {
-          "img": "/img/uploads/franca.png",
-          "link": "/franca"
+          "img": "/img/uploads/franca-pc.png",
+          "link": "/franca",
+          "mobile_img": "/img/uploads/franca-mobile.png"
         },
         {
-          "img": "/img/uploads/argentina.png",
-          "link": "/argentina"
+          "img": "/img/uploads/argentina-pc.png",
+          "link": "/argentina",
+          "mobile_img": "/img/uploads/argentina-mobile.png"
         },
         {
-          "img": "/img/uploads/portugal.png",
-          "link": "/portugal"
+          "img": "/img/uploads/portugal-pc.png",
+          "link": "/portugal",
+          "mobile_img": "/img/uploads/portugal-mobile.png"
         },
         {
-          "img": "/img/uploads/brasil.png",
-          "link": "/brasil"
+          "img": "/img/uploads/brasil-pc.png",
+          "link": "/brasil",
+          "mobile_img": "/img/uploads/brasil-mobile.png"
         },
         {
-          "img": "/img/uploads/chile.png",
-          "link": "/chile"
+          "img": "/img/uploads/chile-pc.png",
+          "link": "/chile",
+          "mobile_img": "/img/uploads/chile-mobile.png"
         },
         {
-          "img": "/img/uploads/alemanha.png",
-          "link": "/alemanha"
+          "img": "/img/uploads/alemanha-pc.png",
+          "link": "/alemanha",
+          "mobile_img": "/img/uploads/alemanha-mobile.png"
         },
         {
-          "img": "/img/uploads/espanha.png",
-          "link": "/espanha"
+          "img": "/img/uploads/espanha-pc.png",
+          "link": "/espanha",
+          "mobile_img": "/img/uploads/espanha-mobile.png"
         },
         {
-          "img": "/img/uploads/africa-do-sul.png",
-          "link": "/africa-do-sul"
+          "img": "/img/uploads/africa-pc.png",
+          "link": "/africa-do-sul",
+          "mobile_img": "/img/uploads/africa-mobile.png"
         },
         {
-          "img": "/img/uploads/eslovenia.png",
-          "link": "/eslovenia"
+          "img": "/img/uploads/eslovenia-pc.png",
+          "link": "/eslovenia",
+          "mobile_img": "/img/uploads/eslovenia-mobile.png"
         },
         {
-          "img": "/img/uploads/grecia.png",
-          "link": "/grecia"
+          "img": "/img/uploads/grecia-pc.png",
+          "link": "/grecia",
+          "mobile_img": "/img/uploads/grecia-mobile.png"
         }
       ]
     },
