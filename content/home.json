@@ -25,35 +25,36 @@
         {
           "img": "/img/uploads/espumantes-2.png",
           "link": "/espumantes",
-          "mobile_img": "/img/uploads/espumantes-icon-mobile.png"
+          "mobile_img": "/img/uploads/espumantes-mobile-102x132.png"
         },
         {
           "img": "/img/uploads/brancos-2.png",
           "link": "/vinho-branco",
-          "mobile_img": "/img/uploads/brancos-icon-mobile.png"
+          "mobile_img": "/img/uploads/brancos-mobile-102x132.png"
         },
         {
           "img": "/img/uploads/tintos-2.png",
           "link": "/vinho-tinto",
-          "mobile_img": "/img/uploads/tintos-icon-mobile.png"
+          "mobile_img": "/img/uploads/tintos-mobile-102x132.png"
         },
         {
           "img": "/img/uploads/premiados-2.png",
           "link": "/premiados",
-          "mobile_img": "/img/uploads/premiados-icon-mobile.png"
+          "mobile_img": "/img/uploads/premiados-mobile-102x132.png"
         },
         {
           "img": "/img/uploads/ofertas-2.png",
           "link": "/ofertas",
-          "mobile_img": "/img/uploads/ofertas-icon-mobile.png"
+          "mobile_img": "/img/uploads/ofertas-mobile-102x132.png"
         },
         {
           "img": "/img/uploads/kits-2.png",
           "link": "/kits",
-          "mobile_img": "/img/uploads/kits-icon-mobile.png"
+          "mobile_img": "/img/uploads/kits-mobile-102x132.png"
         },
         {
-          "img": "/img/uploads/harmonizar-2.png"
+          "img": "/img/uploads/harmonizar-2.png",
+          "mobile_img": "/img/uploads/harmonizar-mobile-102x132.png"
         }
       ]
     },
