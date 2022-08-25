@@ -270,7 +270,8 @@ const hasMegamenu = header.desktop_megamenu
                   <% const subcategories = _.categories.filter(({ parent }) => parent && parent.slug === slug) %>
                   <% if (subcategories.length) { %>
                     <nav class="header__submenu" id="<%= `s-${slug.replace(/\//g, '_')}` %>">
-                      <% subcategories.forEach(subcategory => { %>
+                      <% const categoriesSorted = _.lodash.sortBy(subcategories, ['name']) %>
+                      <% categoriesSorted.forEach(subcategory => { %>
                         <div>
                           <a style="margin-top: 0px;" id="sd-<%= subcategory._id %>" href="/<%= subcategory.slug %>"><%= subcategory.name %></a>
                           <% const thirdCategories = _.categories.filter(({ parent }) => parent && parent.slug === subcategory.slug) %>
