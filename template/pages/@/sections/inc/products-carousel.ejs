@@ -31,14 +31,14 @@
         <% if (opt.title || opt.collection) { %>
           <% if (link) { %>
             <a href="<%= link %>">
-              <%= title %>
+              <%- title %>
             </a>
           <% } else { %>
-            <span><%= title %></span>
+            <span><%- title %></span>
           <% } %>
         <% } else { %>
           <a href="/search">
-            <%= title %>
+            <%- title %>
           </a>
         <% } %>
       </h4>

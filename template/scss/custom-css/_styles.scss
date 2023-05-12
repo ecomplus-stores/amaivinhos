@@ -31,3 +31,172 @@
   gap: var(--spacer-1);
   margin-top: var(--spacer-2);
 }
+
+.slick-slider{
+    .apx_arrow{
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        z-index: 2;
+        border: 0;
+        padding: 0%;
+        background: transparent;
+    }
+    .prev{left: -20px;}
+    .next{right: -20px;}
+}
+.slick-dots{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    li{
+        width: auto;
+        display: block;
+        margin: 0;
+        button{
+            font-size: 0;
+            background: #f2f2f2;
+            height: 6px;
+            width: 30px;
+            padding: 0;
+            
+        }
+        button:before{
+            display:none
+        }
+
+    }
+    li.slick-active{
+        button{
+            background: #000;
+        }
+    }
+}
+
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.text-justify{text-align:justify}
+
+.apx_banner-slider{
+    max-width:100%;
+    height:auto!important;
+    --banner-aspect-ratio:1!important;
+    --banner-aspect-ratio-mobile:1!important;
+}
+
+.apx_banner{position:relative}
+.apx_banner .apx_banner-content h3{
+    font-size:var(--bn_title);
+    font-weight:bold;
+    text-transform: initial;
+    letter-spacing: 0.1em;
+}
+.apx_banner .apx_banner-content p{
+    font-size:var(--bn_description);
+    line-height:calc(var(--bn_description) * 2)!important;
+    font-family: 'Source Sans Pro';
+    line-height:initial;
+    margin:1rem 0 0 0;
+    max-width:80%;
+    display: block;
+}
+.apx_banner .apx_banner-content a{
+    line-height:56px;
+    padding:0 2rem;
+    display:inline-block;
+    width:fit-content;
+    text-transform:initial;
+    letter-spacing: 0.1em;
+    font-weight:700;
+    margin-top:2rem;
+
+}
+.apx_banner .apx_banner-content{margin:var(--banner_spacer) 0}
+.apx_banner .apx_banner-content.inside_image{
+    position:absolute;
+    margin:0;
+}
+.apx_banner .apx_banner-content.inside_image.top_left{
+    top:var(--banner_spacer);
+    left:var(--banner_spacer);
+    bottom:auto;
+    right:auto;
+}
+.apx_banner .apx_banner-content.inside_image.top_middle,
+.apx_banner .apx_banner-content.inside_image.center_middle,
+.apx_banner .apx_banner-content.inside_image.bottom_middle{text-align: center;}
+.apx_banner .apx_banner-content.inside_image.top_middle{
+    top:var(--banner_spacer);
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin:0 auto;
+}
+.apx_banner .apx_banner-content.inside_image.top_right,
+.apx_banner .apx_banner-content.inside_image.center_right,
+.apx_banner .apx_banner-content.inside_image.bottom_right{text-align: right;}
+.apx_banner .apx_banner-content.inside_image.top_right{
+    top:var(--banner_spacer);
+    right:var(--banner_spacer);
+    bottom:auto;
+    left:auto;
+}
+
+.apx_banner .apx_banner-content.inside_image.center_left{
+    top:50%;
+    left:var(--banner_spacer);
+    bottom:auto;
+    left:auto;
+    translate:0 -50%;
+}
+.apx_banner .apx_banner-content.inside_image.center_middle{
+    top:50%;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin:0 auto;
+    translate:0 -50%;
+}
+.apx_banner .apx_banner-content.inside_image.center_right{
+    top:50%;
+    right:var(--banner_spacer);
+    bottom:auto;
+    left:auto;
+    translate:0 -50%;
+}
+.apx_banner .apx_banner-content.center_center{
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+}
+.apx_banner .apx_banner-content.inside_image.bottom_left{
+    top:auto;
+    left:var(--banner_spacer);
+    bottom:var(--banner_spacer);
+    left:auto;
+}
+.apx_banner .apx_banner-content.inside_image.bottom_middle{
+    top:auto;
+    left:auto;
+    right:auto;
+    bottom:var(--banner_spacer);
+    margin:0 auto;
+}
+.apx_banner .apx_banner-content.inside_image.bottom_right{
+    top:auto;
+    right:var(--banner_spacer);
+    bottom:var(--banner_spacer);
+    left:auto;
+}
+.apx_banner .apx_banner-content.center_center *{margin-left:auto;margin-right:auto}
+.apx_banner .apx_banner-content.top_left *,
+.apx_banner .apx_banner-content.center_left *,
+.apx_banner .apx_banner-content.bottom_left *{text-align:left}
+.apx_banner .apx_banner-content.top_center *,
+
+.apx_banner .apx_banner-content.center_center,
+.apx_banner .apx_banner-content.bottom_center *{text-align:center;justify-content:center}
+.apx_banner .apx_banner-content.top_right *,
+.apx_banner .apx_banner-content.center_right *,
+.apx_banner .apx_banner-content.bottom_right *{text-align:right}

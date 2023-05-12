@@ -14,226 +14,196 @@
           "mobile_img": "/img/uploads/full-mobile-600-600-px-1-.png"
         }
       ]
+    },  
+    
+    {
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "62eadef5eb85911216a430ac",
+        "62eadec8eb85911216a4303d",
+        "62eadeeaeb85911216a43098",
+        "62eadf46eb85911216a43187",
+        "62e96b96eb85911216a221f3"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "padding_md": "px-md-1",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "4",
+      "btn_text": "Ver Todas",
+      "padding": "px-md-5",
+      "num_col_sm": "2",
+      "title": "Mais Vendidos",
+      "type": "apx_productList_A",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "btn_link": "/bazicas",
+      "list": "description_last",
+      "carrossel_md": "Sim"
     },
     {
-      "type": "info-bar",
-      "enabled": false
-    },
-    {
-      "type": "banners-grid",
+      "type": "apx_banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/espumantes-2.png",
-          "link": "/espumantes",
-          "mobile_img": "/img/uploads/espumantes-mobile-102x108.png"
+          "description_color": "#000000",
+          "animate": "fadeInTopRight",
+          "img": "https://via.placeholder.com/782x300",
+          "content_order": "before_image",
+          "alt": "",
+          "content_position": "center_left",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#01D6CA",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Título do Banner 1",
+          "link": "/",
+          "title_color": "#232323",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. 1"
         },
         {
-          "img": "/img/uploads/brancos-2.png",
-          "link": "/vinho-branco",
-          "mobile_img": "/img/uploads/brancos-mobile-102x108.png"
-        },
-        {
-          "img": "/img/uploads/tintos-2.png",
-          "link": "/vinho-tinto",
-          "mobile_img": "/img/uploads/tintos-mobile-102x108.png"
-        },
-        {
-          "img": "/img/uploads/premiados-2.png",
-          "link": "/premiados",
-          "mobile_img": "/img/uploads/premiados-mobile-102x108.png"
-        },
-        {
-          "img": "/img/uploads/ofertas-2.png",
-          "link": "/ofertas",
-          "mobile_img": "/img/uploads/ofertas-mobile-102x108.png"
-        },
-        {
-          "img": "/img/uploads/kits-2.png",
-          "link": "/kits",
-          "mobile_img": "/img/uploads/kits-mobile-102x108.png"
-        },
-        {
-          "img": "/img/uploads/harmonizar-2.png",
-          "mobile_img": "/img/uploads/harmonizar-mobile-102x108.png"
-        }
-      ]
-    },
+          "description_color": "#000000",
+          "animate": "fadeInTopRight",
+          "img": "https://via.placeholder.com/782x300",
+          "content_order": "before_image",
+          "alt": "",
+          "content_position": "center_left",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#01D6CA",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Título do Banner 2",
+          "link": "/",
+          "title_color": "#232323",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. 2"
+        }    
+      ],
+      "padding": "px-3",
+      "container": "container-fluid"
+    },    
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": "",
-      "page": "",
-      "sort": "sales",
-      "title": "Destaques da semana"
+      "carrossel_sm": "Sim",
+      "container": "container-fluid",
+      "products": [
+        "62eadef5eb85911216a430ac",
+        "62eadec8eb85911216a4303d",
+        "62eadeeaeb85911216a43098",
+        "62eadf46eb85911216a43187",
+        "62e96b96eb85911216a221f3"
+      ],
+      "carrossel_dots_md": "Sim",
+      "carrossel_arrows_md": "Sim",
+      "padding_md": "px-md-1",
+      "carrossel_dots_sm": "Sim",
+      "carrossel_arrows_sm": "Não",
+      "padding_sm": "px-1",
+      "num_col_md": "3",
+      "btn_text": "Ver Todas",
+      "padding": "px-md-5",
+      "num_col_sm": "2",
+      "title": "Mais Vendidos",
+      "type": "apx_productList_A",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "btn_link": "/bazicas",
+      "list": "description_last",
+      "carrossel_md": "Sim"
     },
+    
     {
-      "type": "banners-grid",
+      "type": "apx_banners-grid",
+      "classe_css" : "harmonizacoes",
+      "title": "Mais Vendidos",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
+      "list": "description_last",
       "banners": [
         {
-          "img": "/img/uploads/vinhos-para-o-dia-a-dia.jpg"
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Carnes",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
         },
         {
-          "img": "/img/uploads/para-saborear-com-comida.jpg"
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Aves",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
         },
         {
-          "img": "/img/uploads/os-mais-especiais.jpg"
-        }
-      ]
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
-      "sort": "news",
-      "title": "Seleção da Sommelière",
-      "headless": false,
-      "limit": "",
-      "page": ""
-    },
-    {
-      "type": "custom-html",
-      "html": "<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Por país</span></h2>"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/italia-pc.png",
-          "link": "/italia",
-          "mobile_img": "/img/uploads/italia-mobile.png"
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Massas",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
         },
         {
-          "img": "/img/uploads/franca-pc.png",
-          "link": "/franca",
-          "mobile_img": "/img/uploads/franca-mobile.png"
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Peixes",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
         },
         {
-          "img": "/img/uploads/argentina-pc.png",
-          "link": "/argentina",
-          "mobile_img": "/img/uploads/argentina-mobile.png"
-        },
-        {
-          "img": "/img/uploads/portugal-pc.png",
-          "link": "/portugal",
-          "mobile_img": "/img/uploads/portugal-mobile.png"
-        },
-        {
-          "img": "/img/uploads/brasil-pc.png",
-          "link": "/brasil",
-          "mobile_img": "/img/uploads/brasil-mobile.png"
-        },
-        {
-          "img": "/img/uploads/chile-pc.png",
-          "link": "/chile",
-          "mobile_img": "/img/uploads/chile-mobile.png"
-        },
-        {
-          "img": "/img/uploads/alemanha-pc.png",
-          "link": "/alemanha",
-          "mobile_img": "/img/uploads/alemanha-mobile.png"
-        },
-        {
-          "img": "/img/uploads/espanha-pc.png",
-          "link": "/espanha",
-          "mobile_img": "/img/uploads/espanha-mobile.png"
-        },
-        {
-          "img": "/img/uploads/africa-pc.png",
-          "link": "/africa-do-sul",
-          "mobile_img": "/img/uploads/africa-mobile.png"
-        },
-        {
-          "img": "/img/uploads/eslovenia-pc.png",
-          "link": "/eslovenia",
-          "mobile_img": "/img/uploads/eslovenia-mobile.png"
-        },
-        {
-          "img": "/img/uploads/grecia-pc.png",
-          "link": "/grecia",
-          "mobile_img": "/img/uploads/grecia-mobile.png"
-        }
-      ]
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 2,
-      "sort": "sales",
-      "title": "Mais vendidos do mês"
-    },
-    {
-      "type": "custom-html",
-      "html": "  <h2 style=\"text-align:center\"><span style=\"font-size:24px\">Produtores premiados</span></h2>"
-    },
-    {
-      "type": "brands-carousel",
-      "limit": 24,
-      "offset": 0
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "sort": "slug",
-      "title": "Queridinhos do público"
-    },
-    {
-      "type": "custom-html",
-      "html": "​<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Dicas de Harmonização</span></h2>"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/aves-mobile.jpg",
-          "link": "/aves",
-          "mobile_img": "/img/uploads/aves-mobile.jpg"
-        },
-        {
-          "link": "/vermelhas",
-          "img": "/img/uploads/carnes-mobile.jpg",
-          "mobile_img": "/img/uploads/carnes-mobile.jpg"
-        },
-        {
-          "img": "/img/uploads/frutos-do-mar-mobile.jpg",
-          "link": "/peixes-e-frutos-do-mar",
-          "mobile_img": "/img/uploads/frutos-do-mar-mobile.jpg"
-        },
-        {
-          "img": "/img/uploads/queijos-mobile.jpg",
-          "link": "/queijos",
-          "mobile_img": "/img/uploads/queijos-mobile.jpg"
-        },
-        {
-          "img": "/img/uploads/vegetais-mobile.jpg",
-          "link": "/vegetais",
-          "mobile_img": "/img/uploads/vegetais-mobile.jpg"
-        },
-        {
-          "img": "/img/uploads/sobremesas-mobile.jpg",
-          "link": "/sobremesas",
-          "mobile_img": "/img/uploads/sobremesas-mobile.jpg"
-        }
-      ]
-    },
-    {
-      "type": "custom-html",
-      "html": "<h2 style=\"text-align:center\"><span style=\"font-size:24px\">Blog</span></h2>"
-    },
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Queijos",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
+        }  
+      ],
+      "padding": "px-3",
+      "container": "container-fluid"
+    },   
     {
       "type": "blog",
       "enabled": true
-    },
-    {
-      "type": "custom-html",
-      "html": "<p style=\"text-align:center\"><a href=\"/blog\" target=\"_self\"><span style=\"background-color:#000000\"><input name=\"Veja todos os artigos\" type=\"button\" value=\"Veja todos os artigos\" /></span></a></p>\n"
-    },
-    {
-      "type": "page-title",
-      "title": "SOBRE A AMAI VINHOS",
-      "description": "Somos uma loja onde você encontra vinhos selecionados com muito amor. Aproveite nossas promoções!"
     }
   ]
 }

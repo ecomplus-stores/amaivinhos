@@ -186,10 +186,35 @@ export default options => {
           options: ["px-0","px-1","px-2","px-3","px-4","px-5"]
         },  
         {
+          label: 'Título',
+          required: false,
+          name: 'title',
+          widget: 'string'
+        },
+        {
+          label: 'Descrição',
+          required: false,
+          name: 'description',
+          widget: 'text'
+        },
+        {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },
+        {
           label: 'Banners',
           name: 'banners',
           widget: 'list',
           fields: bannerFields
+        },
+        {
+          label: 'Classe CSS',
+          required: false,
+          name: 'custom_class',
+          widget: 'string'
         }
       ]
     },
@@ -229,6 +254,12 @@ export default options => {
           step: 1000,
           default: 9000,
           widget: 'number'
+        },
+        {
+          label: 'Classe CSS',
+          required: false,
+          name: 'custom_class',
+          widget: 'string'
         }
       ]
     },
@@ -500,6 +531,12 @@ export default options => {
           required: false,
           name: 'btn_link',
           widget: 'string'
+        },
+        {
+          label: 'Classe CSS',
+          required: false,
+          name: 'custom_class',
+          widget: 'string'
         }
       ]
     },
@@ -572,66 +609,66 @@ export default options => {
           ]
         },        
       ]
-    },
-    {
-      label: '[ALPIX] - Feed Instagram',
-      name: 'apx_instafeed',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Sub Título',
-          required: false,
-          name: 'subtitle',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        },
-        {
-          label: 'Link p/ Chaves do Instagram',
-          required: false,
-          name: 'instantTokens',
-          widget: 'string'
-        },
-        {
-          label: 'Quantidade de Fotos (Desktop)',
-          required: false,
-          name: 'quantity_desktop',
-          widget: 'select',
-          options : ["3","4","5","6","7","8","9","10","11","12"]
-        },
-        {
-          label: 'Quantidade de Fotos (Mobile)',
-          required: false,
-          name: 'quantity_mobile',
-          widget: 'select',
-          options : ["3","4","5","6","7","8","9","10","11","12"]
-        },
-        {
-          label: 'Grid de Fotos (Desktop)',
-          required: false,
-          name: 'grid_desktop',
-          widget: 'select',
-          options : ["3","4","5","6","7","8","9","10","11","12"]
-        },
-        {
-          label: 'Grid de Fotos (Mobile)',
-          required: false,
-          name: 'grid_mobile',
-          widget: 'select',
-          options : ["3","4","5","6","7","8","9","10","11","12"]
-        }
-      ]
     }
+    // {
+    //   label: '[ALPIX] - Feed Instagram',
+    //   name: 'apx_instafeed',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Sub Título',
+    //       required: false,
+    //       name: 'subtitle',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     },
+    //     {
+    //       label: 'Link p/ Chaves do Instagram',
+    //       required: false,
+    //       name: 'instantTokens',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Quantidade de Fotos (Desktop)',
+    //       required: false,
+    //       name: 'quantity_desktop',
+    //       widget: 'select',
+    //       options : ["3","4","5","6","7","8","9","10","11","12"]
+    //     },
+    //     {
+    //       label: 'Quantidade de Fotos (Mobile)',
+    //       required: false,
+    //       name: 'quantity_mobile',
+    //       widget: 'select',
+    //       options : ["3","4","5","6","7","8","9","10","11","12"]
+    //     },
+    //     {
+    //       label: 'Grid de Fotos (Desktop)',
+    //       required: false,
+    //       name: 'grid_desktop',
+    //       widget: 'select',
+    //       options : ["3","4","5","6","7","8","9","10","11","12"]
+    //     },
+    //     {
+    //       label: 'Grid de Fotos (Mobile)',
+    //       required: false,
+    //       name: 'grid_mobile',
+    //       widget: 'select',
+    //       options : ["3","4","5","6","7","8","9","10","11","12"]
+    //     }
+    //   ]
+    // }
 
 ])
 
