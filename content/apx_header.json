@@ -11,73 +11,8 @@
   ],
   "links": [
     {
-      "title": "Roupas",
-      "url": "/roupas",
-      "image": "/img/uploads/banner-aba-categoria.jpg",
-      "list": [
-        {
-          "item": {
-            "title": "Bázica Gola C",
-            "url": "/bazica-gola-c",
-            "image": ""
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Long",
-            "url": "/bazica-long"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Gola V",
-            "url": "/bazica-gola-v",
-            "image": ""
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Kids",
-            "url": "/bazica-kids"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Lord",
-            "url": "/bazica-lord"
-          }
-        },
-        {
-          "item": {
-            "title": "Bázica Vibe",
-            "url": "/bazica-vibe"
-          }
-        },
-        {
-          "item": {
-            "url": "/bazica-vicentti",
-            "title": "Bázica Vicentti"
-          }
-        },
-        {
-          "item": {
-            "title": "Cuecas",
-            "url": "/cuecas"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Produtos Exclusivos",
+      "title": "Clube de Assinatura",
       "url": "/produtos-exclusivos"
-    },
-    {
-      "title": "Bazicash",
-      "url": "/pages/o-que-e-bazicash"
-    },
-    {
-      "title": "BaziPass",
-      "url": "https://landing.sejabazico.com.br/bazipass-assinatura/"
     }
   ]
 }

@@ -101,6 +101,11 @@
           "file": "content/apx_footer.json",
           "fields": [
             {
+              "label": "Horário de Atendimento",
+              "name": "atendimento",
+              "widget": "string"          
+            },
+            {
               "label": "Menus do Rodapé",
               "name": "links",
               "widget": "list",

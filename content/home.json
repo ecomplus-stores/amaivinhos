@@ -50,7 +50,7 @@
           "description_color": "#000000",
           "animate": "fadeInTopRight",
           "img": "https://via.placeholder.com/782x300",
-          "content_order": "before_image",
+          "content_order": "after_image",
           "alt": "",
           "content_position": "center_left",
           "btn_text": "Saiba Mais",
@@ -66,7 +66,7 @@
           "description_color": "#000000",
           "animate": "fadeInTopRight",
           "img": "https://via.placeholder.com/782x300",
-          "content_order": "before_image",
+          "content_order": "after_image",
           "alt": "",
           "content_position": "center_left",
           "btn_text": "Saiba Mais",
@@ -113,7 +113,7 @@
     {
       "type": "apx_banners-grid",
       "classe_css" : "harmonizacoes",
-      "title": "Mais Vendidos",
+      "title": "Harmonizações",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.",
       "list": "description_last",
       "banners": [
@@ -196,7 +196,39 @@
           "link": "/",
           "title_color": "#fff",
           "description": ""
-        }  
+        },
+        {
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Queijos",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
+        },
+        {
+          "description_color": "#ffffff",
+          "animate": "fadeIn",
+          "img": "https://via.placeholder.com/252x330",
+          "content_order": "inside_image",
+          "alt": "",
+          "content_position": "center_center",
+          "btn_text": "Saiba Mais",
+          "btn_background": "#AE0533",
+          "btn_text_color": "#ffffff",
+          "mask_opacity": 0,
+          "title": "Queijos",
+          "link": "/",
+          "title_color": "#fff",
+          "description": ""
+        }      
       ],
       "padding": "px-3",
       "container": "container-fluid"

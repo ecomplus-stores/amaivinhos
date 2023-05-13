@@ -2,8 +2,8 @@
   "marketing_stripe": {
     "text": "Frete Grátis nas compras acima de R$ 300 para Sul e Sudeste",
     "link": "",
-    "background": "#30a77e",
-    "color": "#ffffff"
+    "background": "#ffffff",
+    "color": "#3E3E3E"
   },
   "contacts_stripe": {
     "pages": [

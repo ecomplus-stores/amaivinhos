@@ -46,13 +46,252 @@ if (header.categories_list) {
   }
   isCategoriesNavFull = header.categories_list.full_width
 }
+}
 const hasMegamenu = header.desktop_megamenu
 %>
 
 <div id="overlay" class="fade"></div>
 
+<div class="top-bar">
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col">
+        <div
+          class="glide"
+          data-wait-mutation="false"
+          data-autoplay="4000"
+          data-per-view="1"
+          data-per-view-md="1"
+          data-per-view-sm="1"
+        >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+          <% if (apx_header.stripe_slider) { %>
+            <% apx_header.stripe_slider.forEach(({ text, url })=> { %>
+              <li class="glide__slide">
+              <% if (text) { %>
+                <% if (url) { %>
+                  <a
+                    class="top-bar__countdown"
+                    style="<%= marketingStripeStyle %>"
+                    href="<%= url %>"
+                  >
+                    <%- text %>
+                  </a>
+                <% } else { %>
+                  <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
+                    <%- text %>
+                  </div>
+                <% } %>
+              <% } %>
+              </li>
+            <% }) %>
+          <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-<header class="header" id="header">
+<header id="a-header" class="py-4 px-4">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-between">
+      <div class="col">
+        <div class="d-flex align-items-center">
+          <button type="button" class="menu-trigger open">
+            <img src="/img/menu.svg"/>
+          </button>
+          <% if (apx_header.links) { %>
+            <ul class="level_1 ml-md-4">
+              <% apx_header.links.forEach(({ url, title, image, list })=> { %>
+                <li class="<%= list ? 'dropdown' : ''%>">
+                  
+                  <a href="<%= url %>" data-image="<%= image ? image : 'empty' %>">
+                    <%= title %>
+                  </a>
+                  <% if (list) { %>
+                    <button type="button" onclick="$(this).closest('li').toggleClass('open')">                    
+                        <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.353553" y1="0.646447" x2="3.35355" y2="3.64645" stroke="black"/>
+                        <line y1="-0.5" x2="4.24264" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 6 1)" stroke="black"/>
+                        </svg>  
+                    </button>
+                  <% } %>
+                  
+                  <% if (list) { %>
+                    <div class="level_2">
+                      <ul class="">
+                        <% list.forEach(({ item })=> { 
+                          %>
+                          
+                          <li>
+                            <a href="<%= item.url %>" data-image="<%= item.image ? item.image : 'empty' %>">
+                              <%= item.title %>
+                            </a>
+                          </li>
+                        <% }) %>
+                      </ul>
+                      <% if(image || list.find(el => el.image)){ %>
+                      <div class="bz_dropbanner">
+                        <% if (image){ %>
+                        <img src="<%= image %>" data-original="<%= image %>"/>
+                        <% } %>
+                      </div>
+                      <% } %>
+                      
+                      
+                    </div>
+                  <% } %>
+                </li>
+              <% }) %>
+            </ul>
+          <% } %>
+        </div>
+      </div>
+      <div class="col-auto">
+        <a href="/">
+          <%- await include('@/layout/inc/logo', { _ }) %>
+        </a>
+      </div>
+      <div class="col">
+        <div class="row align-items-center justify-content-end">
+          <div class="col-auto">
+            <div
+              class="d-none d-lg-block collapse show"
+              id="search-bar"
+            >
+              <form
+                class="header__search mt-2 mt-md-3 mt-lg-0"
+                id="search-form"
+                action="/search"
+                method="get"
+                autocomplete="off"
+              >
+                <button
+                  type="submit"
+                  class="header__search-btn"
+                  aria-label="<%= _.dictionary('searchProducts') %>"
+                >
+                  <img src="/img/search.svg"/>
+                </button>
+                <input
+                  type="text"
+                  name="term"
+                  placeholder="Buscar vinhos..."
+                  aria-label="<%= _.dictionary('searchProducts') %>"
+                  class="header__search-input form-control"
+                  id="search-input"
+                  autocomplete="off"
+                >
+                
+                <div id="instant-search">
+                  <!--
+                    `InstantSearch` should be open on input focus:
+                    https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+                  -->
+                </div>
+              </form>
+
+              <% if (_.settings.domain) { %>
+                <script type="application/ld+json"><%-
+                  JSON.stringify({
+                    '@context': 'http://schema.org',
+                    '@type': 'WebSite',
+                    url: `https://${_.settings.domain}/`,
+                    potentialAction: {
+                      '@type': 'SearchAction',
+                      target: `https://${_.settings.domain}/search?term={search_term_string}`,
+                      'query-input': 'required name=search_term_string'
+                    }
+                  })
+                %></script>
+              <% } %>
+            </div>
+          </div>
+          <div class="col-auto ml-4">
+            <a href="">
+              <img src="/img/user.svg"/>
+            </a>
+          </div>
+          <div class="col-auto ml-4">
+            <a href="">
+              <img src="/img/bag.svg"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</header>
+<!--
+<% 
+const categoryParents = _.lodash.groupBy(_.categories, ({ parent }) => {
+  return !parent || !parent.slug ? '_' : parent.slug
+})
+const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
+%>
+
+<% if (categories && categories.length) { %>
+<div id="a-menu">
+  <div class="close-mobile d-block d-md-none">
+    <button type="button" class="toggleMenu  open" onclick=""></button>          
+  </div>          
+  
+  <nav>
+    <ul>
+    <% categories.forEach(({ slug, name, _id }) => { %>
+      <li class="<%- categoryParents[slug] ? 'has-child' : '' %>">
+        <span>
+          <a href="/<%= slug %>">
+            <%= ` ${name} ` %> 
+          </a>
+        </span>
+          <% if (categoryParents[slug]) { %>
+            <ul class="expand-menu row mx-0">
+            <% categoryParents[slug].forEach(subcategory => { %>
+              <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
+              <li class="col-12 col-md-auto pr-5 mr-5">
+                <a href="/<%= subcategory.slug %>">
+                  <%= subcategory.name %>
+                </a>
+                <% if (hasSubmenu) { %>
+                  <ul>
+                    <% categoryParents[subcategory.slug].forEach(subcategory_ => { %>
+                      <li>
+                        <a href="/<%= subcategory_.slug %>">
+                          <%= subcategory_.name %>
+                        </a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </li>
+            <% }) %>
+              <%                      
+                const itemMenu = categories.find( arr => arr._id === _id )                      
+                if (itemMenu && itemMenu.icon) {
+                %> 
+                <li class="col-auto ml-auto d-none d-md-block">
+                  <img
+                    src="<%= itemMenu.icon.url %>"
+                    alt="<%= itemMenu.icon.alt || itemMenu.name %>"
+                  >
+                </li>
+              <% } %>  
+            </ul>
+          <% } %>
+      </li>
+    <% }) %>
+    </ul>
+  </nav>
+</div>
+<% } %>
+-->
+
+<% if (1 != 1) { %>
+  <header class="header" id="header">
   <div class="header__container container-fluid">
     <div class="header__row row">
       <div class="col-auto p-0">
@@ -228,45 +467,6 @@ const hasMegamenu = header.desktop_megamenu
     </div>
   </div>
 
-  <div class="top-bar">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div
-            class="glide"
-            data-wait-mutation="false"
-            data-autoplay="4000"
-            data-per-view="1"
-            data-per-view-md="1"
-            data-per-view-sm="1"
-          >
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-            <% if (apx_header.stripe_slider) { %>
-              <% apx_header.stripe_slider.forEach(({ text, url })=> { %>
-                <li class="glide__slide">
-                <% if (text) { %>
-                  <% if (url) { %>
-                    <a
-                      class="top-bar__countdown"
-                      style="<%= marketingStripeStyle %>"
-                      href="<%= url %>"
-                    >
-                      <%- text %>
-                    </a>
-                  <% } else { %>
-                    <div class="top-bar__countdown" style="<%= marketingStripeStyle %>">
-                      <%- text %>
-                    </div>
-                  <% } %>
-                <% } %>
-                </li>
-              <% }) %>
-            <% } %>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 </header>
+<% } %>
