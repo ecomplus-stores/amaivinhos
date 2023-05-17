@@ -4,6 +4,14 @@
 let pArrow = '<svg width="11" height="36" viewBox="0 0 11 36" fill="none" xmlns="http://www.w3.org/2000/svg">    <line y1="-0.5" x2="20" y2="-0.5" transform="matrix(-0.5 0.866025 0.866025 0.5 11 1)" stroke="black"/>    <line x1="10.567" y1="35.1597" x2="0.566987" y2="17.8392" stroke="black"/>    </svg>'
 let nArrow = '<svg width="11" height="36" viewBox="0 0 11 36" fill="none" xmlns="http://www.w3.org/2000/svg">    <line x1="0.433013" y1="0.75" x2="10.433" y2="18.0705" stroke="black"/>    <line y1="-0.5" x2="20" y2="-0.5" transform="matrix(0.5 -0.866025 -0.866025 -0.5 0 34.9097)" stroke="black"/>    </svg>';
 
+function imageResize(){
+    $('.apx_product-list').each(function(){
+        let h = $(this).find('.product-card__pictures').innerWidth() * 1.28;
+        $(this).find('.product-card__pictures, .product-card__pictures picture,  .product-card__pictures picture img').css('height',h + 'px');
+
+    });
+};
+
 $('.apx_product-list').each(function(){
     let oObj = $(this);
     let md = {};
@@ -59,4 +67,7 @@ $(document).ready(function(){
       dots: false
         
     });
-})
+
+    imageResize();
+
+});

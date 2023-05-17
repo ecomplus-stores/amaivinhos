@@ -8,6 +8,7 @@ if (Array.isArray(_.itemDataFields)) {
 itemDataFields.forEach(field => itemData[field] = opt.item[field])
 itemData.name = _.ecomUtils.name(opt.item)
 itemData.price = _.ecomUtils.price(opt.item)
+console.log(opt.item)
 
 const imgObj = _.ecomUtils.img(opt.item)
 if (imgObj) {
@@ -20,6 +21,10 @@ let stampsList
 if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
   stampsList = stamps.stamps_list
 }
+
+
+const apx_properties = _.cms('apx_properties') || {}
+const apx_countries = _.cms('apx_countries') || {}
 
 %>
 
@@ -48,9 +53,9 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
             <% } %>
           <% } %>
         </div>
-      <% } %>
+      <% } %>      
     </div>
-
+    
     <a
       href="/<%= itemData.slug %>"
       class="product-card__link"
@@ -78,9 +83,24 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
       </div>
 
       <div data-slot="title">
+        <% if (opt.item.brands){ %>
+          <small class="apx_brand"><%= opt.item.brands[0].name %></small>
+        <% } %>
         <h3 class="product-card__name">
+          <% if (opt.item.brands){ %>
+            <%= itemData.name.replace(opt.item.brands[0].name,'') %>
+          <% }else{ %>
           <%= itemData.name %>
+          <% } %>
         </h3>
+        <% if (opt.item.specs && opt.item.specs.find(el => el.grid == 'pais')){ %>
+          <small class="apx_origin">
+            <%= opt.item.specs.find(el => el.grid == 'pais').text %>
+            <% if (opt.item.specs.find(el => el.grid == 'regiao')){ %>
+              <i><%= opt.item.specs.find(el => el.grid == 'regiao').text %></i>
+            <% } %>
+          </small>
+        <% } %>
       </div>
     </a>
 
