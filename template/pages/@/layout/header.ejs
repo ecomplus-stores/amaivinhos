@@ -211,18 +211,38 @@ const hasMegamenu = header.desktop_megamenu
             </div>
           </div>
           <div class="col-auto ml-4">
-            <a href="">
+            <a 
+            role="button"
+            href="/app/#/account/"
+            title="<%= _.dictionary('myAccount') %>"
+            >
               <img src="/img/user.svg"/>
             </a>
           </div>
           <div class="col-auto ml-4">
-            <a href="">
+            <a 
+            role="button"
+            href="/app/#/cart"
+            title="<%= _.dictionary('openCart') %>"
+            >
               <img src="/img/bag.svg"/>
             </a>
           </div>
         </div>
       </div>
     </div>    
+  </div>
+  <div id="login-modal">
+    <!--
+      `LoginModal` should be rendered here:
+      https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/LoginModal.html
+    -->
+  </div>
+  <div id="cart-quickview">
+    <!--
+      `CartQuickview` should be rendered here:
+      https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/CartQuickview.html
+    -->
   </div>
 </header>
 <!--

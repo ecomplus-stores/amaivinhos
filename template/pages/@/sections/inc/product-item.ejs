@@ -8,7 +8,7 @@ if (Array.isArray(_.itemDataFields)) {
 itemDataFields.forEach(field => itemData[field] = opt.item[field])
 itemData.name = _.ecomUtils.name(opt.item)
 itemData.price = _.ecomUtils.price(opt.item)
-console.log(opt.item)
+//console.log(opt.item)
 
 const imgObj = _.ecomUtils.img(opt.item)
 if (imgObj) {
@@ -95,12 +95,20 @@ const apx_countries = _.cms('apx_countries') || {}
         </h3>
         <% if (opt.item.specs && opt.item.specs.find(el => el.grid == 'pais')){ %>
           <small class="apx_origin">
-            <%= opt.item.specs.find(el => el.grid == 'pais').text %>
+            <%
+              let countryFlag = apx_countries.countries.find(el => el.title.toLowerCase().trim() == opt.item.specs.find(el => el.grid == 'pais').text.toLowerCase().trim()) ? 'url(' + apx_countries.countries.find(el => el.title.toLowerCase().trim() == opt.item.specs.find(el => el.grid == 'pais').text.toLowerCase().trim()).image + ')' : '#f2f2f2'
+              //console.log(apx_countries.countries.find(el => el.title.toLowerCase().trim() == opt.item.specs.find(el => el.grid == 'pais').text.toLowerCase().trim()))
+              
+            %>
+            <span class="apx_country-flag" style="background:<%= countryFlag %>"></span>
+            <span class="apx_country-name">
+              <%= opt.item.specs.find(el => el.grid == 'pais').text %>
+            </span>
             <% if (opt.item.specs.find(el => el.grid == 'regiao')){ %>
-              <i><%= opt.item.specs.find(el => el.grid == 'regiao').text %></i>
+              <span class="apx_country-region">, <%= opt.item.specs.find(el => el.grid == 'regiao').text %></span>
             <% } %>
           </small>
-        <% } %>
+        <% } %>        
       </div>
     </a>
 
@@ -113,12 +121,11 @@ const apx_countries = _.cms('apx_countries') || {}
         <% } %>
       </strong>
     </div>
-
-    <!-- Customize add to cart button content:
-    <div data-slot="buy-button-content">
-      <i class="i-shopping-bag mr-1"></i>
-      {{ _.dictionary('buy') }}
+    <div data-slot="buy-button-content">      
+      Comprar
     </div>
+    <!-- Customize add to cart button content:
+    
     -->
 
     <div class="spinner-border spinner-border-sm fade" role="status">

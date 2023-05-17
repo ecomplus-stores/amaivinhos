@@ -4,57 +4,48 @@
 let pArrow = '<svg width="11" height="36" viewBox="0 0 11 36" fill="none" xmlns="http://www.w3.org/2000/svg">    <line y1="-0.5" x2="20" y2="-0.5" transform="matrix(-0.5 0.866025 0.866025 0.5 11 1)" stroke="black"/>    <line x1="10.567" y1="35.1597" x2="0.566987" y2="17.8392" stroke="black"/>    </svg>'
 let nArrow = '<svg width="11" height="36" viewBox="0 0 11 36" fill="none" xmlns="http://www.w3.org/2000/svg">    <line x1="0.433013" y1="0.75" x2="10.433" y2="18.0705" stroke="black"/>    <line y1="-0.5" x2="20" y2="-0.5" transform="matrix(0.5 -0.866025 -0.866025 -0.5 0 34.9097)" stroke="black"/>    </svg>';
 
-function imageResize(){
+window.imageResize = function () {
     $('.apx_product-list').each(function(){
-        let h = $(this).find('.product-card__pictures').innerWidth() * 1.28;
-        $(this).find('.product-card__pictures, .product-card__pictures picture,  .product-card__pictures picture img').css('height',h + 'px');
+        let h = $(this).find('.product-card__pictures').first().innerWidth() * 1.28;
+        $(this).css('--height',h + 'px');
 
     });
 };
 
-$('.apx_product-list').each(function(){
-    let oObj = $(this);
-    let md = {};
-    let sm = {};
-    
-    if(oObj.attr('data-carrossel_md') == "Não"){
-        md.breakpoint = 9999;
-        md.settings = "unslick";
-    }else{
-        md.breakpoint = 9999;
-        md.settings = {};
-        md.settings.slidesToShow = oObj.attr('data-num_col_md');
-        md.settings.slidesToScrol = oObj.attr('data-num_col_md');
-        md.settings.infinite = true;
-        md.settings.dots = oObj.attr('data-carrossel_dots_md') == "Sim" ? true : false;
-        md.settings.arrows = oObj.attr('data-carrossel_arrows_md') == "Sim" ? true : false;
-        if(md.settings.arrows){
-            md.settings.prevArrow = '<button type="button" class="apx_arrow prev">' + pArrow + '</button>';
-            md.settings.nextArrow= '<button type="button" class="apx_arrow next">' + nArrow + '</button>';
-        }
-    }
-    if(oObj.attr('data-carrossel_sm') == "Não"){
-        sm.breakpoint = 800;
-        sm.settings = "unslick";
-    }else{
-        sm.breakpoint = 800;
-        sm.settings = {};
-        sm.settings.slidesToShow = oObj.attr('data-num_col_sm');
-        sm.settings.slidesToScrol = oObj.attr('data-num_col_sm');
-        sm.settings.infinite = true;
-        sm.settings.dots = oObj.attr('data-carrossel_dots_sm') == "Sim" ? true : false;
-        sm.settings.arrows = oObj.attr('data-carrossel_arrows_sm') == "Sim" ? true : false;
-        if(sm.settings.arrows){
-            sm.settings.prevArrow = '<button type="button" class="apx_arrow prev">' + pArrow + '</button>';
-            sm.settings.nextArrow= '<button type="button" class="apx_arrow next">' + nArrow + '</button>';
-        }
-    }
-    $(this).find('.row.list').slick({
-        responsive: [md,sm]
-    });
-});
+window.slickBannersSlider = function () {
+    $('.fullbanner-slider__slides').each(function(){
+        let autoplay = parseInt($(this).attr('data-autoplay'));
+        $(this).slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            autoplay: autoplay > 0 ? true : false,
+            autoplaySpeed: autoplay,
+            slidesToShow: 1,
+            centerMode: false,
+            arrows:true,
+            prevArrow: '<button type="button" class="apx_arrow prev">' + pArrow + '</button>',
+            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>'
+        });
 
-$(document).ready(function(){
+    });
+};
+window.blogSlide = function () {
+    $('.blog_slide').each(function(){
+        $(this).slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            centerMode: false,
+            arrows:true,
+            prevArrow: '<button type="button" class="apx_arrow prev">' + pArrow + '</button>',
+            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>'
+        });
+
+    });
+};
+window.harmonizacoesSlider = function(){
     $('.harmonizacoes .row').slick({
         infinite: true,
       slidesToShow: 5,
@@ -67,7 +58,70 @@ $(document).ready(function(){
       dots: false
         
     });
+};
 
-    imageResize();
+window.productSlider = function(){
+    $('.apx_product-list').each(function(){
+        let oObj = $(this);
+        let md = {};
+        let sm = {};
+        
+        if(oObj.attr('data-carrossel_md') == "Não"){
+            md.breakpoint = 9999;
+            md.settings = "unslick";
+        }else{
+            md.breakpoint = 9999;
+            md.settings = {};
+            md.settings.slidesToShow = oObj.attr('data-num_col_md');
+            md.settings.slidesToScrol = oObj.attr('data-num_col_md');
+            md.settings.infinite = true;
+            md.settings.dots = oObj.attr('data-carrossel_dots_md') == "Sim" ? true : false;
+            md.settings.arrows = oObj.attr('data-carrossel_arrows_md') == "Sim" ? true : false;
+            if(md.settings.arrows){
+                md.settings.prevArrow = '<button type="button" class="apx_arrow prev">' + pArrow + '</button>';
+                md.settings.nextArrow= '<button type="button" class="apx_arrow next">' + nArrow + '</button>';
+            }
+        }
+        if(oObj.attr('data-carrossel_sm') == "Não"){
+            sm.breakpoint = 800;
+            sm.settings = "unslick";
+        }else{
+            sm.breakpoint = 800;
+            sm.settings = {};
+            sm.settings.slidesToShow = oObj.attr('data-num_col_sm');
+            sm.settings.slidesToScrol = oObj.attr('data-num_col_sm');
+            sm.settings.infinite = true;
+            sm.settings.dots = oObj.attr('data-carrossel_dots_sm') == "Sim" ? true : false;
+            sm.settings.arrows = oObj.attr('data-carrossel_arrows_sm') == "Sim" ? true : false;
+            if(sm.settings.arrows){
+                sm.settings.prevArrow = '<button type="button" class="apx_arrow prev">' + pArrow + '</button>';
+                sm.settings.nextArrow= '<button type="button" class="apx_arrow next">' + nArrow + '</button>';
+            }
+        }
+        $(this).find('.row.list').slick({
+            responsive: [md,sm]
+        });
+    });
+}
 
+$(document).ready(function(){
+    
+
+    
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.imageResize();
+    
+}, false);
+
+window.addEventListener('load', function () {
+    window.productSlider();
+    window.imageResize();
+    window.slickBannersSlider();
+    window.harmonizacoesSlider();
+    window.blogSlide();
+
+    $('.slick-slider').slick('refresh');
+}, false);
+

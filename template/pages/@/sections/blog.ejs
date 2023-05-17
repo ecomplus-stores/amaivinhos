@@ -4,8 +4,12 @@ const themeCustom = _.settings.theme.custom || ''
 if (Array.isArray(posts) && posts.length) {
   %>
     <div class="blog my-4 my-lg-5">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid px-1 px-md-5">
+        <div class="apx_section-title text-center mb-4">         
+          <h2 class="text-bold text-uppercase">Últimas do Blog</h2>         
+          <small class="text-uppercase">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</small>          
+        </div>
+        <div class="blog_slide">
           <%
           const postsList = []
           posts.forEach(slug => { 
@@ -19,7 +23,7 @@ if (Array.isArray(posts) && posts.length) {
           postsList.forEach(post => { 
             const { title, slug, thumbnail, description, date } = post 
             %>
-            <div class="col col-md-6 col-lg-4">
+            <div class="blog_slide-item">
               <div class="card">
                 <% if (thumbnail) { %>
                   <a href="/posts/<%= slug %>">
@@ -40,19 +44,17 @@ if (Array.isArray(posts) && posts.length) {
                       <%= title %>
                     </a>
                   </h5>
-                  <% if(themeCustom === 'ecom-beauty') { %>
-                    <a
-                      href="/posts/<%= slug %>"
-                      class="blog-post-link"
-                    >
-                      <%- _.dictionary('seeMore') %>
-                      <i class="i-chevron-right"></i>
-                    </a>
-                  <% } else { %>
-                    <p class="card-text">
-                      <%= description %>
-                    </p>
-                  <% } %>
+                  <p class="card-text">
+                    <%= description || 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.' %>
+                  </p>
+                  <a
+                    href="/posts/<%= slug %>"
+                    class="blog-post-link"
+                  >
+                    <%- _.dictionary('seeMore') %>
+
+                  </a>
+
                 </div>
               </div>
             </div>
