@@ -173,6 +173,66 @@
           ]
         },
         {
+          "name": "apx_productBenefits",
+          "label": "Página de Produto - Benefícios",
+          "file": "content/apx_productBenefits.json",
+          "fields": [
+            {
+              "label": "Benefícios",
+              "name": "benefits",
+              "widget": "list",
+              "required":false,
+              "fields": [
+                {
+                  "label": "Título",
+                  "name": "title",
+                  "widget": "string",
+                  "required":true      
+                }, 
+                {
+                  "label": "Descrição Curta",
+                  "name": "description",
+                  "widget": "string",
+                  "required":false        
+                },               
+                {
+                  "label": "Ícone",
+                  "name": "image",
+                  "widget": "image",
+                  "required":false
+                }      
+              ]
+            }            
+          ]
+        },
+        {
+          "name": "apx_productSpecialistReview",
+          "label": "Página de Produto - Opinião do Especialista",
+          "file": "content/apx_productSpecialistReview.json",
+          "fields": [
+            {
+              "label": "Reviews",
+              "name": "reviews",
+              "widget": "list",
+              "required":false,
+              "fields": [
+                {
+                  "label": "SKU do Produto",
+                  "name": "title",
+                  "widget": "string",
+                  "required":true      
+                }, 
+                {
+                  "label": "Texto do Review",
+                  "name": "description",
+                  "widget": "text",
+                  "required":false        
+                }
+              ]
+            }            
+          ]
+        },
+        {
           "name": "apx_properties",
           "label": "Imagens das Características de Produto",
           "file": "content/apx_properties.json",

@@ -4,6 +4,9 @@ let stampsList
 if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
   stampsList = stamps.stamps_list
 }
+
+const apx_properties = _.cms('apx_properties') || {}
+const apx_countries = _.cms('apx_countries') || {}
 %>
 
 <div id="product-block" class="product-block my-4 mb-lg-5">
@@ -86,12 +89,39 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
         </div>
 
         <div class="col">
-          <h1 class="product__name">
+          <% if (_.state.brands){ %>
+            <h1 class="product__name">            
+              <small class="apx_brand"><%= _.state.brands[0].name %></small>
+              <%= _.ecomUtils.name(_.state).replace(_.state.brands[0].name,'')  %>
+            </h1>
+            
+          <% }else{ %>
+          <h1 class="product__name">            
             <%= _.ecomUtils.name(_.state) %>
           </h1>
+          <% } %>
           <p class="product__sku">
             COD: <%= _.state.sku %>
           </p>
+          <div id="apx_product_props">
+            
+            <% if (_.state.specifications && _.state.specifications['pais']){ %>
+              <small class="apx_origin">
+                <%
+                  let countryFlag = apx_countries.countries.find(el => el.title.toLowerCase().trim() == _.state.specifications['pais'][0].text.toLowerCase().trim()) ? 'url(' + apx_countries.countries.find(el => el.title.toLowerCase().trim() == _.state.specifications['pais'][0].text.toLowerCase().trim()).image + ')' : '#f2f2f2'
+                  //console.log(apx_countries.countries.find(el => el.title.toLowerCase().trim() == _.state.specifications['pais'][0].text.toLowerCase().trim()))
+                  
+                %>
+                <span class="apx_country-flag" style="background:<%= countryFlag %>"></span>
+                <span class="apx_country-name">
+                  <%= _.state.specifications['pais'][0].text %>
+                </span>
+                <% if (_.state.specifications['regiao']){ %>
+                  <span class="apx_country-region">, <%= _.state.specifications['regiao'][0].text %></span>
+                <% } %>
+              </small>
+            <% } %>  
+          </div>
 
           <div id="product-actions">
             <div id="product-loading">
