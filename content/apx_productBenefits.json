@@ -1,0 +1,19 @@
+{
+  "benefits": [
+    {
+      "image": "/img/uploads/group-86.svg",
+      "title": "Dúvidas?",
+      "description": "Fale com a Sommelière"
+    },
+    {
+      "image": "/img/uploads/newspaper-outline-1-.svg",
+      "title": "Novidades",
+      "description": "exclusivas em nosso clube de assinatura"
+    },
+    {
+      "image": "/img/uploads/group-87.svg",
+      "title": "Seleções",
+      "description": "exclusivas para assinantes"
+    }
+  ]
+}
