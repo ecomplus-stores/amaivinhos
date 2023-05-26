@@ -1,26 +1,9 @@
 {
   "sections": [
     {
-      "type": "breadcrumbs",
-      "enabled": true
-    },
-    {
-      "type": "page-title",
-      "title": "",
-      "description": ""
-    },
-    {
-      "type": "document-banner",
-      "enabled": true
-    },
-    {
-      "type": "document-description",
-      "enabled": true
-    },
-    {
       "type": "brand-retail",
       "enabled": true,
-      "sort": "sales"
+      "sort": "slug"
     }
   ]
 }
