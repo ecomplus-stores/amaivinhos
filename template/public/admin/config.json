@@ -234,7 +234,7 @@
         },
         {
           "name": "apx_brandPage",
-          "label": "Página de Marca - Conteúdo",
+          "label": "Página de Marca - Conteúdo Adicional",
           "file": "content/apx_brandPage.json",
           "fields": [
             {

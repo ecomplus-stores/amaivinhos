@@ -30,15 +30,50 @@ _.breadcrumbs = [{
     
     <% console.log(_.state)%>
 
-    <% if(_.state.name){%>
     
-    <% } %>
 
     <% if(_.state.pictures && _.state.pictures[0]){%>
       <div class="brand_banner px-md-5 container-fluid">
         <img class="w-100" src="<%= _.state.pictures[0].url %>" alt="<%= _.state.name %>"/>
       </div>
     <% } %>
+      
+    <div class="brand_menu px-md-5">
+      <ul>
+        <li>
+          <button type="button" class="py-3 px-0 active">História</button>
+        </li>
+        <li>
+          <button type="button" class="py-3 px-0">Sobre o produtor</button>
+        </li>
+        <li>
+          <button type="button" class="py-3 px-0">Destaques</button>
+        </li>
+        <li>
+          <button type="button" class="py-3 px-0">Enólogo</button>
+        </li>
+        <li>
+          <button type="button" class="py-3 px-0">Produtos</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-fluid">
+      
+      <% if(_.state.name){%>
+        <div class="row">
+          <h1 class="brand_title"><%= _.state.name %></h1>
+        </div>
+      <% } %>
+
+      <% if(_.state.body_html){%>
+        <div class="row">
+          <h1 class="brand_html"><%- _.state.body_html %></h1>
+        </div>
+      <% } %>
+      
+    </div>
+    
 
     <%- await include('@/layout/sections') %>
     <%- await include('@/layout/footer') %>

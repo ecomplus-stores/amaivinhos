@@ -1047,4 +1047,40 @@ h1.product__name{
     
 }
 
+
+
+.brand_menu{
+    ul{
+        list-style-type: none;
+        padding: 0;
+        border-bottom: 1px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        li{
+            button{
+                background: transparent;
+                border: 0;
+                font-weight: 300;
+                
+            }   
+            button.active{
+                color: var(--red);
+                position: relative;                
+            }
+            button.active:after{
+                content: "";
+                width: 80%;
+                height: 3px;
+                background: var(--red);
+                position: absolute;
+                bottom: -1px;
+                left: 50%;
+                translate: -50% 0;
+            }
+        }
+    }
+}
+
 // .prices:not(.prices--big) .prices__installments:before{content:"ou "}
