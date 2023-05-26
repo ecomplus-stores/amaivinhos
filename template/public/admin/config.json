@@ -233,6 +233,91 @@
           ]
         },
         {
+          "name": "apx_brandPage",
+          "label": "Página de Marca - Conteúdo",
+          "file": "content/apx_productSpecialistReview.json",
+          "fields": [
+            {
+              "label": "Produtores",
+              "name": "brand",
+              "widget": "list",
+              "required":false,
+              "fields": [
+                {
+                  "label": "SKU da Página da Marca",
+                  "name": "title",
+                  "widget": "string",
+                  "required":true      
+                }, 
+                {
+                  "label": "História",
+                  "name": "history",
+                  "widget": "text",
+                  "required":false       
+                },
+                {
+                  "label": "Imagem História",
+                  "name": "history_image",
+                  "widget": "image",
+                  "required":false
+                },
+                {
+                  "label": "Características do Produtor",
+                  "name": "props",
+                  "widget": "list",
+                  "required":false,
+                  "fields": [
+                    {
+                      "label": "Título",
+                      "name": "title",
+                      "widget": "string",
+                      "required":true      
+                    }, 
+                    {
+                      "label": "Descrição Curta",
+                      "name": "description",
+                      "widget": "string",
+                      "required":false        
+                    },               
+                    {
+                      "label": "Ícone",
+                      "name": "image",
+                      "widget": "image",
+                      "required":false
+                    }      
+                  ]
+                },
+                {
+                  "label": "Título Enólogo",
+                  "name": "about_title",
+                  "widget": "string",
+                  "required":false       
+                },   
+                {
+                  "label": "Texto Enólogo",
+                  "name": "about_text",
+                  "widget": "text",
+                  "required":false       
+                },  
+                {
+                  "label": "Imagens Enólogo",
+                  "name": "about_images",
+                  "widget": "list",
+                  "required":false,
+                  "fields": [
+                    {
+                      "label": "Imagem",
+                      "name": "image",
+                      "widget": "image",
+                      "required":false
+                    }      
+                  ]
+                }
+              ]
+            }            
+          ]
+        },
+        {
           "name": "apx_properties",
           "label": "Imagens das Características de Produto",
           "file": "content/apx_properties.json",

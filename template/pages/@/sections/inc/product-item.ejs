@@ -83,10 +83,11 @@ const apx_countries = _.cms('apx_countries') || {}
       </div>
 
       <div data-slot="title">
-        <% if (opt.item.brands){ %>
-          <small class="apx_brand"><%= opt.item.brands[0].name %></small>
-        <% } %>
+        
         <h3 class="product-card__name">
+          <% if (opt.item.brands){ %>
+            <small class="apx_brand"><%= opt.item.brands[0].name %></small>
+          <% } %>
           <% if (opt.item.brands){ %>
             <%= itemData.name.replace(opt.item.brands[0].name,'') %>
           <% }else{ %>

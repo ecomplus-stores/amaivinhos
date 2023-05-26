@@ -1,10 +1,9 @@
 <% if (_.state.body_html) { %>
   <section id="product-description" class="product-description my-4 my-lg-5">
     <div class="container">
-      <p class="lead">
-        <a href="#description" name="description">#</a>
+      <h2>
         <%= _.dictionary('productDescription') %>
-      </p>
+      </h2>
       <div class="html-clearfix">
         <%- _.state.body_html.replace(
           /<img ([^/>]+)?src=['"]([^'"]+)['"]([^/>]+)?\/?>/g,

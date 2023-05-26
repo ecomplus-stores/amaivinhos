@@ -3,9 +3,7 @@
         const search = new _.EcomSearch()
         await search.setProductIds(opt.products).fetch(true)
         const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
-    %>
-
- 
+    %> 
   
     <section
       class="apx_product-list my-5 <%= opt.classe_css %> "

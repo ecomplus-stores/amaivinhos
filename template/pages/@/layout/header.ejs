@@ -246,10 +246,7 @@ const hasMegamenu = header.desktop_megamenu
       </div>
     </div>    
   </div>
-  
-</header>
-<!--
-<% 
+  <% 
 const categoryParents = _.lodash.groupBy(_.categories, ({ parent }) => {
   return !parent || !parent.slug ? '_' : parent.slug
 })
@@ -257,53 +254,71 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
 %>
 
 <% if (categories && categories.length) { %>
-<div id="a-menu">
-  <div class="close-mobile d-block d-md-none">
-    <button type="button" class="toggleMenu  open" onclick=""></button>          
+<div id="a-menu" class="p-4">
+  <div class="close-mobile d-block">
+    <button type="button" class="toggleMenu menu-trigger" onclick=""></button>          
   </div>          
   
-  <nav>
+  <nav class="px-md-5">
     <ul>
     <% categories.forEach(({ slug, name, _id }) => { %>
-      <li class="<%- categoryParents[slug] ? 'has-child' : '' %>">
-        <span>
+      <li class="<%- categoryParents[slug] ? 'has-child primary' : '' %>">
           <a href="/<%= slug %>">
             <%= ` ${name} ` %> 
-          </a>
-        </span>
+          </a>    
           <% if (categoryParents[slug]) { %>
-            <ul class="expand-menu row mx-0">
+            <div class="expand-menu primary">
+              <ul class="expand-menu-list primary row mx-0">
+              <% categoryParents[slug].forEach(subcategory => { %>
+                <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
+                <li class="<%- hasSubmenu ? 'has-child secondary' : ''%>" data-category="<%= subcategory.slug%>">
+                  <a href="/<%= subcategory.slug %>">
+                    <%= subcategory.name %>
+                  </a>
+                  <!--<% if (hasSubmenu) { %>
+                    <div class="expand-menu secondary">
+                      <ul class="expand-menu-list secondary row mx-0">
+                        <% categoryParents[subcategory.slug].forEach(subcategory_ => { %>
+                          <li>
+                            <a href="/<%= subcategory_.slug %>">
+                              <%= subcategory_.name %>
+                            </a>
+                          </li>
+                        <% }) %>
+                      </ul>
+                    </div>
+                  <% } %>-->
+                </li>
+              <% }) %>
+                <%                      
+                  const itemMenu = categories.find( arr => arr._id === _id )                      
+                  if (itemMenu && itemMenu.icon) {
+                  %> 
+                  <li class="col-auto ml-auto d-none d-md-block">
+                    <img
+                      src="<%= itemMenu.icon.url %>"
+                      alt="<%= itemMenu.icon.alt || itemMenu.name %>"
+                    >
+                  </li>
+                <% } %>  
+              </ul>
+            </div>
             <% categoryParents[slug].forEach(subcategory => { %>
               <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
-              <li class="col-12 col-md-auto pr-5 mr-5">
-                <a href="/<%= subcategory.slug %>">
-                  <%= subcategory.name %>
-                </a>
                 <% if (hasSubmenu) { %>
-                  <ul>
-                    <% categoryParents[subcategory.slug].forEach(subcategory_ => { %>
-                      <li>
-                        <a href="/<%= subcategory_.slug %>">
-                          <%= subcategory_.name %>
-                        </a>
-                      </li>
-                    <% }) %>
-                  </ul>
-                <% } %>
-              </li>
+                  <div class="expand-menu secondary <%= subcategory.slug%>">
+                    <ul class="expand-menu-list secondary row mx-0">
+                      <% categoryParents[subcategory.slug].forEach(subcategory_ => { %>
+                        <li>
+                          <a href="/<%= subcategory_.slug %>">
+                            <%= subcategory_.name %>
+                          </a>
+                        </li>
+                      <% }) %>
+                    </ul>
+                  </div>
+                <% } %>              
             <% }) %>
-              <%                      
-                const itemMenu = categories.find( arr => arr._id === _id )                      
-                if (itemMenu && itemMenu.icon) {
-                %> 
-                <li class="col-auto ml-auto d-none d-md-block">
-                  <img
-                    src="<%= itemMenu.icon.url %>"
-                    alt="<%= itemMenu.icon.alt || itemMenu.name %>"
-                  >
-                </li>
-              <% } %>  
-            </ul>
           <% } %>
       </li>
     <% }) %>
@@ -311,7 +326,10 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
   </nav>
 </div>
 <% } %>
--->
+</header>
+
+
+
 
 <% if (1 != 1) { %>
   <header class="header" id="header">

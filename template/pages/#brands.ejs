@@ -6,4 +6,48 @@ _.breadcrumbs = [{
 }]
 %>
 
-<%- await include('@/view') %>
+<!doctype html>
+<html lang="<%= _.lang.replace('_', '-') %>" dir="ltr">
+
+<head>
+  <%- await include('@/head') %>
+</head>
+
+<body
+  id="page-<%= _.pageName %>"
+  class="_<%= _.route.path.replace(/\//g, '_') %>"
+  <% if (_.route.resource) { %>
+    data-resource="<%= _.route.resource %>"
+    data-resource-id="<%= _.state._id %>"
+  <% } else if (_.route.collection) { %>
+    data-cms-collection="<%= _.route.collection %>"
+  <% } %>
+>
+  <%- await include('@/layout/menu') %>
+
+  <main role="main" id="main">
+    <%- await include('@/layout/header') %>
+    
+    <% console.log(_.state)%>
+
+    <% if(_.state.name){%>
+    
+    <% } %>
+
+    <% if(_.state.pictures && _.state.pictures[0]){%>
+      <div class="brand_banner px-md-5 container-fluid">
+        <img class="w-100" src="<%= _.state.pictures[0].url %>" alt="<%= _.state.name %>"/>
+      </div>
+    <% } %>
+
+    <%- await include('@/layout/sections') %>
+    <%- await include('@/layout/footer') %>
+  </main>
+
+  <%- await include('@/json') %>
+  <%- await include('@/scripts') %>
+</body>
+
+</html>
+
+

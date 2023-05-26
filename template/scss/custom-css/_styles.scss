@@ -124,6 +124,7 @@ small{
 .text-center{text-align: center;}
 .text-justify{text-align:justify}
 .align-items-center{align-items: center;}
+.align-items-start{align-items: flex-start;}
 .justify-content-between{justify-content: space-between;}
 .justify-content-end{justify-content: end;}
 
@@ -570,6 +571,8 @@ small{
     }
 
     .product-card__pictures{border:1px solid #f2f2f2;margin-bottom:10px}
+
+    .prices__installments{margin-top: 5px;}
 }
 
 .apx_origin{
@@ -665,4 +668,383 @@ small{
         }
     }
 }
+
+#product-description{
+    h2{
+        font-family: 'Gilda Display';
+        font-size: var(--f_big);
+    }
+}
+
+#apx_gauge,
+#apx_specifications,
+#apx_specialistReview{
+    h2{
+        font-family: 'Gilda Display';
+        font-size: var(--f_big);
+    }
+    .item{
+        display:flex;
+        align-items: center;      
+        justify-content: space-between;  
+        strong{
+            font-size: var(--f_small);
+            font-weight: normal;;
+        }
+    }
+    .apx_gauge-metter{
+        background:#d9d9d9;
+        display: block;
+        height:5px;
+        width: calc(100% - 100px);
+        border-radius: 10px;
+        overflow: hidden;
+        
+        
+        .apx_gauge-value{
+            background:var(--red);
+            height:100%;
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+
+    .apx_specifications-item{
+        gap: 10px;
+        strong{
+            display: block;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        span{
+            font-size: var(--f_small);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            
+            overflow: hidden;
+        }
+    }
+
+    h3{
+        font-size: var(--f_big);
+        font-weight: 600;
+
+        small{
+            font-size: var(--f_small);
+            color: #000;
+            display: block;
+        }
+    }
+
+    p{color: var(--gray);}
+}
+
+
+@media(min-width:990px){
+    .apx_specifications-item{padding-right: 30px;}
+    .container-small,
+    .gallery-and-actions,
+    #product-description .container{max-width:1030px;margin-left: auto;margin-right: auto;padding-left: 0;padding-right: 0;}
+
+    .gallery__thumbs{
+        width: fit-content!important;
+        flex-basis: fit-content!important;
+        margin: 0!important;
+        .gallery__item:only-child{display:none}
+    }
+    .gallery__stage{
+        .glide__slides{margin: 0 auto!important;}
+    }
+}
+
+#apx_product_props{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    small{margin: 0;}
+    .apx_origin{
+        .apx_country-region{
+            text-overflow: ellipsis;
+            max-width: 100px;
+            overflow: hidden;
+        }
+    }
+    .apx_otherProps{
+        color: var(--gray);
+        font-size: var(--f_small);
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    img{max-height: 18px;}
+    
+}
+
+h1.product__name{
+    font-size: var(--section_title);
+    font-family: 'Gilda Display';
+    small{
+        display: block;
+        font-size: var(--f_normal);
+        color: var(--gray);
+        font-family: 'Gilda Display';
+    }
+}
+.product__name-block{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    h1,
+    p{margin:0}
+    
+    p{font-family:'Work Sans';font-size: var(--f_small);font-weight: 300;}
+}
+
+.prices--big{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    .prices__value{
+        font-size: var(--f_big);
+    }
+    .prices__installments{
+        font-size:var(--f_small);
+        font-weight: 300;
+        small,
+        span{font-weight: 300;}
+    }
+}
+
+.product__buy{
+    .quantity-selector{
+        .quantity-selector__btn-container{display:none}
+
+        .btn.btn-lg.btn-primary{
+            background: var(--green);
+            border-color: var(--green);
+            color:#fff;
+            min-width: 310px;
+            border-radius: 0;
+            span{color:#fff;font-size: var(--f_big);font-weight: 500;}
+        }
+    }
+}
+
+#product-actions{
+    .mb-3,
+    article,
+    .product__favorite{display: none;}
+}
+
+.apx_productBenefits{
+
+    .item{
+        display: flex;
+        align-items: center;
+        color:var(--gray);
+        font-size: var(--f_small);
+        .img-block{margin-right: 5px;text-align: center;width: 20px;display: inline-block;}
+
+        strong,
+        span{
+            color:var(--gray);
+        }
+    }
+}
+.apx_product-list.brand-related:before{
+    content:"";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+}
+.apx_product-list.brand-related{
+    position: relative;
+    background-size: cover!important;
+
+    .content{
+        h2{font-family: "Gilda Display";font-size: var(--section_title);}
+        h2,
+        div *{color: #fff;font-weight: 300;line-height: 25px;}
+    }
+    .product-item{
+        .product-card{
+            .product-card__pictures{border:0}
+            section{background:#fff}
+            *{text-align: center;justify-content: center;}
+
+            .apx_origin{
+                max-width: 80%;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .product-card__buy{
+                display: none;
+                // margin-left: auto;
+                // margin-right: auto;
+                // margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+#a-menu.open{
+    opacity: 1;
+    pointer-events: all;
+    
+}
+#a-menu{
+    pointer-events:none;
+    opacity: 0;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--red);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+
+    .toggleMenu:before,
+    .toggleMenu:after{
+        content:'';
+        width: 1px;
+        height: 100%;
+        background:#fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        rotate: 45deg;
+    }
+    .toggleMenu:before{rotate: -45deg;}
+    .toggleMenu{
+        height: 36px;
+        width: 36px;
+        background: transparent;
+        padding: 0;
+        border: 0;
+        display: block;
+        position: relative;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav{height: 100%;display: flex;align-items: center;}
+    nav > ul > li >  a{
+        font-size: calc(var(--section_title) * 1.2);
+        color: #fff;
+        font-family: 'Gilda Display';
+    }
+    nav > ul{        
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+        .expand-menu{
+            position:absolute;
+            display: flex;
+            flex-direction: column;
+            left: 100%;
+            top: 0;
+            max-height: 100%;
+            // overflow-y: auto;
+            // overflow-x: visible;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            a{
+                font-family: 'Work Sans';
+                font-size: calc(var(--f_big) * 1.2);
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+
+        // .expand-menu-list{
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+
+        .expand-menu-list{display: grid;gap: 20px;}
+    }
+
+    nav ul{
+        width: calc(33vw - 3rem);
+    }
+    nav a{text-decoration: unset;}
+    .has-child > a{
+        display:flex;
+        width: 100%;
+        gap: 15px;
+        align-items: center;
+        white-space: nowrap;
+        padding-right: 20px;
+    }
+    .has-child.primary-open > a:after,
+    .has-child.secondary-open > a:after{
+        content:"";
+        width: 100%;
+        border-top: 1px solid #f2f2f2;
+        display: block;
+    }
+    .has-child.primary-open:before{
+        content:"";
+        height:100%;
+        position: absolute;
+        width: 1px;
+        background: #fff;
+        top: 0;
+        right: 0;
+    }
+    .has-child.primary-open{
+        .expand-menu.primary{
+            opacity: 1;
+            padding-left: 2rem;
+            pointer-events: all;
+        }
+
+        
+        .expand-menu.secondary{margin-left: 33vw;}
+        .expand-menu.secondary.secondary-open{
+            opacity: 1;
+            padding-left: 2rem;
+            pointer-events: all;
+        }
+        
+    }
+
+    .expand-menu{overflow-y: auto;}
+
+    .expand-menu::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #D4063E; /* or add it to the track */
+    }
+    
+    /* Add a thumb */
+    .expand-menu::-webkit-scrollbar-thumb {
+    background: #6D0220;
+    }
+
+
+    .first-selection-ready > li:not(.primary-open):not(.secondary-open){opacity: .3;}
+    
+}
+
 // .prices:not(.prices--big) .prices__installments:before{content:"ou "}

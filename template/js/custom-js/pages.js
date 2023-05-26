@@ -105,8 +105,31 @@ window.productSlider = function(){
 }
 
 $(document).ready(function(){
-    
+    $('#a-menu nav > ul .has-child.primary > a').click(function(e){
+        e.preventDefault();
+        $('.first-selection-ready').removeClass('first-selection-ready');
+        $('#a-menu .secondary-open').removeClass('secondary-open');
+        $('#a-menu .primary-open').removeClass('primary-open');
+        $(this).closest('.has-child').addClass('primary-open');
+        $('#a-menu nav > ul').addClass('first-selection-ready');        
+    });
 
+    $('#a-menu .has-child.secondary > a').click(function(e){
+        e.preventDefault();
+        $('#a-menu .secondary-open').removeClass('secondary-open');
+        $(this).closest('.has-child.secondary').addClass('secondary-open');
+        $(this).closest('.expand-menu-list.primary').addClass('first-selection-ready');
+        let cat = $(this).closest('li').attr('data-category');
+        $('.' + cat).addClass('secondary-open');
+        
+    });
+
+    $('.menu-trigger').click(function(){
+        $('#a-menu').toggleClass('open');
+        $('.first-selection-ready').removeClass('first-selection-ready');
+        $('.primary-open').removeClass('primary-open');
+        $('.secondary-open').removeClass('secondary-open');
+    })
     
 });
 

@@ -7,6 +7,25 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 
 const apx_properties = _.cms('apx_properties') || {}
 const apx_countries = _.cms('apx_countries') || {}
+const apx_productSpecialistReview = _.cms('apx_productSpecialistReview') || {}
+const apx_productBenefits = _.cms('apx_productBenefits') || {}
+
+let brand = false
+
+try{
+  if(_.state.brands && _.state.brands[0]._id){
+    await _.ecomClient.store({
+      url: `/brands/${_.state.brands[0]._id}.json`
+    }).then(response => {
+      brand = response.data
+      //console.log(response.data)
+    })
+  }
+}catch(e){
+  console.log(e)
+}
+
+//console.log(_.state)
 %>
 
 <div id="product-block" class="product-block my-4 mb-lg-5">
@@ -25,7 +44,7 @@ const apx_countries = _.cms('apx_countries') || {}
         -->
       </div>
 
-      <div class="row">
+      <div class="row align-items-center gallery-and-actions">
         <div class="col-12 col-md-6 mb-4">
           <!-- Picture(s) gallery will be inserted dynamically within `TheProduct` -->
           <% if (_.state.pictures) { %>
@@ -89,21 +108,23 @@ const apx_countries = _.cms('apx_countries') || {}
         </div>
 
         <div class="col">
-          <% if (_.state.brands){ %>
+          <div class="product__name-block">
+            <% if (_.state.brands){ %>
+              <h1 class="product__name">            
+                <small class="apx_brand"><%= _.state.brands[0].name %></small>
+                <%= _.ecomUtils.name(_.state).replace(_.state.brands[0].name,'')  %>
+              </h1>
+              
+            <% }else{ %>
             <h1 class="product__name">            
-              <small class="apx_brand"><%= _.state.brands[0].name %></small>
-              <%= _.ecomUtils.name(_.state).replace(_.state.brands[0].name,'')  %>
+              <%= _.ecomUtils.name(_.state) %>
             </h1>
-            
-          <% }else{ %>
-          <h1 class="product__name">            
-            <%= _.ecomUtils.name(_.state) %>
-          </h1>
-          <% } %>
-          <p class="product__sku">
-            COD: <%= _.state.sku %>
-          </p>
-          <div id="apx_product_props">
+            <% } %>
+            <p class="product__sku">
+              COD: <%= _.state.sku %>
+            </p>
+          </div>
+          <div id="apx_product_props" class="my-4">
             
             <% if (_.state.specifications && _.state.specifications['pais']){ %>
               <small class="apx_origin">
@@ -121,9 +142,22 @@ const apx_countries = _.cms('apx_countries') || {}
                 <% } %>
               </small>
             <% } %>  
+
+            <% if (_.state.specifications){ %>
+                <% for (let item in _.state.specifications){ %>
+                  <% if (['uvas','tipo_de_vinho'].includes(item)){ %>
+                      <small class="apx_otherProps">
+                      <% if (apx_properties.props.find(el => el.title == _.ecomUtils.gridTitle(item, _.grids))){ %>
+                        <img src="<%= apx_properties.props.find(el => el.title == _.ecomUtils.gridTitle(item, _.grids)).image %>"/>
+                      <% } %>                  
+                        <span title="<%= _.ecomUtils.specTextValue(_.state, item, _.grids) %>"><%= _.ecomUtils.specTextValue(_.state, item, _.grids) %></span>                      
+                      </small>  
+                  <% } %>
+                <% } %>
+            <% } %>
           </div>
 
-          <div id="product-actions">
+          <div id="product-actions" class="my-4">
             <div id="product-loading">
               <% if (_.state.available && _.state.visible && _.ecomUtils.inStock(_.state)) { %>
                 <div class="product__price prices prices--big">
@@ -192,7 +226,6 @@ const apx_countries = _.cms('apx_countries') || {}
                   <% } %>
                 >
                   <div data-slot="buy-button-content">
-                    <i class="i-shopping-bag mr-1"></i>
                     <% if (_.state.kit_composition && _.state.kit_composition.length) { %>
                       <%= _.dictionary('buyKit') %>
                     <% } else { %> 
@@ -201,13 +234,32 @@ const apx_countries = _.cms('apx_countries') || {}
                         <% const productWidget = _.widgets.find(item => item.pkg === '@ecomplus/widget-product') %>
                         <% buyText = productWidget && productWidget.options.buyText %>
                       <% } %>
-                      <%= buyText || _.dictionary('buy') %>
-                    <% } %>
+                      <%= buyText || _.dictionary('buy') %> Agora
+                    <% } %>                    
                   </div>
                 </button>
               </div>
             </div>
           </div>
+
+          <% if (apx_productBenefits) { %>
+            <div class="apx_productBenefits my-4">
+              <% for (let item in apx_productBenefits.benefits){ %>
+                <div class="row my-2">
+                  <div class="col-12 item">
+                    <% if (apx_productBenefits.benefits[item].image){ %>
+                      <span class="img-block"><img src="<%= apx_productBenefits.benefits[item].image %>"/></span>
+                    <% } %>                  
+                    <div>
+                      <strong><%= apx_productBenefits.benefits[item].title %></strong>
+                      <span><%= apx_productBenefits.benefits[item].description %></span>
+                    </div>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+          <% } %>
+          
 
           <% if (_.state.short_description) { %>
             <p class="product__info mt-3 lead">
@@ -217,16 +269,150 @@ const apx_countries = _.cms('apx_countries') || {}
         </div>
       </div>
 
-      <%- await include('@/helpers/widgets-append', {
-        _, opt: {}, field: 'productSlots'
-      }) %>
-    </section>
+      <div class="container-small">
+        <% if (_.state.specifications){ %>
+          <section id="apx_gauge" class="my-5">
+            <h2 class="mb-3">Ficha Técnica</h2>
+            <div class="row justify-content-between">
+              <% if (_.state.specifications.docura){ %>
+                <div class="col-md-5 col-12 item mb-3">
+                  <strong>Doçura</strong>
+                  <div class="apx_gauge-metter">
+                    <div class="apx_gauge-value" style="width:<%= parseInt(_.state.specifications.docura[0].value) * 10 %>%"></div>
+                  </div>
+                </div>
+              <% } %>
+              <% if (_.state.specifications.acidez){ %>
+                <div class="col-md-5 col-12 item mb-3">
+                  <strong>Acidez</strong>
+                  <div class="apx_gauge-metter">
+                    <div class="apx_gauge-value" style="width:<%= parseInt(_.state.specifications.acidez[0].value) * 10 %>%"></div>
+                  </div>
+                </div>
+              <% } %>
+              <% if (_.state.specifications.tanino){ %>
+                <div class="col-md-5 col-12 item mb-3">
+                  <strong>Tanino</strong>
+                  <div class="apx_gauge-metter">
+                    <div class="apx_gauge-value" style="width:<%= parseInt(_.state.specifications.tanino[0].value) * 10 %>%"></div>
+                  </div>
+                </div>
+              <% } %>
+              <% if (_.state.specifications.frutado){ %>
+                <div class="col-md-5 col-12 item mb-3">
+                  <strong>Frutado</strong>
+                  <div class="apx_gauge-metter">
+                    <div class="apx_gauge-value" style="width:<%= parseInt(_.state.specifications.frutado[0].value) * 10 %>%"></div>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+          </section>
+        <% } %>
 
-    <%- await include('@/helpers/widgets-append', {
-      _, opt: {}, field: 'productBlockAppend'
-    }) %>
+        <% if (_.state.specifications){ %>
+          <section id="apx_specifications" class="my-5">
+            <h2 class="mb-3">Características</h2>
+            <div class="row align-items-start">
+              <% for (let item in _.state.specifications){%>
+                <% if (!['docura','tanino','acidez','frutado'].includes(item)){ %>
+                <div class="col-md-3 col-12 item mb-3">
+                  <div class="apx_specifications-item d-flex align-items-center">
+                    <% if (apx_properties.props.find(el => el.title == _.ecomUtils.gridTitle(item, _.grids))){ %>
+                      <img src="<%= apx_properties.props.find(el => el.title == _.ecomUtils.gridTitle(item, _.grids)).image %>"/>
+                    <% } %>                  
+                    <div>
+                      <strong><%= _.ecomUtils.gridTitle(item, _.grids) %></strong>
+                      <span title="<%= _.ecomUtils.specTextValue(_.state, item, _.grids) %>"><%= _.ecomUtils.specTextValue(_.state, item, _.grids) %></span>
+                    </div>
+                  </div>
+                </div>
+                <% } %>
+              <% } %>
+              
+            </div>
+          </section>
+        <% } %>
+
+        <% if (apx_productSpecialistReview.reviews.find(el => el.sku == _.state.specifications.sku)){ %>
+          <section id="apx_specialistReview" class="my-5">
+            <h2 class="mb-3">Opinião da Especialista</h2>
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <img src="https://via.placeholder.com/310x273"/>
+              </div>
+              <div class="col">
+                <h3 class="mb-3">Elaine de Oliveira
+                  <small>Sommelière da AmaiVinhos</small>
+                </h3>
+                <p>
+                  <%= apx_productSpecialistReview.reviews.find(el => el.sku == _.state.specifications.sku).description %>
+                </p>
+              </div>
+              
+            </div>
+          </section>
+        <% } %>
+
+        
+      </div>      
+    </section>
   </div>
+  <% 
+    console.log(brand)
+    %> 
+      
+    <%  if (brand) { 
+      
+      const search = new _.EcomSearch()
+      await search.setBrandIds([brand._id]).fetch(true)
+      const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+      %>
+      <section
+        class="apx_product-list brand-related my-5"
+        data-num_col_sm="1"
+        data-carrossel_sm="Não"
+        data-num_col_md="2"
+        data-carrossel_md="Não"
+        data-carrossel_dots_md="Não"
+        data-carrossel_arrows_md="Sim"
+        data-carrossel_dots_sm="Não"
+        data-carrossel_arrows_sm="Sim"
+        style="background:<%= brand.pictures && brand.pictures[0].url ? 'url('+ brand.pictures[0].url +')' : 'var(--red)'%>"
+      >
+        <div class="container-small py-5">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-4 content">
+              <h2 class="mb-4"><%= brand.name ? brand.name : ''%></h2>
+              <div><%- brand.body_html ? brand.body_html : ''%></div>
+            </div>  
+            <div class="col-12 col-md-8">
+              <div class="row list mx-0">        
+                <% for (let i = 0; i < items.length; i++) { %>
+                  <div class="col-md-6 col-12 my-4">
+                    <%- await include('@/sections/inc/product-item', {
+                      _, opt: { item: items[i] }
+                    }) %>
+                  </div>
+                <% } %>          
+              </div>
+            </div>          
+          </div>
+        </div>
+      </section>
+    <% } %>
+  <%  %>
+
+  <%- await include('@/helpers/widgets-append', {
+    _, opt: {}, field: 'productSlots'
+  }) %>
+
+  <%- await include('@/helpers/widgets-append', {
+    _, opt: {}, field: 'productBlockAppend'
+  }) %>
 </div>
+
+
 
 <%
 const productJsonLd = {
