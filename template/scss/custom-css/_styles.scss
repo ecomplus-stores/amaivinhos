@@ -118,7 +118,7 @@ small{
         }
     }
 }
-
+.w-100{width: 100%;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
 .text-center{text-align: center;}
@@ -1048,8 +1048,13 @@ h1.product__name{
 }
 
 
-
+#a-header{position: sticky;top: 0;background: #fff;z-index: 10;}
 .brand_menu{
+    position: sticky;
+    top: 108px;
+    background: #fff!important;
+    z-index: 10;
+
     ul{
         list-style-type: none;
         padding: 0;
@@ -1059,17 +1064,19 @@ h1.product__name{
         align-items: center;
         gap: 75px;
         li{
-            button{
+            a{
                 background: transparent;
                 border: 0;
                 font-weight: 300;
+                display: block;
+                text-decoration: none;
                 
             }   
-            button.active{
+            a.active{
                 color: var(--red);
                 position: relative;                
             }
-            button.active:after{
+            a.active:after{
                 content: "";
                 width: 80%;
                 height: 3px;
@@ -1083,4 +1090,71 @@ h1.product__name{
     }
 }
 
+.container-extra-small{
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand_title{
+    font-size: var(--section_title);
+    font-family: "Gilda Display";    
+}
+.brand_html *{
+    color: var(--gray);
+    line-height: 25px;
+}
+
+.brand_specifications{
+    .item{
+     display: flex;   
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     img{border-radius: 50%;margin-bottom: .5rem;}
+     strong{font-size: var(--f_small);line-height: initial;}
+     span{font-size: calc(var(--f_small) * 1.2)}
+    }
+}
+
+.brand_about{
+    position: relative;
+    width: 100%;
+    .brand_gallery{
+        display: grid;
+        position: relative;
+        gap: 0;
+        img{width: 100%;}
+    }
+    .brand_gallery:after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .7;
+    }
+    .brand_about-content{
+        width: 600px;
+        h2,p{color: #fff;}
+        h2{font-size: calc(var(--section_title) * 1.2)}
+        p{font-size: var(--f_big);font-weight: 300;line-height: 32px;}
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+}
+
+
+.slick-list{margin-left: auto;margin-right: auto;}
+
+
+
+@media(min-width:990px){
+//   [data-num_col_md="3"] .col-md-4.col-sm-6.px-md-1{padding-left: 0!important;padding-right: 0!important;}
+}
 // .prices:not(.prices--big) .prices__installments:before{content:"ou "}

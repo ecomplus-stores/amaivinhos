@@ -41,41 +41,177 @@ _.breadcrumbs = [{
     <div class="brand_menu px-md-5">
       <ul>
         <li>
-          <button type="button" class="py-3 px-0 active">História</button>
+          <a class="py-3 px-0 active" href="#historia">História</a>
         </li>
         <li>
-          <button type="button" class="py-3 px-0">Sobre o produtor</button>
+          <a class="py-3 px-0" href="#sobre-o-produtor">Sobre o produtor</a>
         </li>
         <li>
-          <button type="button" class="py-3 px-0">Destaques</button>
+          <a class="py-3 px-0" href="#destaques">Destaques</a>
         </li>
         <li>
-          <button type="button" class="py-3 px-0">Enólogo</button>
+          <a class="py-3 px-0" href="#enologo">Enólogo</a>
         </li>
         <li>
-          <button type="button" class="py-3 px-0">Produtos</button>
+          <a class="py-3 px-0" href="#produtos">Produtos</a>
         </li>
       </ul>
     </div>
 
-    <div class="container-fluid">
-      
-      <% if(_.state.name){%>
-        <div class="row">
-          <h1 class="brand_title"><%= _.state.name %></h1>
-        </div>
-      <% } %>
+    <div class="container-fluid container-extra-small">      
+      <div id="historia" >
+        <% if(_.state.name){%>
+          <div class="row mt-5 mb-3">
+            <div class="col-12">
+              <h1 class="brand_title text-center"><%= _.state.name %></h1>
+            </div>
+          </div>
+        <% } %>
 
-      <% if(_.state.body_html){%>
-        <div class="row">
-          <h1 class="brand_html"><%- _.state.body_html %></h1>
-        </div>
-      <% } %>
+        <% if(_.state.body_html){%>
+          <div class="row">
+            <div class="col-12">
+              <div class="brand_html text-center"><%- _.state.body_html %></div>
+            </div>
+          </div>
+        <% } %>
       
+        <div class="row my-5">
+          <div class="col-12">
+            <div class="brand_history_image text-center">
+              <img src="https://via.placeholder.com/600x232" class="w-100 ml-auto mr-auto"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sobre-o-produtor">
+        <div class="row">
+          <div class="col-12">
+            <h2  class="brand_title text-center mb-4">Sobre o produtor</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="brand_specifications">
+              <div class="row align-items-start text-center">
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+                <div class="col-md-3 col-6 item mb-3">
+                  <img src="https://via.placeholder.com/36x36"/>
+                  <strong>Título</strong>
+                  <span>Descrição</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>       
     </div>
-    
 
+    <% 
+        const search = new _.EcomSearch()
+        await search.setBrandIds([_.state._id]).fetch(true)
+        const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+
+        if(items.length){
+      %> 
+  
+        <section
+          class="apx_product-list my-5"
+          data-num_col_sm="1"
+          data-carrossel_sm="Sim"
+          data-num_col_md="3"
+          data-carrossel_md="Sim"
+          data-carrossel_dots_md="Sim"
+          data-carrossel_arrows_md="Sim"
+          data-carrossel_dots_sm="Sim"
+          data-carrossel_arrows_sm="Sim"
+
+          id="destaques"
+        >
+        <div class="container-fluid px-1 px-md-5 pb-5">
+          <div class="row">
+            <div class="col-12">
+              <h2  class="brand_title text-center mb-4">Destaques</h2>
+            </div>
+          </div>
+
+            <div class="row list mx-0">        
+                <% for (let i = 0; i < items.length; i++) { %>
+                  <div class="col-md-4 col-sm-6 px-md-1 px-1 my-4">
+                    <%- await include('@/sections/inc/product-item', {
+                      _, opt: { item: items[i] }
+                    }) %>
+                  </div>
+                  <div class="col-md-4 col-sm-6 px-md-1 px-1 my-4">
+                    <%- await include('@/sections/inc/product-item', {
+                      _, opt: { item: items[i] }
+                    }) %>
+                  </div>
+                  <div class="col-md-4 col-sm-6 px-md-1 px-1 my-4">
+                    <%- await include('@/sections/inc/product-item', {
+                      _, opt: { item: items[i] }
+                    }) %>
+                  </div>
+                <% } %>          
+            </div>
+        </div>
+        </section>
+      <% } %>
+      
+    <div class="container-fluid">
+      <div class="row">
+        <div class="brand_about" id="enologo">
+          <div class="brand_gallery" style="grid-template-columns: 50% 50%;">
+            <img src="https://via.placeholder.com/720x440"/>
+            <img src="https://via.placeholder.com/720x440"/>
+            <img src="https://via.placeholder.com/720x440"/>
+            <img src="https://via.placeholder.com/720x440"/>
+          </div>
+          <div class="brand_about-content">
+            <h2 class="brand_title text-center mb-4">Sobre o enólogo</h2>
+            <p class="text-center">De família de vinicultores, Renzo Cotarella nasceu na Úmbria, em Monterubiaglio. Estudou agronomia, mas sua paixão pela produção de vinhos o fez seguir o caminho da enologia. Em 1981, foi contratado por Piero Antinori, patriarca da família, para trabalhar na renovação da produção vinícola da Castello della Sala, uma das propriedades da vinícola Antinori. A visão única de Renzo o tornou CEO e enólogo-chefe da Marchesi Antinori em 2005. Hoje, trabalha equilibrando tradição e inovação, buscando sempre ser ético e respeitoso com o terroir e elaborar vinhos saborosos e cheios de personalidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="produtos">
     <%- await include('@/layout/sections') %>
+    </div>
     <%- await include('@/layout/footer') %>
   </main>
 

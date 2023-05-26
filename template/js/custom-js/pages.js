@@ -99,6 +99,7 @@ window.productSlider = function(){
             }
         }
         $(this).find('.row.list').slick({
+            lazyLoad: 'ondemand',
             responsive: [md,sm]
         });
     });
@@ -129,7 +130,42 @@ $(document).ready(function(){
         $('.first-selection-ready').removeClass('first-selection-ready');
         $('.primary-open').removeClass('primary-open');
         $('.secondary-open').removeClass('secondary-open');
-    })
+    });
+
+    if($('#page-brands').length > 0){
+        $('.brand_menu a').click(function(e) {
+            e.preventDefault();
+            var target = $(this).attr('href');
+            var offset = $(target).offset().top;
+            window.scrollTo({
+                top: offset - 200,
+                behavior: 'smooth'
+            });
+        });
+
+        $(window).on('scroll', function() {
+            let itens = ['#historia', '#sobre-o-produtor', '#destaques', '#enologo', '#produtos'];
+
+            for(let i in itens){                
+                var elemento = $(itens[i]);
+                var janela = $(window);
+        
+                var janelaTopo = janela.scrollTop();
+                var janelaFim = janelaTopo + janela.height();
+                var elementoTopo = elemento.offset().top;
+                var elementoFim = elementoTopo + elemento.outerHeight() - 200;
+
+                //var offset = $(itens[i]).offset().top - 200;
+        
+                if (elementoTopo < janelaFim && elementoFim > janelaTopo) {
+                    $('.brand_menu a').removeClass('active');
+                    $('[href="'+ itens[i] +'"]').addClass('active');
+                    return false;
+                }
+            }
+            
+        });
+    }
     
 });
 
