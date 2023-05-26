@@ -1,0 +1,35 @@
+{
+  "brand": [
+    {
+      "title": "franz-kunstler",
+      "history": "Fundada em 1965, na charmosa cidade de Hochheim, a Künstler tornou-se uma das maiores referências do Rheingau. Seus 50 hectares de vinha abrangem nada menos do que 8 “Grosse Lagen” (Grand Crus), espalhados nas comunas de Hochheim, Kostheim, Rüdesheim e Assmannhaüsen. De estilo potente, os vinhos ostentam grande concentração de fruta, extrato e vincada mineralidade, o que garante longa guarda. Comandada por Gunter Künstler, a vinícola está entre as maiores de todo o país, com as máximas 4 estrelas de Hugh Johnson, e integra o VDP desde 1994.",
+      "history_image": "/img/uploads/images.jpg",
+      "props": [
+        {
+          "title": "Título 1",
+          "image": "/img/uploads/1-3-.png",
+          "description": "Exemplo 1"
+        }
+      ],
+      "about_title": "Um Título para Enólogo",
+      "about_text": "Fundada em 1965, na charmosa cidade de Hochheim, a Künstler tornou-se uma das maiores referências do Rheingau. Seus 50 hectares de vinha abrangem nada menos do que 8 “Grosse Lagen” (Grand Crus), espalhados nas comunas de Hochheim, Kostheim, Rüdesheim e Assmannhaüsen. De estilo potente, os vinhos ostentam grande concentração de fruta, extrato e vincada mineralidade, o que garante longa guarda. Comandada por Gunter Künstler, a vinícola está entre as maiores de todo o país, com as máximas 4 estrelas de Hugh Johnson, e integra o VDP desde 1994.",
+      "about_images": [
+        {
+          "image": "/img/uploads/10.png"
+        },
+        {
+          "image": "/img/uploads/11.png"
+        },
+        {
+          "image": "/img/uploads/13-curiosidades.jpg"
+        },
+        {
+          "image": "/img/uploads/9.png"
+        },
+        {
+          "image": "/img/uploads/abrir-o-vinho-1-1-.png"
+        }
+      ]
+    }
+  ]
+}
