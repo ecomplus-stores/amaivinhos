@@ -235,7 +235,7 @@
         {
           "name": "apx_brandPage",
           "label": "Página de Marca - Conteúdo",
-          "file": "content/apx_productSpecialistReview.json",
+          "file": "content/apx_brandPage.json",
           "fields": [
             {
               "label": "Produtores",
