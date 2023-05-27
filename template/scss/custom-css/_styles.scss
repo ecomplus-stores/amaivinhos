@@ -125,6 +125,7 @@ small{
 .text-justify{text-align:justify}
 .align-items-center{align-items: center;}
 .align-items-start{align-items: flex-start;}
+.justify-content-center{justify-content: center;}
 .justify-content-between{justify-content: space-between;}
 .justify-content-end{justify-content: end;}
 
@@ -1048,7 +1049,7 @@ h1.product__name{
 }
 
 
-#a-header{position: sticky;top: 0;background: #fff;z-index: 10;}
+#a-header{position: sticky;top: 0;background: #fff;z-index: 11;}
 .brand_menu{
     position: sticky;
     top: 108px;
@@ -1112,7 +1113,7 @@ h1.product__name{
      justify-content: center;
      align-items: center;
 
-     img{border-radius: 50%;margin-bottom: .5rem;}
+     img{border-radius: 50%;margin-bottom: .5rem;max-height: 46px;height: 46px;}
      strong{font-size: var(--f_small);line-height: initial;}
      span{font-size: calc(var(--f_small) * 1.2)}
     }
@@ -1125,7 +1126,8 @@ h1.product__name{
         display: grid;
         position: relative;
         gap: 0;
-        img{width: 100%;}
+        span{width:100%}
+        img{min-height:100%;min-width: 100%;object-fit:cover}
     }
     .brand_gallery:after{
         content:"";
@@ -1152,6 +1154,51 @@ h1.product__name{
 
 .slick-list{margin-left: auto;margin-right: auto;}
 
+#page-categories{
+    h1{
+        font-size: calc(var(--section_title) * 1.2);
+        font-family: 'Gilda Display';
+        text-align: center;
+        display: block;
+    }
+    .page-title__head{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .page-title,
+    .category-description{
+        margin: .5rem auto .5rem auto!important;
+    }
+    ol.breadcrumb{
+        display: flex;
+        justify-content: center;
+        *{
+            font-size: var(--f_small);
+            color:var(--gray);
+            font-weight: normal;
+        }
+    }
+    
+    .breadcrumb-item+.breadcrumb-item:before{content:'-'}
+    .category-description .html-clearfix *{
+        color: var(--gray);
+        line-height: 30px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .page-title__head,
+    .category-description{
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-banner{margin-top: 0;}
+
+    
+}
 
 
 @media(min-width:990px){

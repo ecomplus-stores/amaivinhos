@@ -3,7 +3,7 @@ if (Array.isArray(_.state.pictures) && _.state.pictures.length) {
   const className = _.route.resource === 'categories' ? 'category'
     : _.route.resource.slice(0, -1)
   %>
-  <div class="hero-banner <%= className %>-banner">
+  <div class="hero-banner <%= className %>-banner px-5">
     <% if (_.state.pictures.length === 1) { %>
       <img
         class="img-fluid lozad fade"

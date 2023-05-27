@@ -13,7 +13,7 @@ if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
       <ol class="breadcrumb my-2 my-sm-3<%= breadcrumbs.length < 2 ? ' d-none d-md-flex' : '' %>">
         <li class="breadcrumb-item d-none d-md-block">
           <a href="/">
-            <i class="i-home"></i>
+            Início
           </a>
         </li>
         <% breadcrumbs.forEach(({ name, link }, index) => { %>
@@ -30,9 +30,9 @@ if (Array.isArray(breadcrumbs) && breadcrumbs.length) {
               </a>
             </li>
           <% } else { %>
-            <li class="breadcrumb-item d-none d-md-block active" aria-current="page">
+            <!-- <li class="breadcrumb-item d-none d-md-block active" aria-current="page">
               <%= name %>
-            </li>
+            </li> -->
           <% } %>
         <% }) %>
       </ol>

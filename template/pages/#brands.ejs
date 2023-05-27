@@ -28,7 +28,13 @@ _.breadcrumbs = [{
   <main role="main" id="main">
     <%- await include('@/layout/header') %>
     
-    <% console.log(_.state)%>
+    <% 
+    //console.log(_.state)
+    
+    const apx_brand = _.cms('apx_brandPage') && _.cms('apx_brandPage').brand.find(el => el.title == _.state.slug)
+    console.log(apx_brand)
+    
+    %>
 
     
 
@@ -68,21 +74,23 @@ _.breadcrumbs = [{
           </div>
         <% } %>
 
-        <% if(_.state.body_html){%>
+        <% if(apx_brand.history || _.state.body_html){%>
           <div class="row">
             <div class="col-12">
-              <div class="brand_html text-center"><%- _.state.body_html %></div>
+              <div class="brand_html text-center"><%- apx_brand.history || _.state.body_html %></div>
             </div>
           </div>
         <% } %>
       
+        <% if (apx_brand.history_image) {%>
         <div class="row my-5">
           <div class="col-12">
             <div class="brand_history_image text-center">
-              <img src="https://via.placeholder.com/600x232" class="w-100 ml-auto mr-auto"/>
+              <img src="<%- apx_brand.history_image %>" class="w-100 ml-auto mr-auto"/>
             </div>
           </div>
         </div>
+        <% } %>
       </div>
 
       <div id="sobre-o-produtor">
@@ -94,47 +102,14 @@ _.breadcrumbs = [{
         <div class="row">
           <div class="col-12">
             <div class="brand_specifications">
-              <div class="row align-items-start text-center">
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
-                <div class="col-md-3 col-6 item mb-3">
-                  <img src="https://via.placeholder.com/36x36"/>
-                  <strong>Título</strong>
-                  <span>Descrição</span>
-                </div>
+              <div class="row align-items-start justify-content-center text-center">
+                <% for (let item in apx_brand.props){ %>    
+                  <div class="col-md-3 col-6 item mb-3">
+                    <img src="<%- apx_brand.props[item].image %>"/>
+                    <strong><%- apx_brand.props[item].title %></strong>
+                    <span><%- apx_brand.props[item].description %></span>
+                  </div>              
+                <% } %>
               </div>
             </div>
           </div>
@@ -197,14 +172,16 @@ _.breadcrumbs = [{
       <div class="row">
         <div class="brand_about" id="enologo">
           <div class="brand_gallery" style="grid-template-columns: 50% 50%;">
-            <img src="https://via.placeholder.com/720x440"/>
-            <img src="https://via.placeholder.com/720x440"/>
-            <img src="https://via.placeholder.com/720x440"/>
-            <img src="https://via.placeholder.com/720x440"/>
+            <% let sliceBy = apx_brand.about_images.length % 2 == 0 ? apx_brand.about_images.length : apx_brand.about_images.length - 1 %>
+            <% for (let item in apx_brand.about_images.slice(0,sliceBy)){ %>                  
+              <span>
+                <img src="<%- apx_brand.about_images[item].image %>"/>              
+              </span> 
+            <% } %>
           </div>
           <div class="brand_about-content">
-            <h2 class="brand_title text-center mb-4">Sobre o enólogo</h2>
-            <p class="text-center">De família de vinicultores, Renzo Cotarella nasceu na Úmbria, em Monterubiaglio. Estudou agronomia, mas sua paixão pela produção de vinhos o fez seguir o caminho da enologia. Em 1981, foi contratado por Piero Antinori, patriarca da família, para trabalhar na renovação da produção vinícola da Castello della Sala, uma das propriedades da vinícola Antinori. A visão única de Renzo o tornou CEO e enólogo-chefe da Marchesi Antinori em 2005. Hoje, trabalha equilibrando tradição e inovação, buscando sempre ser ético e respeitoso com o terroir e elaborar vinhos saborosos e cheios de personalidade.</p>
+            <h2 class="brand_title text-center mb-4"><%- apx_brand.about_title || 'Sobre o enólogo'%></h2>
+            <p class="text-center"><%- apx_brand.about_text || ''%></p>
           </div>
         </div>
       </div>
