@@ -95,7 +95,7 @@ const hasMegamenu = header.desktop_megamenu
 </div>
 </div>
 
-<header id="a-header" class="py-4 px-4">
+<header id="a-header" class="pb-3 pt-2 px-0 px-md-4 py-md-4">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between">
       <div class="col">
@@ -104,7 +104,7 @@ const hasMegamenu = header.desktop_megamenu
             <img src="/img/menu.svg"/>
           </button>
           <% if (apx_header.links) { %>
-            <ul class="level_1 ml-md-4">
+            <ul class="level_1 ml-md-4 d-none d-md-block">
               <% apx_header.links.forEach(({ url, title, image, list })=> { %>
                 <li class="<%= list ? 'dropdown' : ''%>">
                   
@@ -157,7 +157,7 @@ const hasMegamenu = header.desktop_megamenu
       </div>
       <div class="col">
         <div class="row align-items-center justify-content-end">
-          <div class="col-auto">
+          <div class="col-auto d-none d-md-block">
             <div
               class="d-none d-lg-block collapse show"
               id="search-bar"
@@ -210,7 +210,7 @@ const hasMegamenu = header.desktop_megamenu
               <% } %>
             </div>
           </div>
-          <div class="col-auto ml-4">
+          <div class="col-auto ml-4 d-md-block d-none">
             <a 
             role="button"
             id="user-button"
@@ -244,6 +244,61 @@ const hasMegamenu = header.desktop_megamenu
           </div>
         </div>
       </div>
+      <div class="col-12 d-block d-md-none">
+        <div id="search-mobile" class="mt-2">
+          <div
+            class="d-none d-lg-block collapse show"
+            id="search-bar"
+          >
+            <form
+              class="header__search mt-2 mt-md-3 mt-lg-0"
+              id="search-form"
+              action="/search"
+              method="get"
+              autocomplete="off"
+            >
+              <button
+                type="submit"
+                class="header__search-btn"
+                aria-label="<%= _.dictionary('searchProducts') %>"
+              >
+                <img src="/img/search.svg"/>
+              </button>
+              <input
+                type="text"
+                name="term"
+                placeholder="Buscar vinhos..."
+                aria-label="<%= _.dictionary('searchProducts') %>"
+                class="header__search-input form-control"
+                id="search-input"
+                autocomplete="off"
+              >
+              
+              <div id="instant-search">
+                <!--
+                  `InstantSearch` should be open on input focus:
+                  https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+                -->
+              </div>
+            </form>
+
+            <% if (_.settings.domain) { %>
+              <script type="application/ld+json"><%-
+                JSON.stringify({
+                  '@context': 'http://schema.org',
+                  '@type': 'WebSite',
+                  url: `https://${_.settings.domain}/`,
+                  potentialAction: {
+                    '@type': 'SearchAction',
+                    target: `https://${_.settings.domain}/search?term={search_term_string}`,
+                    'query-input': 'required name=search_term_string'
+                  }
+                })
+              %></script>
+            <% } %>
+          </div>
+        </div>
+      </div>
     </div>    
   </div>
   <% 
@@ -255,9 +310,28 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
 
 <% if (categories && categories.length) { %>
 <div id="a-menu" class="p-4">
-  <div class="close-mobile d-block">
-    <button type="button" class="toggleMenu menu-trigger" onclick=""></button>          
-  </div>          
+  <div class="a-menu-header">
+    <div class="close-mobile d-block">
+      <button type="button" class="toggleMenu menu-trigger" onclick=""></button>          
+    </div>          
+    <a 
+      role="button"
+      id="user-button"
+      href="/app/#/account/"
+      title="<%= _.dictionary('myAccount') %>"
+      class="d-flex d-md-none"
+      >
+      <div>
+        <span>Olá <i>Visitante</i></span> 
+        <small>Faça <u>login</u> ou <u>cadastre-se</u></small>
+      </div>
+      <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.7166 5.84615C14.5193 8.51507 12.5025 10.6923 10.2884 10.6923C8.07438 10.6923 6.05405 8.51558 5.86032 5.84615C5.65905 3.06971 7.62151 1 10.2884 1C12.9554 1 14.9178 3.12019 14.7166 5.84615Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10.2882 13.9231C6.07955 13.9231 1.80799 16.3461 1.01753 20.9197C0.922233 21.471 1.22119 22 1.77413 22H18.8023C19.3557 22 19.6547 21.471 19.5594 20.9197C18.7685 16.3461 14.4969 13.9231 10.2882 13.9231Z" stroke="white" stroke-miterlimit="10"/>
+      </svg>
+    
+    </a>
+  </div>
   
   <nav class="px-md-5">
     <ul>
@@ -268,7 +342,18 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
           </a>    
           <% if (categoryParents[slug]) { %>
             <div class="expand-menu primary">
+              <div class="back-menu-button d-block d-md-none">
+                <button type="button">
+                  <svg width="6" height="18" viewBox="0 0 6 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.566987" y1="8.89172" x2="5.26763" y2="0.749973" stroke="white"/>
+                    <line y1="-0.5" x2="9.40128" y2="-0.5" transform="matrix(0.5 0.866025 0.866025 -0.5 1 8.85828)" stroke="white"/>
+                    </svg>
+
+                  Voltar
+                </button>
+              </div>
               <ul class="expand-menu-list primary row mx-0">
+                
               <% categoryParents[slug].forEach(subcategory => { %>
                 <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
                 <li class="<%- hasSubmenu ? 'has-child secondary' : ''%>" data-category="<%= subcategory.slug%>">
@@ -307,6 +392,16 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
               <% const hasSubmenu = Array.isArray(categoryParents[subcategory.slug]) %>
                 <% if (hasSubmenu) { %>
                   <div class="expand-menu secondary <%= subcategory.slug%>">
+                    <div class="back-menu-button d-block d-md-none">
+                      <button type="button">
+                        <svg width="6" height="18" viewBox="0 0 6 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line x1="0.566987" y1="8.89172" x2="5.26763" y2="0.749973" stroke="white"/>
+                          <line y1="-0.5" x2="9.40128" y2="-0.5" transform="matrix(0.5 0.866025 0.866025 -0.5 1 8.85828)" stroke="white"/>
+                          </svg>
+      
+                        Voltar
+                      </button>
+                    </div>
                     <ul class="expand-menu-list secondary row mx-0">
                       <% categoryParents[subcategory.slug].forEach(subcategory_ => { %>
                         <li>
@@ -403,7 +498,7 @@ const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`
         const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
         %>
         <div
-          class="d-lg-block col-12 col-lg<%= searchColSize %> collapse show"
+          class="d-lg-block col-12 col-lg<%= searchColSize %> collapse show order-md-first order-last"
           id="search-bar"
         >
           <form

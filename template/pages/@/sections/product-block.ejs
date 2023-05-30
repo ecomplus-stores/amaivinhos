@@ -338,8 +338,8 @@ try{
           <section id="apx_specialistReview" class="my-5">
             <h2 class="mb-3">Opinião da Especialista</h2>
             <div class="row align-items-center">
-              <div class="col-auto">
-                <img src="https://via.placeholder.com/310x273"/>
+              <div class="col-md-auto col-12">
+                <img src="https://via.placeholder.com/310x273" class="w-100"/>
               </div>
               <div class="col">
                 <h3 class="mb-3">Elaine de Oliveira
@@ -358,9 +358,6 @@ try{
       </div>      
     </section>
   </div>
-  <% 
-    console.log(brand)
-    %> 
       
     <%  if (brand) { 
       
@@ -369,7 +366,7 @@ try{
       const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
       %>
       <section
-        class="apx_product-list brand-related my-5"
+        class="apx_product-list brand-related my-md-5 my-3"
         data-num_col_sm="1"
         data-carrossel_sm="Não"
         data-num_col_md="2"
@@ -380,7 +377,7 @@ try{
         data-carrossel_arrows_sm="Sim"
         style="background:<%= brand.pictures && brand.pictures[0].url ? 'url('+ brand.pictures[0].url +')' : 'var(--red)'%>"
       >
-        <div class="container-small py-5">
+        <div class="container-small py-md-5 py-4 px-md-0 px-3">
           <div class="row align-items-center">
             <div class="col-12 col-md-4 content">
               <h2 class="mb-4"><%= brand.name ? brand.name : ''%></h2>

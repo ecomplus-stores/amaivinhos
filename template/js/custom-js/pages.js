@@ -25,7 +25,15 @@ window.slickBannersSlider = function () {
             centerMode: false,
             arrows:true,
             prevArrow: '<button type="button" class="apx_arrow prev">' + pArrow + '</button>',
-            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>'
+            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>',
+            responsive:[
+                {
+                    breakpoint: 990,
+                    settings:{
+                        arrows:false
+                    }
+                }
+            ]
         });
 
     });
@@ -40,7 +48,16 @@ window.blogSlide = function () {
             centerMode: false,
             arrows:true,
             prevArrow: '<button type="button" class="apx_arrow prev">' + pArrow + '</button>',
-            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>'
+            nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>',
+            responsive:[
+                {
+                    breakpoint:990,
+                    settings:{
+                        slidesToShow:1,
+                        
+                    }
+                }
+            ]
         });
 
     });
@@ -55,7 +72,13 @@ window.harmonizacoesSlider = function(){
       prevArrow : '<button type="button" class="apx_arrow prev">' + pArrow + '</button>',
       nextArrow: '<button type="button" class="apx_arrow next">' + nArrow + '</button>',
       arrows: true,
-      dots: false
+      dots: false,
+      responsive:[
+        {   
+            breakpoint:990,
+            settings:"unslick"
+        }
+      ]
         
     });
 };
@@ -131,6 +154,16 @@ $(document).ready(function(){
         $('.primary-open').removeClass('primary-open');
         $('.secondary-open').removeClass('secondary-open');
     });
+
+    $('.back-menu-button button').click(function(){
+        if($(this).closest('.secondary').length == 0){
+            $('.primary-open').removeClass('primary-open');
+            $('.first-selection-ready').removeClass('first-selection-ready');
+        }else{
+            $('.secondary-open').removeClass('secondary-open');
+            $('.first-selection-ready').removeClass('first-selection-ready');
+        }
+    })
 
     if($('#page-brands').length > 0){
         $('.brand_menu a').click(function(e) {
