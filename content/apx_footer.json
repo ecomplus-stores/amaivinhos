@@ -1,5 +1,5 @@
 {
-  "atendimento":"Segunda à Sexta, das 10h às 18h",
+  "atendimento": "Segunda à Sexta, das 10h às 18h",
   "links": [
     {
       "title": "Institucional",
@@ -36,8 +36,8 @@
         },
         {
           "item": {
-            "title": "Por que comprar na Bázico?",
-            "url": "/pages/por-que-comprar-na-bazico"
+            "title": "Por que comprar na Amai Vinhos?",
+            "url": "/pages/por-que-comprar-na-amai-vinhos"
           }
         },
         {
