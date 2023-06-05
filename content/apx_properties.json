@@ -2,50 +2,50 @@
   "props": [
     {
       "title": "País",
-      "image": "/img/uploads/1946763.png"
+      "image": "/img/uploads/sem-titulo-1-02.png"
     },
     {
-      "image": "/img/uploads/placeholder.png",
+      "image": "",
       "title": "Região"
     },
     {
       "title": "Produtor",
-      "image": "/img/uploads/5970090.png"
+      "image": "/img/uploads/sem-titulo-1-03.png"
     },
     {
       "title": "Tipo",
-      "image": "/img/uploads/5970065.png"
+      "image": "/img/uploads/sem-titulo-1-07.png"
     },
     {
-      "image": "/img/uploads/grape-1-.png",
+      "image": "/img/uploads/sem-titulo-1_prancheta-1-01.png",
       "title": "Uva"
     },
     {
       "title": "Volume",
-      "image": "/img/uploads/5970017.png"
+      "image": ""
     },
     {
       "title": "Teor alcóolico",
-      "image": "/img/uploads/8352807.png"
+      "image": "/img/uploads/sem-titulo-1-04.png"
     },
     {
       "title": "Temperatura de serviço",
-      "image": "/img/uploads/temperature-1-.png"
+      "image": "/img/uploads/sem-titulo-1-08.png"
     },
     {
       "title": "Safra",
-      "image": "/img/uploads/8524294.png"
+      "image": "/img/uploads/sem-titulo-1-06.png"
     },
     {
-      "image": "/img/uploads/5970127.png",
+      "image": "/img/uploads/sem-titulo-1-09.png",
       "title": "Potencial de guarda"
     },
     {
-      "image": "/img/uploads/wine.png",
+      "image": "",
       "title": "Visual"
     },
     {
-      "image": "/img/uploads/smell.png",
+      "image": "/img/uploads/sem-titulo-1_prancheta-1-11.png",
       "title": "Olfativo"
     },
     {
@@ -53,7 +53,7 @@
       "title": "Paladar"
     },
     {
-      "image": "/img/uploads/cork.png",
+      "image": "",
       "title": "Tipo de rolha"
     },
     {
@@ -61,8 +61,12 @@
       "title": "Amadurecimento"
     },
     {
-      "image": "/img/uploads/reward.png",
+      "image": "",
       "title": "Prêmios"
+    },
+    {
+      "title": "Harmonização",
+      "image": "/img/uploads/sem-titulo-1-10.png"
     }
   ]
 }
