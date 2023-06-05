@@ -33,16 +33,24 @@
       "image": "/img/uploads/temperature-1-.png"
     },
     {
-      "image": "/img/uploads/5970127.png",
-      "title": "Tempo de armazenamento"
+      "title": "Safra",
+      "image": "/img/uploads/8524294.png"
     },
     {
-      "image": "/img/uploads/taste.png",
-      "title": "Paladar"
+      "image": "/img/uploads/5970127.png",
+      "title": "Potencial de guarda"
     },
     {
       "image": "/img/uploads/wine.png",
       "title": "Visual"
+    },
+    {
+      "image": "/img/uploads/smell.png",
+      "title": "Olfativo"
+    },
+    {
+      "image": "/img/uploads/taste.png",
+      "title": "Paladar"
     },
     {
       "image": "/img/uploads/cork.png",
@@ -50,19 +58,11 @@
     },
     {
       "image": "/img/uploads/barrel.png",
-      "title": "Barrica"
+      "title": "Amadurecimento"
     },
     {
       "image": "/img/uploads/reward.png",
       "title": "Prêmios"
-    },
-    {
-      "image": "/img/uploads/smell.png",
-      "title": "Olfato"
-    },
-    {
-      "title": "Safra",
-      "image": "/img/uploads/8524294.png"
     }
   ]
 }
