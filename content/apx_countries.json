@@ -2,10 +2,15 @@
   "countries": [
     {
       "title": "Alemanhã",
-      "image": "/img/uploads/germany-flag-icon.png"
+      "image": "/img/uploads/alemanha-copia-copia.png"
     },
     {
-      "title": "Argentina"
+      "title": "Argentina",
+      "image": "/img/uploads/argentina-1-copia-copia.png"
+    },
+    {
+      "title": "África do sul",
+      "image": "/img/uploads/3909408.png"
     }
   ]
 }
