@@ -2,19 +2,47 @@
   "countries": [
     {
       "title": "África do sul",
-      "image": "/img/uploads/3909408.png"
+      "image": "/img/uploads/197562.png"
     },
     {
       "title": "Alemanhã",
-      "image": "/img/uploads/alemanha-copia-copia.png"
+      "image": "/img/uploads/197571.png"
     },
     {
       "title": "Argentina",
-      "image": "/img/uploads/argentina-1-copia-copia.png"
+      "image": "/img/uploads/197573.png"
     },
     {
       "title": "Áustria",
-      "image": "/img/uploads/323321.png"
+      "image": "/img/uploads/197447.png"
+    },
+    {
+      "title": "Brasil",
+      "image": "/img/uploads/197386.png"
+    },
+    {
+      "title": "Chile",
+      "image": "/img/uploads/197586.png"
+    },
+    {
+      "title": "Eslovênia",
+      "image": "/img/uploads/4855726.png"
+    },
+    {
+      "title": "Espanha",
+      "image": "/img/uploads/197593.png"
+    },
+    {
+      "title": "França",
+      "image": "/img/uploads/197560.png"
+    },
+    {
+      "title": "Grécia",
+      "image": "/img/uploads/4628677.png"
+    },
+    {
+      "title": "Itália",
+      "image": "/img/uploads/197626.png"
     }
   ]
 }
