@@ -153,6 +153,7 @@
           "description_color": "#ffffff",
           "animate": "fadeIn",
           "img": "https://via.placeholder.com/252x330",
+          "mobile_img": "/img/uploads/ave.png",
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
