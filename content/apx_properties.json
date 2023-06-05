@@ -25,6 +25,14 @@
       "image": "/img/uploads/5970017.png"
     },
     {
+      "title": "Teor alcóolico",
+      "image": "/img/uploads/8352807.png"
+    },
+    {
+      "title": "Temperatura de serviço",
+      "image": "/img/uploads/temperature-1-.png"
+    },
+    {
       "image": "/img/uploads/5970127.png",
       "title": "Tempo de armazenamento"
     },
@@ -49,16 +57,8 @@
       "title": "Prêmios"
     },
     {
-      "title": "Temperatura",
-      "image": "/img/uploads/temperature-1-.png"
-    },
-    {
       "image": "/img/uploads/smell.png",
       "title": "Olfato"
-    },
-    {
-      "title": "Teor alcóolico",
-      "image": "/img/uploads/8352807.png"
     }
   ]
 }
