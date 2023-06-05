@@ -3,6 +3,54 @@
     {
       "image": "/img/uploads/grape-1-.png",
       "title": "Uvas"
+    },
+    {
+      "title": "Produtor",
+      "image": "/img/uploads/5970090.png"
+    },
+    {
+      "image": "/img/uploads/5970127.png",
+      "title": "Tempo de armazenamento"
+    },
+    {
+      "image": "/img/uploads/placeholder.png",
+      "title": "Região"
+    },
+    {
+      "image": "/img/uploads/taste.png",
+      "title": "Paladar"
+    },
+    {
+      "image": "/img/uploads/wine.png",
+      "title": "Visual"
+    },
+    {
+      "image": "/img/uploads/cork.png",
+      "title": "Tipo de rolha"
+    },
+    {
+      "image": "/img/uploads/barrel.png",
+      "title": "Barrica"
+    },
+    {
+      "image": "/img/uploads/reward.png",
+      "title": "Prêmios"
+    },
+    {
+      "title": "Temperatura",
+      "image": "/img/uploads/temperature-1-.png"
+    },
+    {
+      "title": "Tipo",
+      "image": "/img/uploads/5970065.png"
+    },
+    {
+      "image": "/img/uploads/smell.png",
+      "title": "Olfato"
+    },
+    {
+      "title": "País",
+      "image": "/img/uploads/1946763.png"
     }
   ]
 }
