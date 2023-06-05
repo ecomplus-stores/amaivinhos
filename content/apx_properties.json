@@ -21,6 +21,10 @@
       "title": "Uva"
     },
     {
+      "title": "Volume",
+      "image": "/img/uploads/5970017.png"
+    },
+    {
       "image": "/img/uploads/5970127.png",
       "title": "Tempo de armazenamento"
     },
@@ -51,6 +55,10 @@
     {
       "image": "/img/uploads/smell.png",
       "title": "Olfato"
+    },
+    {
+      "title": "Teor alcóolico",
+      "image": "/img/uploads/8352807.png"
     }
   ]
 }
