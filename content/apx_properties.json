@@ -1,20 +1,28 @@
 {
   "props": [
     {
-      "image": "/img/uploads/grape-1-.png",
-      "title": "Uvas"
+      "title": "País",
+      "image": "/img/uploads/1946763.png"
+    },
+    {
+      "image": "/img/uploads/placeholder.png",
+      "title": "Região"
     },
     {
       "title": "Produtor",
       "image": "/img/uploads/5970090.png"
     },
     {
-      "image": "/img/uploads/5970127.png",
-      "title": "Tempo de armazenamento"
+      "title": "Tipo",
+      "image": "/img/uploads/5970065.png"
     },
     {
-      "image": "/img/uploads/placeholder.png",
-      "title": "Região"
+      "image": "/img/uploads/grape-1-.png",
+      "title": "Uva"
+    },
+    {
+      "image": "/img/uploads/5970127.png",
+      "title": "Tempo de armazenamento"
     },
     {
       "image": "/img/uploads/taste.png",
@@ -41,16 +49,8 @@
       "image": "/img/uploads/temperature-1-.png"
     },
     {
-      "title": "Tipo",
-      "image": "/img/uploads/5970065.png"
-    },
-    {
       "image": "/img/uploads/smell.png",
       "title": "Olfato"
-    },
-    {
-      "title": "País",
-      "image": "/img/uploads/1946763.png"
     }
   ]
 }
