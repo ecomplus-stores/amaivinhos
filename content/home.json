@@ -135,8 +135,8 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "img": "https://via.placeholder.com/252x330",
-          "mobile_img": "/img/uploads/sem-titulo-1.png",
+          "img": "/img/uploads/sem-titulo-1.png",
+          "mobile_img": "",
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
@@ -152,8 +152,8 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "img": "https://via.placeholder.com/252x330",
-          "mobile_img": "/img/uploads/ave.png",
+          "img": "/img/uploads/ave.png",
+          "mobile_img": "",
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
@@ -169,7 +169,8 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "img": "https://via.placeholder.com/252x330",
+          "img": "/img/uploads/massa.png",
+          "mobile_img": "",
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
@@ -185,7 +186,8 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "img": "https://via.placeholder.com/252x330",
+          "img": "/img/uploads/peixe.png",
+          "mobile_img": "",
           "content_order": "inside_image",
           "alt": "",
           "content_position": "center_center",
