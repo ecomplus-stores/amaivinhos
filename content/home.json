@@ -65,7 +65,7 @@
         {
           "description_color": "#000000",
           "animate": "fadeInTopRight",
-          "img": "https://via.placeholder.com/782x300",
+          "img": "/img/uploads/prancheta-1.png",
           "content_order": "after_image",
           "alt": "",
           "content_position": "center_left",
@@ -81,7 +81,7 @@
         {
           "description_color": "#000000",
           "animate": "fadeInTopRight",
-          "img": "https://via.placeholder.com/782x300",
+          "img": "/img/uploads/prancheta-1-1.png",
           "content_order": "after_image",
           "alt": "",
           "content_position": "center_left",
