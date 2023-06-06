@@ -186,7 +186,7 @@
         {
           "description_color": "#ffffff",
           "animate": "fadeIn",
-          "img": "/img/uploads/peixe.png",
+          "img": "/img/uploads/sea-food.png",
           "mobile_img": "",
           "content_order": "inside_image",
           "alt": "",
@@ -195,7 +195,7 @@
           "btn_background": "#AE0533",
           "btn_text_color": "#ffffff",
           "mask_opacity": 0,
-          "title": "Peixes",
+          "title": "Peixes e frutos do mar",
           "link": "/",
           "title_color": "#fff",
           "description": ""
