@@ -2,35 +2,35 @@
   "props": [
     {
       "title": "País",
-      "image": "/img/uploads/sem-titulo-1-02.png"
+      "image": "/img/uploads/prancheta-2.png"
     },
     {
-      "image": "",
+      "image": "/img/uploads/prancheta-1_1.png",
       "title": "Região"
     },
     {
       "title": "Produtor",
-      "image": "/img/uploads/sem-titulo-1-03.png"
+      "image": "/img/uploads/prancheta-3.png"
     },
     {
       "title": "Tipo",
-      "image": "/img/uploads/sem-titulo-1-07.png"
+      "image": "/img/uploads/prancheta-7.png"
     },
     {
-      "image": "/img/uploads/sem-titulo-1_prancheta-1-01.png",
+      "image": "/img/uploads/prancheta-1.png",
       "title": "Uva"
     },
     {
       "title": "Volume",
-      "image": ""
+      "image": "/img/uploads/prancheta-4.png"
     },
     {
       "title": "Teor alcóolico",
-      "image": "/img/uploads/sem-titulo-1-04.png"
+      "image": "/img/uploads/prancheta-4.png"
     },
     {
       "title": "Temperatura de serviço",
-      "image": "/img/uploads/sem-titulo-1-08.png"
+      "image": "/img/uploads/prancheta-8.png"
     },
     {
       "title": "Safra",
