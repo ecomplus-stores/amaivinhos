@@ -4,24 +4,12 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 3000,
+      "autoplay": 0,
       "slides": [
         {
           "animate": "backInUp",
           "start": "2023-05-11T11:00:39.563Z",
           "img": "/img/uploads/mariovascon_landingpage_ux_ui_paper_quilling_of_wines_valentine_e4ee8321-0394-4690-b034-d1a76128ba89.png",
-          "mobile_img": "https://via.placeholder.com/750x1000",
-          "content_order": "inside_image",
-          "alt": "",
-          "content_position": "top_center",
-          "mask_opacity": 0,
-          "link": "",
-          "end": "2023-12-21T02:59:39.600Z"
-        },
-        {
-          "animate": "backInUp",
-          "start": "2023-05-11T11:00:39.563Z",
-          "img": "/img/uploads/mariovascon_landingpage_ux_ui_paper_quilling_of_wines_valentine_e2a4502b-f61b-442f-8167-a80c47736e20.png",
           "mobile_img": "https://via.placeholder.com/750x1000",
           "content_order": "inside_image",
           "alt": "",
