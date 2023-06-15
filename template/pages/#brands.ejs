@@ -74,15 +74,15 @@ _.breadcrumbs = [{
           </div>
         <% } %>
 
-        <% if(apx_brand.history || _.state.body_html){%>
+        <% if(apx_brand && apx_brand.history || _.state.body_html){%>
           <div class="row">
             <div class="col-12">
-              <div class="brand_html text-center"><%- apx_brand.history || _.state.body_html %></div>
+              <div class="brand_html text-center"><%- apx_brand && apx_brand.history || _.state.body_html %></div>
             </div>
           </div>
         <% } %>
       
-        <% if (apx_brand.history_image) {%>
+        <% if (apx_brand && apx_brand.history_image) {%>
         <div class="row my-5">
           <div class="col-12">
             <div class="brand_history_image text-center">
@@ -92,7 +92,7 @@ _.breadcrumbs = [{
         </div>
         <% } %>
       </div>
-
+      <%  if(apx_brand && apx_brand.props){ %>
       <div id="sobre-o-produtor">
         <div class="row">
           <div class="col-12">
@@ -103,7 +103,7 @@ _.breadcrumbs = [{
           <div class="col-12">
             <div class="brand_specifications">
               <div class="row align-items-start justify-content-center text-center">
-                <% for (let item in apx_brand.props){ %>    
+                <%for (let item in apx_brand.props){ %>    
                   <div class="col-md-3 col-6 item mb-3">
                     <img src="<%- apx_brand.props[item].image %>"/>
                     <strong><%- apx_brand.props[item].title %></strong>
@@ -114,7 +114,8 @@ _.breadcrumbs = [{
             </div>
           </div>
         </div>     
-      </div>       
+      </div>  
+      <% } %>     
     </div>
 
     <% 
@@ -152,22 +153,13 @@ _.breadcrumbs = [{
                       _, opt: { item: items[i] }
                     }) %>
                   </div>
-                  <div class="col-md-4 col-sm-6 px-md-1 px-1 my-4">
-                    <%- await include('@/sections/inc/product-item', {
-                      _, opt: { item: items[i] }
-                    }) %>
-                  </div>
-                  <div class="col-md-4 col-sm-6 px-md-1 px-1 my-4">
-                    <%- await include('@/sections/inc/product-item', {
-                      _, opt: { item: items[i] }
-                    }) %>
-                  </div>
+                  
                 <% } %>          
             </div>
         </div>
         </section>
       <% } %>
-      
+    <%  if(apx_brand && apx_brand.about_title && apx_brand.about_images && apx_brand.about_text){ %>  
     <div class="container-fluid">
       <div class="row">
         <div class="brand_about" id="enologo">
@@ -186,6 +178,7 @@ _.breadcrumbs = [{
         </div>
       </div>
     </div>
+    <% } %>
     <div id="produtos">
     <%- await include('@/layout/sections') %>
     </div>

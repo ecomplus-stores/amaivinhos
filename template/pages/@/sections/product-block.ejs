@@ -333,8 +333,7 @@ try{
             </div>
           </section>
         <% } %>
-
-        <% if (apx_productSpecialistReview.reviews.find(el => el.sku == _.state.specifications.sku)){ %>
+        <% if (_.state.specifications && _.state.specifications.sku && apx_productSpecialistReview.reviews.find(el => el.sku == _.state.specifications.sku)){ %>
           <section id="apx_specialistReview" class="my-5">
             <h2 class="mb-3">Opinião da Especialista</h2>
             <div class="row align-items-center">
@@ -381,7 +380,8 @@ try{
           <div class="row align-items-center">
             <div class="col-12 col-md-4 content">
               <h2 class="mb-4"><%= brand.name ? brand.name : ''%></h2>
-              <div><%- brand.body_html ? brand.body_html : ''%></div>
+              <div><%- brand.short_description ? brand.short_description : ''%></div>
+              <a class="mt-5 px-4" href="<%- brand.slug ? brand.slug : ''%>">Ver Mais</a>
             </div>  
             <div class="col-12 col-md-8">
               <div class="row list mx-0">        

@@ -282,7 +282,13 @@ small{
             a{
                 border: 1px solid var(--red);
                 border-radius: 30px;
-                padding:.4rem .8rem
+                padding:.4rem .8rem;
+                transition:all .3s;
+            }
+            a:hover{
+                background: var(--red);
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
@@ -621,9 +627,21 @@ small{
         .product-card .apx_origin{max-width: 60%;margin-left: auto;margin-right: auto;}
 
         .slick-current + .slick-slide{
-            border-left:1px solid #f2f2f2;
-            border-right:1px solid #f2f2f2;
+            position: relative;
+            // border-left:1px solid #f2f2f2;
+            // border-right:1px solid #f2f2f2;
         }
+        .slick-current + .slick-slide:after,
+        .slick-current + .slick-slide:before{
+            content:"";
+            width:1px;
+            height: 100%;
+            position: absolute;
+            background: #f2f2f2;
+            top: 0;
+            left: 0;
+        }
+        .slick-current + .slick-slide:after{left: auto;right: 0;}
     }
 }
 
@@ -873,7 +891,18 @@ h1.product__name{
     .content{
         h2{font-family: "Gilda Display";font-size: var(--section_title);}
         h2,
+        div,
         div *{color: #fff;font-weight: 300;line-height: 25px;}
+        a{
+            background: var(--red);
+            color: #fff;
+            display: block;
+            font-size: var(--f_small);
+            letter-spacing: 2px;
+            line-height: 34px;
+            text-transform: uppercase;
+            width: fit-content;
+        }
     }
     .product-item{
         .product-card{
@@ -1470,3 +1499,6 @@ h1.product__name{
     }
     #a-menu .has-child.primary-open>a:after, #a-menu .has-child.secondary-open>a:after{display: none;}
 }
+
+.slick-track:before,
+.slick-track:after{display: none;}
