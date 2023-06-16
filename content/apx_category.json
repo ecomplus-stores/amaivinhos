@@ -1,7 +1,7 @@
 {
   "num_col_md": "4",
   "num_col_sm": "2",
-  "padding": "px-md-3",
-  "padding_sm": "px-3",
+  "padding": "px-md-5",
+  "padding_sm": "px-2",
   "container": "container-fluid"
 }

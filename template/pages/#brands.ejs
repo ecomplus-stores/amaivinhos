@@ -121,7 +121,7 @@ _.breadcrumbs = [{
     <% 
         const search = new _.EcomSearch()
         await search.setBrandIds([_.state._id]).fetch(true)
-        const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+        const items = search.getItems()
 
         if(items.length){
       %> 
@@ -129,9 +129,9 @@ _.breadcrumbs = [{
         <section
           class="apx_product-list my-5"
           data-num_col_sm="1"
-          data-carrossel_sm="Sim"
+          data-carrossel_sm="<%= items.length > 2 ? 'Sim' : 'Não'%>"
           data-num_col_md="3"
-          data-carrossel_md="Sim"
+          data-carrossel_md="<%= items.length > 3 ? 'Sim' : 'Não'%>"
           data-carrossel_dots_md="Sim"
           data-carrossel_arrows_md="Sim"
           data-carrossel_dots_sm="Sim"
@@ -152,8 +152,7 @@ _.breadcrumbs = [{
                     <%- await include('@/sections/inc/product-item', {
                       _, opt: { item: items[i] }
                     }) %>
-                  </div>
-                  
+                  </div>                  
                 <% } %>          
             </div>
         </div>
@@ -180,6 +179,13 @@ _.breadcrumbs = [{
     </div>
     <% } %>
     <div id="produtos">
+      <div class="container-fluid px-1 px-md-5">
+        <div class="row">
+          <div class="col-12">
+            <h2  class="brand_title text-center mb-4">Catálogo de Produtos</h2>
+          </div>
+        </div>
+      </div>
     <%- await include('@/layout/sections') %>
     </div>
     <%- await include('@/layout/footer') %>

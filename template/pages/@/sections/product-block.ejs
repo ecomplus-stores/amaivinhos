@@ -358,18 +358,21 @@ try{
     </section>
   </div>
       
-    <%  if (brand) { 
+    <% console.log(brand)
+      if (brand) { 
       
       const search = new _.EcomSearch()
       await search.setBrandIds([brand._id]).fetch(true)
-      const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+      //const items = search.getItems().filter(item => _.ecomUtils.inStock(item))
+      const items = search.getItems().filter(item => item.sku != _.state.sku)
       %>
+      
       <section
         class="apx_product-list brand-related my-md-5 my-3"
-        data-num_col_sm="1"
-        data-carrossel_sm="Não"
+        data-num_col_sm="2"
+        data-carrossel_sm="Sim"
         data-num_col_md="2"
-        data-carrossel_md="Não"
+        data-carrossel_md="Sim"
         data-carrossel_dots_md="Não"
         data-carrossel_arrows_md="Sim"
         data-carrossel_dots_sm="Não"
@@ -383,7 +386,7 @@ try{
               <div><%- brand.short_description ? brand.short_description : ''%></div>
               <a class="mt-5 px-4" href="<%- brand.slug ? brand.slug : ''%>">Ver Mais</a>
             </div>  
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-7 offset-md-1">
               <div class="row list mx-0">        
                 <% for (let i = 0; i < items.length; i++) { %>
                   <div class="col-md-6 col-12 my-4">

@@ -1,0 +1,38 @@
+<% if (Array.isArray(opt.banners) && opt.banners.length) { %>
+    <% const colSize = Math.ceil(12 / opt.banners.length) %>
+    <div class="banners-grid my-3 my-md-4 my-lg-5 <%= opt.classe_css %>">
+      <div class="<%= opt.container %> <%= opt.padding %>">
+        <%
+            if(opt.title){
+                %>
+                    <div class="apx_section-title text-center mb-4">
+                    <%
+                    if(opt.list != "description_last"){
+                        %>
+                        <small class="text-uppercase"><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                    <%
+                    if(opt.list == "description_last"){
+                        %>
+                        <small class="text-uppercase"><%- opt.description %></small>
+                        <%
+                    }
+                    %>
+                    </div>
+                <%
+            }
+        %>
+        <div class="row mx-0">
+          <% for (let i = 0; i < opt.banners.length; i++) { %>
+            <div class="col-12 col-lg-<%= colSize %>  <%= opt.padding %> mb-3 mb-lg-0">
+              <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  <% } %>
+  

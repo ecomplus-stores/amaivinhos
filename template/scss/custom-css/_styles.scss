@@ -376,7 +376,7 @@ small{
                 margin-top: calc(50px + 2rem);                
                 transition: all .3s ease-in-out;
                 font-family:'Gilda Display';
-                font-size: var(--section_title);
+                font-size: var(--h4);
                 font-weight: normal;
             }
             h3:after{
@@ -404,7 +404,7 @@ small{
         height:100%;
         width: calc(100% - 10px);
         position: absolute;
-        opacity: 0;
+        opacity: 0.3;
         transition: all .3s ease-in-out;
     }
     .apx_banner:hover:before{
@@ -624,7 +624,8 @@ small{
         .product-card__buy{margin-left:auto;margin-right:auto}
         .product-card__prices{gap:5px}
 
-        .product-card .apx_origin{max-width: 60%;margin-left: auto;margin-right: auto;}
+        .product-card .apx_origin{max-width: 60%;margin-left: auto;margin-right: auto;justify-content:center}
+        
 
         .slick-current + .slick-slide{
             position: relative;
@@ -637,9 +638,9 @@ small{
             width:1px;
             height: 100%;
             position: absolute;
-            background: #f2f2f2;
             top: 0;
             left: 0;
+            border-right:1px solid #f2f2f2;
         }
         .slick-current + .slick-slide:after{left: auto;right: 0;}
     }
@@ -887,7 +888,13 @@ h1.product__name{
 .apx_product-list.brand-related{
     position: relative;
     background-size: cover!important;
-
+    
+    .apx_arrow svg{filter: invert(1);}
+    .slick-slide{
+        padding: 0;
+        border-radius:0;
+    }
+    
     .content{
         h2{font-family: "Gilda Display";font-size: var(--section_title);}
         h2,
@@ -905,7 +912,13 @@ h1.product__name{
         }
     }
     .product-item{
+        
         .product-card{
+            margin-left:5px;
+            margin-right:5px;
+            padding: 2rem;
+            border-radius:0;
+            background:#fff;
             .product-card__pictures{border:0}
             section{background:#fff}
             *{text-align: center;justify-content: center;}
@@ -1502,3 +1515,27 @@ h1.product__name{
 
 .slick-track:before,
 .slick-track:after{display: none;}
+
+.product-card--inactive, .product-card--inactive img{opacity: 1!important;}
+
+.product__out-of-stock, .product__unavailable, .product__without-price{
+    background: #848484;
+    border-color: #848484;
+    border-radius: 0;
+    color: #fff;
+    min-width: 310px;
+    line-height: 47px;
+    width: fit-content;
+    text-align: center;
+}
+
+.brand-retail{
+    .retail-grid{margin-top:0}
+}
+
+.container_90{
+    width:100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}

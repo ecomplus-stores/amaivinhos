@@ -95,6 +95,7 @@ const bannerFields = [
     name: 'description',
     widget: 'string'
   },
+  
   {
     label: 'Cor da descrição',
     required: false,
@@ -263,146 +264,146 @@ export default options => {
         }
       ]
     },
-    {
-      label: '[ALPIX] - Depoimentos',
-      name: 'apx_testimonials',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        },
-        {
-          label: 'Depoimentos',
-          name: 'testimonials',
-          widget: 'list',
-          required:false,
-          fields: [
-            {
-              label: 'Depoimento',
-              name: 'testimonial',
-              widget: 'object',
-              required:false,
-              fields: [
-                {
-                  label: 'Nome do Cliente',
-                  name: 'name',
-                  widget: 'string'          
-                },
-                {
-                  label: 'Depoimento',
-                  name: 'text',
-                  widget: 'string'          
-                },
-                {
-                  label: 'Foto do Cliente',
-                  name: 'image',
-                  widget: 'image'          
-                },                
-              ]
-            },          
-          ]
-        },        
-      ]
-    },
-    {
-      label: '[ALPIX] - FAQ',
-      name: 'apx_faq',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        },
-        {
-          label: 'Posição da descrição',
-          required: false,
-          name: 'list',
-          widget: 'select',
-          options: ["description_first","description_last"]
-        },        
-        {
-          label: 'Perguntas',
-          name: 'questions',
-          widget: 'list',
-          required:false,
-          fields: [
-            {
-              label: 'Pergunta',
-              name: 'question',
-              widget: 'object',
-              required:false,
-              fields: [
-                {
-                  label: 'Pergunta',
-                  name: 'title',
-                  widget: 'string'          
-                },
-                {
-                  label: 'Resposta',
-                  name: 'response',
-                  widget: 'string'          
-                }              
-              ]
-            },          
-          ]
-        },        
-      ]
-    },
-    {
-      label: '[ALPIX] - Newsletter',
-      name: 'apx_newsletter',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        },
-        {
-          label: 'Posição da descrição',
-          required: false,
-          name: 'list',
-          widget: 'select',
-          options: ["description_first","description_last"]
-        },        
-        {
-          label: 'Texto do botão',
-          required: false,
-          name: 'btn_text',
-          widget: 'text'
-        },  
-        {
-          label: 'Placeholder do campo',
-          required: false,
-          name: 'input_placeholder',
-          widget: 'text'
-        }  
-      ]
-    },
+    // {
+    //   label: '[ALPIX] - Depoimentos',
+    //   name: 'apx_testimonials',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     },
+    //     {
+    //       label: 'Depoimentos',
+    //       name: 'testimonials',
+    //       widget: 'list',
+    //       required:false,
+    //       fields: [
+    //         {
+    //           label: 'Depoimento',
+    //           name: 'testimonial',
+    //           widget: 'object',
+    //           required:false,
+    //           fields: [
+    //             {
+    //               label: 'Nome do Cliente',
+    //               name: 'name',
+    //               widget: 'string'          
+    //             },
+    //             {
+    //               label: 'Depoimento',
+    //               name: 'text',
+    //               widget: 'string'          
+    //             },
+    //             {
+    //               label: 'Foto do Cliente',
+    //               name: 'image',
+    //               widget: 'image'          
+    //             },                
+    //           ]
+    //         },          
+    //       ]
+    //     },        
+    //   ]
+    // },
+    // {
+    //   label: '[ALPIX] - FAQ',
+    //   name: 'apx_faq',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     },
+    //     {
+    //       label: 'Posição da descrição',
+    //       required: false,
+    //       name: 'list',
+    //       widget: 'select',
+    //       options: ["description_first","description_last"]
+    //     },        
+    //     {
+    //       label: 'Perguntas',
+    //       name: 'questions',
+    //       widget: 'list',
+    //       required:false,
+    //       fields: [
+    //         {
+    //           label: 'Pergunta',
+    //           name: 'question',
+    //           widget: 'object',
+    //           required:false,
+    //           fields: [
+    //             {
+    //               label: 'Pergunta',
+    //               name: 'title',
+    //               widget: 'string'          
+    //             },
+    //             {
+    //               label: 'Resposta',
+    //               name: 'response',
+    //               widget: 'string'          
+    //             }              
+    //           ]
+    //         },          
+    //       ]
+    //     },        
+    //   ]
+    // },
+    // {
+    //   label: '[ALPIX] - Newsletter',
+    //   name: 'apx_newsletter',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     },
+    //     {
+    //       label: 'Posição da descrição',
+    //       required: false,
+    //       name: 'list',
+    //       widget: 'select',
+    //       options: ["description_first","description_last"]
+    //     },        
+    //     {
+    //       label: 'Texto do botão',
+    //       required: false,
+    //       name: 'btn_text',
+    //       widget: 'text'
+    //     },  
+    //     {
+    //       label: 'Placeholder do campo',
+    //       required: false,
+    //       name: 'input_placeholder',
+    //       widget: 'text'
+    //     }  
+    //   ]
+    // },
     {
       label: '[ALPIX] - Lista de Produtos',
       name: 'apx_productList_A',
@@ -540,76 +541,200 @@ export default options => {
         }
       ]
     },
+
     {
-      label: '[ALPIX] - HTML por Categoria (Apenas para Produto)',
-      name: 'apx_blockPerCategory',
-      widget: 'object',
+      name: "apx_itemSection",
+      label: "[ALPIX] - Sessão de Itens",
       fields: [
         {
-          label: 'Título (Apenas identificação)',
+          label: 'Título',
           required: false,
           name: 'title',
           widget: 'string'
         },
         {
-          label: 'Gatilho - URL da Categoria (SLUG)',
+          label: 'Descrição',
           required: false,
-          name: 'slug',
+          name: 'description',
+          widget: 'text'
+        },
+        {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },
+        {
+          label: "Imagem de Fundo",
+          name: "background_image",
+          widget: "image",
+          required:false
+        },  
+        {
+          label: 'Cor do título',
+          required: false,
+          name: 'title_color',
+          widget: 'color'
+        },
+        {
+          label: 'Cor da descrição',
+          required: false,
+          name: 'description_color',
+          widget: 'color'
+        }, 
+        {
+          label: 'Cor de fundo',
+          required: false,
+          name: 'background_color',
+          widget: 'color'
+        },
+        {
+          label: 'Texto do Botão',
+          required: false,
+          name: 'btn_text',
           widget: 'string'
         },
         {
-          label: 'Lista de Conteúdo',
-          name: 'list',
-          widget: 'list',
+          label: 'Link do Botão',
+          required: false,
+          name: 'btn_link',
+          widget: 'string'
+        },
+        {
+          label: 'Cor do Botão',
+          required: false,
+          name: 'btn_color',
+          widget: 'color'
+        }, 
+        {
+          label: 'Cor de fundo do Botão',
+          required: false,
+          name: 'btn_background_color',
+          widget: 'color'
+        },
+        {
+          label: 'Classe CSS',
+          required: false,
+          name: 'custom_class',
+          widget: 'string'
+        },
+        {
+          label: "Lista de Itens",
+          name: "list",
+          widget: "list",
           required:false,
           fields: [
             {
-              label: 'Conteúdo',
-              name: 'content',
-              widget: 'object',
-              required:false,
-              fields: [
-                {
-                  label: 'Título',
-                  name: 'title',
-                  widget: 'string',
-                  required:false,
-                },
-                {
-                  label: 'Subtítulo',
-                  name: 'subtitle',
-                  widget: 'string',
-                  required:false,          
-                },
-                {
-                  label: 'Posicionamento da Imagem',
-                  name:"image_position",
-                  widget: 'select',
-                  options: ["first","last"]        
-                },
-                {
-                  label: 'Alinhamento do Texto',
-                  widget: 'select',
-                  name:"text_align",
-                  options: ["left","right","justify","center"]        
-                },
-                {
-                  label: 'Texto',
-                  name: 'body',
-                  widget: 'markdown'          
-                },
-                {
-                  label: 'Imagem',
-                  name: 'image',
-                  widget: 'image',
-                  required:false,          
-                },                
-              ]
-            },          
+              label: "Ícone / Imagem",
+              name: "image",
+              widget: "image",
+              required:false
+            },
+            {
+              label: "Título",
+              name: "title",
+              widget: "string",
+              required:true      
+            }, 
+            {
+              label: "Conteúdo",
+              name: "description",
+              widget: "string",
+              required:false        
+            }             
+              
           ]
-        },        
+        }            
       ]
-    }
+    },
+
+    {
+      name: "apx_imageSection",
+      label: "[ALPIX] - Imagem com Texto",
+      fields: [
+        {
+          label: 'Título',
+          required: false,
+          name: 'title',
+          widget: 'string'
+        },
+        {
+          label: 'Descrição',
+          required: false,
+          name: 'description',
+          widget: 'text'
+        },
+        {
+          label: 'Conteúdo',
+          required: false,
+          name: 'text',
+          widget: 'markdown'
+        }, 
+        {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },
+        {
+          label: "Imagem em Destaque",
+          name: "image",
+          widget: "image",
+          required:false
+        },  
+        {
+          label: 'Cor do título / conteúdo',
+          required: false,
+          name: 'title_color',
+          widget: 'color'
+        },
+        {
+          label: 'Cor da descrição',
+          required: false,
+          name: 'description_color',
+          widget: 'color'
+        }, 
+        {
+          label: 'Cor de fundo',
+          required: false,
+          name: 'background_color',
+          widget: 'color'
+        },
+        {
+          label: 'Texto do Botão',
+          required: false,
+          name: 'btn_text',
+          widget: 'string'
+        },
+        {
+          label: 'Link do Botão',
+          required: false,
+          name: 'btn_link',
+          widget: 'string'
+        },
+        {
+          label: 'Cor do Botão',
+          required: false,
+          name: 'btn_color',
+          widget: 'color'
+        }, 
+        {
+          label: 'Cor de fundo do Botão',
+          required: false,
+          name: 'btn_background_color',
+          widget: 'color'
+        },
+        {
+          label: 'Classe CSS',
+          required: false,
+          name: 'custom_class',
+          widget: 'string'
+        }                 
+      ]
+    },
+    
     // {
     //   label: '[ALPIX] - Feed Instagram',
     //   name: 'apx_instafeed',
