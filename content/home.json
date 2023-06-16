@@ -228,6 +228,13 @@
     {
       "description_color": "#ffffff",
       "btn_color": "#ffffff",
+      "items": [
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 1",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        }
+      ],
       "background_image": "/img/uploads/group-123-1-.png",
       "btn_text": "Participar do Clube",
       "btn_background_color": "#01d6ca",
