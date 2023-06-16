@@ -1,19 +1,25 @@
-<% if (Array.isArray(opt.banners) && opt.banners.length) { %>
-    <% const colSize = Math.ceil(12 / opt.banners.length) %>
-    <div class="banners-grid my-3 my-md-4 my-lg-5 <%= opt.classe_css %>">
-      <div class="<%= opt.container %> <%= opt.padding %>">
-        <%
+<div class="container my-md-5 my-3 py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-11">
+      <div class="row align-items-center">
+        <% if(opt.image){ %>        
+          <div class="col-md-5 mb-md-0 mb-4">
+            <img src="<%- opt.image %>" class="w-100"/>
+          </div>  
+        <% } %>        
+        <div class="col-md-6 offset-md-1">
+          <%
             if(opt.title){
                 %>
-                    <div class="apx_section-title text-center mb-4">
+                    <div class="apx_section-title mb-3">
                     <%
                     if(opt.list != "description_last"){
                         %>
-                        <small class="text-uppercase"><%- opt.description %></small>
+                        <small class="text-uppercase" style="color:<%- opt.description_color %>"><%- opt.description %></small>
                         <%
                     }
                     %>
-                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                        <h2 class="text-bold text-uppercase" style="color:<%- opt.title_color %>"><%- opt.title %></h2>
                     <%
                     if(opt.list == "description_last"){
                         %>
@@ -24,15 +30,56 @@
                     </div>
                 <%
             }
-        %>
-        <div class="row mx-0">
-          <% for (let i = 0; i < opt.banners.length; i++) { %>
-            <div class="col-12 col-lg-<%= colSize %>  <%= opt.padding %> mb-3 mb-lg-0">
-              <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>
-            </div>
-          <% } %>
+
+            if(opt.text){
+              const markdown = (typeof opt === 'object' && opt.text) 
+            %>
+              <div class="md-content" style="color:<%- opt.title_color %>">
+                <%- _.md.render(markdown) %>
+              </div>
+            <%}%>
+
+            <% if (opt.btn_text) {%>
+              <% 
+              let style = "";
+              if(opt.btn_background_color){
+                style = style + 'background-color:' + opt.btn_background_color + ';';
+              }
+              if(opt.btn_color){
+                style = style + 'color:' + opt.btn_color + ';';
+              }
+              
+              %>
+              <a class="btn btn-av mt-4" style="<%= style %>" href="<%= opt.link || 'javascript:;' %>"><%- opt.btn_text %></a>
+            <% } %>      
+            
+          
+
+
         </div>
       </div>
     </div>
-  <% } %>
+  </div>
+</div>
+
   
+
+
+
+  <!-- 
+
+{
+      "description_color": "#848484",
+      "btn_color": "#ffffff",
+      "text": "**Elaine de Oliveira** É sommelière e consultora de vinhos carioca, gourmet e gourmand por excelência. Se formou como sommelière profissional na Associação Brasileira de Sommeliers do Rio de Janeiro, entidade tradicional do ramo e membro da Association de la Sommellerie Internationale (ASI) em Paris.\n\nÉ colunista de Vinhos da Revista Marie Claire, na coluna \"Boa de Copo\". Com mais de uma década de profissão, em 2015 lançou seu primeiro Guia de Rio, um charmoso livro de bolso voltado para o público amante do vinho Vinhos pela editora Eat in Rio, um charmoso livro de bolso voltado para o público amante do vinho.",
+      "btn_text": "Saiba Mais",
+      "btn_background_color": "#ae0533",
+      "title": "Sobre a Sommeliere ",
+      "type": "apx_imageSection",
+      "image": "/img/uploads/rectangle-14.png",
+      "title_color": "#000000",
+      "btn_link": "/sobre-a-sommeliere",
+      "list": "description_last"
+    }
+
+  -->

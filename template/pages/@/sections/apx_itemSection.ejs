@@ -1,38 +1,109 @@
-<% if (Array.isArray(opt.banners) && opt.banners.length) { %>
-    <% const colSize = Math.ceil(12 / opt.banners.length) %>
-    <div class="banners-grid my-3 my-md-4 my-lg-5 <%= opt.classe_css %>">
-      <div class="<%= opt.container %> <%= opt.padding %>">
-        <%
-            if(opt.title){
-                %>
-                    <div class="apx_section-title text-center mb-4">
-                    <%
-                    if(opt.list != "description_last"){
-                        %>
-                        <small class="text-uppercase"><%- opt.description %></small>
-                        <%
-                    }
-                    %>
-                        <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
-                    <%
-                    if(opt.list == "description_last"){
-                        %>
-                        <small class="text-uppercase"><%- opt.description %></small>
-                        <%
-                    }
-                    %>
-                    </div>
+<% if (Array.isArray(opt.items) && opt.items.length) { %>
+  <div style="background-color:<%- opt.background_color %>; background-image:url(<%- opt.background_image %>)" class="py-md-5 py-4 my-5">
+    <div class="container my-0 py-3">
+      <%
+        if(opt.title){
+            %>
+                <div class="apx_section-title mb-5 text-center">
                 <%
-            }
-        %>
-        <div class="row mx-0">
-          <% for (let i = 0; i < opt.banners.length; i++) { %>
-            <div class="col-12 col-lg-<%= colSize %>  <%= opt.padding %> mb-3 mb-lg-0">
-              <%- await include('@/sections/inc/apx_banner', { _, opt: opt.banners[i] }) %>
+                if(opt.list != "description_last"){
+                    %>
+                    <small class="text-uppercase" style="color:<%- opt.description_color %>"><%- opt.description %></small>
+                    <%
+                }
+                %>
+                    <h2 class="text-bold text-uppercase" style="color:<%- opt.title_color %>"><%- opt.title %></h2>
+                <%
+                if(opt.list == "description_last"){
+                    %>
+                    <small class="text-uppercase" style="color:<%- opt.description_color %>"><%- opt.description %></small>
+                    <%
+                }
+                %>
+                </div>
+            <%
+        }
+      %>
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-10">
+          <div class="row">
+            <% for (let i = 0; i < opt.items.length; i++) { %>
+              <div class="col-12 col-md text-center  <%= i == 0 ? '' : 'offset-md-1' %> mb-md-0 mb-5">
+                <% if(opt.items[i].image){ %>        
+                  <div class="av-item-img">
+                    <img src="<%- opt.items[i].image %>" class="w-100"/>
+                  </div>  
+                <% } %>  
+                <% if(opt.items[i].title){ %>        
+                  <div class="my-4">
+                    <strong style="font-size:var(--f_big);color:<%- opt.title_color %>"><%- opt.items[i].title %></strong>
+                  </div>
+                <% } %>  
+                <% if(opt.items[i].description){ %>        
+                  <div>
+                    <p style="color:<%- opt.description_color %>"><%- opt.items[i].description %></p>
+                  </div>
+                <% } %>  
+              </div>
+            <% } %>
+          </div>
+          <% if (opt.btn_text) {%>
+          <div class="row justify-content-center mt-md-4 mt-0">
+            <div class="col-auto">
+              
+                <% 
+                let style = "";
+                if(opt.btn_background_color){
+                  style = style + 'background-color:' + opt.btn_background_color + ';';
+                }
+                if(opt.btn_color){
+                  style = style + 'color:' + opt.btn_color + ';';
+                }
+                
+                %>
+                <a class="btn btn-av btn-av-big py-3 px-md-5 px-4" style="<%= style %>" href="<%= opt.link || 'javascript:;' %>"><%- opt.btn_text %></a>
+              
             </div>
-          <% } %>
+          </div>
+          <% } %>   
         </div>
       </div>
+         
     </div>
-  <% } %>
+  </div>
+<% } %>
   
+
+  <!-- 
+    {
+      "description_color": "#ffffff",
+      "btn_color": "#ffffff",
+      "items": [
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 1",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 2",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 3",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        }
+      ],
+      "background_image": "/img/uploads/group-123-1-.png",
+      "btn_text": "Participar do Clube",
+      "btn_background_color": "#01d6ca",
+      "title": "Vinhos Exclusivos",
+      "type": "apx_itemSection",
+      "title_color": "#ffffff",
+      "description": "Todos os meses na sua casa",
+      "btn_link": "/participar-do-clube",
+      "list": "description_last"
+    },
+
+  -->
