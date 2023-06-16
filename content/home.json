@@ -233,6 +233,16 @@
           "image": "/img/uploads/180x180-1-.png",
           "title": "Título 1",
           "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 2",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+        },
+        {
+          "image": "/img/uploads/180x180-1-.png",
+          "title": "Título 3",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
         }
       ],
       "background_image": "/img/uploads/group-123-1-.png",
