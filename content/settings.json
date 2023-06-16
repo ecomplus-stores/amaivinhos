@@ -1,7 +1,7 @@
 {
   "domain": "app.amaivinhos.com.br",
   "currency_symbol": "R$",
-  "primary_color": "#040404",
+  "primary_color": "#23c1bb",
   "theme": {
     "bootswatch": "_",
     "custom": "_"
@@ -17,7 +17,7 @@
   "favicon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
   "icons_font": "feather-icons",
   "country_code": "BR",
-  "secondary_color": "#424242",
+  "secondary_color": "#ae0533",
   "icon": "/img/uploads/copia-de-logo-amai-com-flecha-preto-icon-li-150-x150.png",
   "store_id": 51299,
   "description": "Somos uma loja online de Vinhos selecionados com muito amor. ",
