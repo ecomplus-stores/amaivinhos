@@ -621,7 +621,7 @@ export default options => {
         },
         {
           label: "Lista de Itens",
-          name: "list",
+          name: "items",
           widget: "list",
           required:false,
           fields: [
