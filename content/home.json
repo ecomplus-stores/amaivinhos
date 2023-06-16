@@ -224,6 +224,12 @@
       "title_color": "#000000",
       "btn_link": "/sobre-a-sommeliere",
       "list": "description_last"
+    },
+    {
+      "type": "apx_itemSection",
+      "title": "Vinhos Exclusivos",
+      "description": "Todos os meses na sua casa",
+      "list": "description_last"
     }
   ]
 }
