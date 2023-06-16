@@ -5,7 +5,7 @@
       "image": "/img/uploads/ico_pais.svg"
     },
     {
-      "image": "/img/uploads/prancheta-1_1.png",
+      "image": "/img/uploads/ico_regiao.svg",
       "title": "Região"
     },
     {
@@ -13,11 +13,11 @@
       "image": "/img/uploads/prancheta-3.png"
     },
     {
-      "title": "Tipo",
-      "image": "/img/uploads/prancheta-7.png"
+      "title": "Tipo de Vinho",
+      "image": "/img/uploads/ico_tipovinho.svg"
     },
     {
-      "image": "/img/uploads/prancheta-1.png",
+      "image": "/img/uploads/iso_uvas.svg",
       "title": "Uva"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "title": "Teor alcóolico",
-      "image": "/img/uploads/prancheta-4.png"
+      "image": "/img/uploads/ico_alcohol.svg"
     },
     {
       "title": "Temperatura de serviço",
@@ -53,8 +53,8 @@
       "title": "Paladar"
     },
     {
-      "image": "/img/uploads/prancheta-1_6.png",
-      "title": "Tipo de fechamento"
+      "image": "/img/uploads/ico_tampa.svg",
+      "title": "Tipo de tampa"
     },
     {
       "image": "/img/uploads/prancheta-5.png",
@@ -66,7 +66,7 @@
     },
     {
       "title": "Harmonização",
-      "image": "/img/uploads/prancheta-10.png"
+      "image": "/img/uploads/ico_harmonizacao.svg"
     }
   ]
 }
