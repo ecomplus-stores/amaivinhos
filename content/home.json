@@ -209,23 +209,6 @@
       "container": "container-fluid"
     },
     {
-      "type": "blog",
-      "enabled": true
-    },
-    {
-      "description_color": "#848484",
-      "btn_color": "#ffffff",
-      "text": "**Elaine de Oliveira** É sommelière e consultora de vinhos carioca, gourmet e gourmand por excelência. Se formou como sommelière profissional na Associação Brasileira de Sommeliers do Rio de Janeiro, entidade tradicional do ramo e membro da Association de la Sommellerie Internationale (ASI) em Paris.\n\nÉ colunista de Vinhos da Revista Marie Claire, na coluna \"Boa de Copo\". Com mais de uma década de profissão, em 2015 lançou seu primeiro Guia de Rio, um charmoso livro de bolso voltado para o público amante do vinho Vinhos pela editora Eat in Rio, um charmoso livro de bolso voltado para o público amante do vinho.",
-      "btn_text": "Saiba Mais",
-      "btn_background_color": "#ae0533",
-      "title": "Sobre a Sommeliere ",
-      "type": "apx_imageSection",
-      "image": "/img/uploads/rectangle-14.png",
-      "title_color": "#000000",
-      "btn_link": "/sobre-a-sommeliere",
-      "list": "description_last"
-    },
-    {
       "description_color": "#ffffff",
       "btn_color": "#ffffff",
       "items": [
@@ -253,6 +236,23 @@
       "title_color": "#ffffff",
       "description": "Todos os meses na sua casa",
       "btn_link": "/participar-do-clube",
+      "list": "description_last"
+    },
+    {
+      "type": "blog",
+      "enabled": true
+    },
+    {
+      "description_color": "#848484",
+      "btn_color": "#ffffff",
+      "text": "**Elaine de Oliveira** É sommelière e consultora de vinhos carioca, gourmet e gourmand por excelência. Se formou como sommelière profissional na Associação Brasileira de Sommeliers do Rio de Janeiro, entidade tradicional do ramo e membro da Association de la Sommellerie Internationale (ASI) em Paris.\n\nÉ colunista de Vinhos da Revista Marie Claire, na coluna \"Boa de Copo\". Com mais de uma década de profissão, em 2015 lançou seu primeiro Guia de Rio, um charmoso livro de bolso voltado para o público amante do vinho Vinhos pela editora Eat in Rio, um charmoso livro de bolso voltado para o público amante do vinho.",
+      "btn_text": "Saiba Mais",
+      "btn_background_color": "#ae0533",
+      "title": "Sobre a Sommeliere ",
+      "type": "apx_imageSection",
+      "image": "/img/uploads/rectangle-14.png",
+      "title_color": "#000000",
+      "btn_link": "/sobre-a-sommeliere",
       "list": "description_last"
     }
   ]
