@@ -226,9 +226,16 @@
       "list": "description_last"
     },
     {
-      "type": "apx_itemSection",
+      "description_color": "#ffffff",
+      "btn_color": "#ffffff",
+      "background_image": "/img/uploads/group-123-1-.png",
+      "btn_text": "Participar do Clube",
+      "btn_background_color": "#01d6ca",
       "title": "Vinhos Exclusivos",
+      "type": "apx_itemSection",
+      "title_color": "#ffffff",
       "description": "Todos os meses na sua casa",
+      "btn_link": "/participar-do-clube",
       "list": "description_last"
     }
   ]
