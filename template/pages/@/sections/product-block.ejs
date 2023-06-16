@@ -322,7 +322,7 @@ try{
                       <img src="<%= apx_properties.props.find(el => el.title == _.ecomUtils.gridTitle(item, _.grids)).image %>"/>
                     <% } %>                  
                     <div>
-                      <strong><%= _.ecomUtils.gridTitle(item, _.grids) %></strong>
+                      <strong><%=  _.ecomUtils.gridTitle(item, _.grids) %></strong>
                       <span title="<%= _.ecomUtils.specTextValue(_.state, item, _.grids) %>"><%= _.ecomUtils.specTextValue(_.state, item, _.grids) %></span>
                     </div>
                   </div>
@@ -358,7 +358,7 @@ try{
     </section>
   </div>
       
-    <% console.log(brand)
+    <%
       if (brand) { 
       
       const search = new _.EcomSearch()

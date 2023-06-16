@@ -12,18 +12,6 @@
         },
         {
           "item": {
-            "title": "Indique e Ganhe",
-            "url": "/pages/indique-e-ganhe"
-          }
-        },
-        {
-          "item": {
-            "url": "/pages/o-que-e-bazicash",
-            "title": "O que é Bazicash?"
-          }
-        },
-        {
-          "item": {
             "title": "Política de Envio",
             "url": "/pages/politica-de-envio"
           }
