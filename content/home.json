@@ -227,28 +227,33 @@
       "btn_color": "#ffffff",
       "items": [
         {
-          "image": "/img/uploads/180x180-1-.png",
-          "title": "Título 1",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "image": "/img/uploads/icon-clubeprancheta-1.png",
+          "title": "Escolha seu plano",
+          "description": "Encontre um plano perfeito para você"
         },
         {
-          "image": "/img/uploads/180x180-1-.png",
-          "title": "Título 2",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "image": "/img/uploads/icon-clubeprancheta-2.png",
+          "title": "Receba em casa",
+          "description": "Receba sua seleção onde quiser, com conforto, comodidade e segurança."
         },
         {
-          "image": "/img/uploads/180x180-1-.png",
-          "title": "Título 3",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          "image": "/img/uploads/icon-clubeprancheta-3.png",
+          "title": "Comodidade",
+          "description": "Deguste vinhos feitos nas principais regiões vinícolas de todo o mundo."
+        },
+        {
+          "description": "Viva experiências incríveis e brinde a vida com vinhos especiais.",
+          "title": "Aproveite",
+          "image": "/img/uploads/icon-clubeprancheta-4.png"
         }
       ],
       "background_image": "/img/uploads/group-123-1-.png",
       "btn_text": "Participar do Clube",
       "btn_background_color": "#01d6ca",
-      "title": "Vinhos Exclusivos",
+      "title": "Clube Amai",
       "type": "apx_itemSection",
       "title_color": "#ffffff",
-      "description": "Todos os meses na sua casa",
+      "description": "No Clube Amai você recebe, todo mês, 2 rótulos escolhidos a dedo das melhores vinícolas do mundo!",
       "btn_link": "/participar-do-clube",
       "list": "description_last"
     },
