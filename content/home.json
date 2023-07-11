@@ -223,13 +223,13 @@
       "container": "container-fluid"
     },
     {
-      "description_color": "#ffffff",
+      "description_color": "#000000",
       "btn_color": "#ffffff",
       "items": [
         {
           "image": "/img/uploads/icon-clubeprancheta-1.png",
           "title": "Escolha seu plano",
-          "description": "Encontre um plano perfeito para você"
+          "description": "Encontre um plano perfeito para você."
         },
         {
           "image": "/img/uploads/icon-clubeprancheta-2.png",
@@ -247,12 +247,13 @@
           "image": "/img/uploads/icon-clubeprancheta-4.png"
         }
       ],
-      "background_image": "/img/uploads/group-123-1-.png",
+      "background_image": "",
       "btn_text": "Participar do Clube",
+      "background_color": "#f5f5f5",
       "btn_background_color": "#01d6ca",
       "title": "Clube Amai",
       "type": "apx_itemSection",
-      "title_color": "#ffffff",
+      "title_color": "#000000",
       "description": "No Clube Amai você recebe, todo mês, 2 rótulos escolhidos a dedo das melhores vinícolas do mundo!",
       "btn_link": "/participar-do-clube",
       "list": "description_last"
