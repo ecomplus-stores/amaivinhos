@@ -227,24 +227,24 @@
       "btn_color": "#ffffff",
       "items": [
         {
-          "image": "/img/uploads/icon-clubeprancheta-1.png",
+          "image": "/img/uploads/clubeprancheta-1.png",
           "title": "Escolha seu plano",
           "description": "Encontre um plano perfeito para você."
         },
         {
-          "image": "/img/uploads/icon-clubeprancheta-2.png",
+          "image": "/img/uploads/clubeprancheta-2.png",
           "title": "Receba em casa",
           "description": "Receba sua seleção onde quiser, com conforto, comodidade e segurança."
         },
         {
-          "image": "/img/uploads/icon-clubeprancheta-3.png",
+          "image": "/img/uploads/clubeprancheta-3.png",
           "title": "Comodidade",
           "description": "Deguste vinhos feitos nas principais regiões vinícolas de todo o mundo."
         },
         {
           "description": "Viva experiências incríveis e brinde a vida com vinhos especiais.",
           "title": "Aproveite",
-          "image": "/img/uploads/icon-clubeprancheta-4.png"
+          "image": "/img/uploads/clubeprancheta-4.png"
         }
       ],
       "background_image": "",
