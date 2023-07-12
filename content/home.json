@@ -4,10 +4,10 @@
   "sections": [
     {
       "type": "apx_banner-slider",
-      "autoplay": 4000,
+      "autoplay": 0,
       "slides": [
         {
-          "mask_opacity": 5,
+          "mask_opacity": 0,
           "start": "2023-07-12T00:41:08.390Z",
           "end": "2023-07-12T00:41:08.412Z",
           "img": "/img/uploads/mariovascon_landingpage_ux_ui_paper_quilling_of_wines_fathers_d_315b1ae1-9f76-415d-b2c2-529451da3977.png",
